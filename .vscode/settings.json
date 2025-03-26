@@ -1,0 +1,13 @@
+{
+  "json.validate.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["data/lieu/*.json"],
+      "url": "./schema/lieu.schema.json"
+    },
+    {
+      "fileMatch": ["data/salle/*.json"],
+      "url": "./schema/salle.schema.json"
+    }
+  ]
+}

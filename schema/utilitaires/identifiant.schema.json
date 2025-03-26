@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/identifiant.schema.json",
+  "title": "Identifiant",
+  "description": "classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "description": "Type d'identifiant",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      },
+      "value": {
+        "description": "Valeur de l'identifiant",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      }
+    },
+    "required": [
+      "type",
+      "value"
+    ]
+  },
+  "minItems": 1,
+  "uniqueItems": true
+}

@@ -1,0 +1,49 @@
+{
+  "@context": "https://datascence.ca/context.jsonld",
+  "type":"Lieu",
+  "nom": "Grand Théâtre de Québec",
+  "identifiant": [
+    {
+      "type": "uri",
+      "value": "http://kg.artsdata.ca/resource/K5-180"
+    },
+    {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q3114610"
+    }
+  ],
+  "description": [
+    {
+      "langue": "fr",
+      "texte": "Un important centre culturel de Québec, accueillant des spectacles variés."
+    },
+    {
+      "langue": "en",
+      "texte": "A major cultural center in Quebec City, hosting a variety of performances."
+    }
+  ],
+  "lieuVirtuel": false,
+  "salle": [
+    {
+      "nom": "Salle Louis-Fréchette",
+      "description": {
+        "langue": "fr",
+        "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+      }
+    },
+    {
+      "nom": "Salle Octave-Crémazie",
+      "description": {
+        "langue": "fr", 
+        "texte": "Une salle plus intime pour des performances variées."
+      }
+    },
+    {
+      "nom": "STUDIOTELUS",
+      "description": {
+        "langue": "fr",
+        "texte": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
+      } 
+    }
+  ]
+}
