@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/utilitaires/terme.schema.json",
+  "title": "Terme",
+  "description": "permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.",
+  "required": [
+    "type",
+    "vocabulaire",
+    "version",
+    "code",
+    "etiquette",
+    "numeroDeSequence"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Terme"
+    },
+    "vocabulaire": {
+      "$ref": "../types/texteCourt.schema"
+    },"version": {
+       "$ref": "../types/texteCourt.schema"
+    },"code": {
+       "$ref": "../types/texteCourt.schema"
+    },"etiquette": {
+       "$ref": "../types/texteMultilingue.schema"
+    },"numeroDeSequence": {
+      "type":"integer"
+    }
+
+  }
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/identifiant.schema.json",
+  "$id": "https://datascene.ca/utilitaires/identifiant.schema.json",
   "title": "Identifiant",
   "description": "classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.",
   "type": "array",

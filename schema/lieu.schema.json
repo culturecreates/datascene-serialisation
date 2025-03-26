@@ -28,7 +28,7 @@
     "description": {
       "type": "array",
       "items": {
-        "$ref": "./types/texteLongMultilingue.schema.json"
+        "$ref": "./types/texteMultilingue.schema.json"
       },
       "minItems": 1
     },
@@ -38,23 +38,7 @@
     "salle": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "nom": {
-            "type": "string",
-            "minLength": 1
-          },
-          "description": {
-            "$ref": "./types/texteLongMultilingue.schema.json"
-          },
-          "capacite": {
-            "type": "integer",
-            "minimum": 0
-          }
-        },
-        "required": [
-          "nom"
-        ]
+        "$ref": "./salle.schema.json"
       },
       "minItems": 0
     }

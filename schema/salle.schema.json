@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/lieu.schema.json",
+  "title": "Salle",
+  "description": "certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.",
+  "required": [
+    "identifiants",
+    "nomIdentiqueAuLieu"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "nomIdentiqueAuLieu": { "const": false }
+        }
+      },
+      "then": {
+        "required": ["nom"]
+      }
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "const": "https://datascence.ca/context.jsonld"
+    },
+    "type": {
+      "const": "Salle"
+    },
+    "identifiant": {
+      "$ref": "./utilitaires/identifiant.schema.json"
+    },
+    "nom": {
+      "description":"Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
+      "$ref": "./types/texteLong.schema.json"
+    },
+    "nomIdentiqueAuLieu": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "array",
+      "items": {
+        "$ref": "./types/texteMultilingue.schema.json"
+      }
+    },
+    "descriptionCourte": {
+      "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "./types/texteMultilingue.schema.json" },
+          {
+            "type": "string",
+            "minLength": 200,
+            "maxLength": 400
+          }
+        ]
+      }
+    },
+    "lieuVirtuel": {
+      "type": "boolean"
+    }
+  }
+}

@@ -25,25 +25,43 @@
   "lieuVirtuel": false,
   "salle": [
     {
+      "identifiants": [
+        {
+          "type": "uri",
+          "value": "http://kg.artsdata.ca/resource/K5-179"
+        }
+      ],
       "nom": "Salle Louis-Fréchette",
-      "description": {
+      "nomIdentiqueAuLieu": false,
+      "description": [{
         "langue": "fr",
         "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
-      }
+      }]
     },
-    {
-      "nom": "Salle Octave-Crémazie",
-      "description": {
+    {"identifiants": [
+        {
+          "type": "uri",
+          "value": "http://lavitrine.com/1234"
+        }
+      ],
+     "nomIdentiqueAuLieu": true,
+      "description": [{
         "langue": "fr", 
         "texte": "Une salle plus intime pour des performances variées."
-      }
+      }]
     },
-    {
+    {"identifiants": [
+        {
+          "type": "uri",
+          "value": "http://lavitrine.com/4567"
+        }
+      ],
       "nom": "STUDIOTELUS",
-      "description": {
+      "nomIdentiqueAuLieu": false,
+      "description": [{
         "langue": "fr",
         "texte": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
-      } 
+      }] 
     }
   ]
 }

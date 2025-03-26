@@ -1,0 +1,16 @@
+{
+  "@context": "https://datascence.ca/context.jsonld",
+  "type":"Salle",
+  "identifiants": [
+    {
+      "type": "uri",
+      "value": "http://kg.artsdata.ca/resource/K5-179"
+    }
+  ],
+  "nom": "Salle Louis-Fréchette",
+  "nomIdentiqueAuLieu": false,
+  "description": [{
+    "langue": "fr",
+    "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+  }]
+}
