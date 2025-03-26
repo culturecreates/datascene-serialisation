@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/utilitaires/contribution.schema.json",
+  "title": "Contribution",
+  "description": "cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.",
+  "required": [
+    "type",
+    "contributionType"
+    
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Contribution"
+    },
+    "contributionType": {
+      "type":"array",
+      "items": {
+         "$ref": "../vocabularie/contributionType.schema.json"
+      },
+      "description": "Identification des types de contribution."
+    },
+    "contributeur": {
+      "description": "Identification du contributeur",
+       "$ref": "../contributeur.schema.json"
+    },
+    "numéroDeSéquence": {
+      "type": "integer",
+      "description": "Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier)."
+    },
+    "note": {
+      "description": "Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.",
+      "$ref": "../types/texteCourt.schema.json"
+
+    }
+  }
+}

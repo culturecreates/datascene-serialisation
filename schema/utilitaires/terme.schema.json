@@ -6,9 +6,7 @@
   "required": [
     "type",
     "vocabulaire",
-    "version",
     "code",
-    "etiquette",
     "numeroDeSequence"
   ],
   "type": "object",
@@ -17,16 +15,21 @@
       "const": "Terme"
     },
     "vocabulaire": {
+      "description": "Identification du vocabulaire duquel est tiré le terme.\n\nTypiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.",
       "$ref": "../types/texteCourt.schema"
-    },"version": {
-       "$ref": "../types/texteCourt.schema"
-    },"code": {
-       "$ref": "../types/texteCourt.schema"
-    },"etiquette": {
-       "$ref": "../types/texteMultilingue.schema"
-    },"numeroDeSequence": {
-      "type":"integer"
+    },
+    "version": {
+      "description": "Version du vocabulaire utilisé, lorsque c'est applicable",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "code": {
+      "$ref": "../types/texteCourt.schema"
+    },
+    "étiquette": {
+      "$ref": "../types/texteMultilingue.schema"
+    },
+    "numéroDeSéquence": {
+      "type": "integer"
     }
-
   }
 }

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/utilitaires/terme.schema.json",
+  "title": "Address",
+  "description": "permet d’indiquer l’adresse d’un lieu.",
+  "required": [
+    "type",
+    "numéro",
+    "type de rue",
+    "rue",
+    "ville",
+    "province",
+    "pays",
+    "codePostal"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Address"
+    },
+    "unité": {
+      "description": "Numéro d’unité, bureau ou appartement\n\nNote: cette propriété et les propriétés suivantes sont inspirées des directrices sur l'adressage de Postes Canada.",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "numéro": {
+      "description": "Numéro municipal",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "type de rue": {
+      "description": "Abréviation de type de rue recommandée par Postes Canada",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "rue": {
+      "description": "Nom de la rue",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "ville": {
+      "description": "Nom de la ville",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "directionDeRue": {
+      "description": "Abréviation des points cardinaux de Postes Canada",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "province": {
+      "description": "Abréviation des noms de provinces recommandés par Postes Canada",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "pays": {
+      "description": "Code de pays à 3 caractères selon le standard ISO 3166-1",
+      "$ref": "../types/texteCourt.schema"
+    },
+    "codePostal": {
+      "description": "Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union",
+      "$ref": "../types/texteCourt.schema"
+    }
+  }
+}
