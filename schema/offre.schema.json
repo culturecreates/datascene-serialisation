@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/offre.schema.json",
+  "title": "Offre",
+  "description": "permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.",
+  "required": [
+    "type",
+    "lieu",
+    "complet",
+    "statut",
+    "gratuit",
+    "accessibleViaAutreOffre",
+    "sansLienAcquisition"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Offre"
+    },
+    "lieu": {
+      "description": "Lieu associé à l'offre (physique ou virtuel).",
+      "$ref": "./lieu.schema.json"
+    },
+    "salle": {
+      "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
+      "$ref": "./salle.schema.json"
+    },
+    "configurationSalle": {
+      "description": "Configuration de la salle dans le contexte de cette offre.",
+      "$ref": "./vocabulaires/configurationSalleTermes.schema.json"
+    },
+    "complet": {
+      "description": "Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.",
+      "type": "boolean"
+    },
+    "completDepuis": {
+      "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "statut": {
+      "description": "Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.",
+      "$ref": "./vocabulaires/statutOffreTermes.schema.json"
+    },
+    "prix": {
+      "description": "Prix de départ en dollars canadiens.",
+      "$ref": "./datatypes/monétaires.schema.json"
+    },
+    "gratuit": {
+      "description": "Indique que la présente offre est gratuite.",
+      "type": "boolean"
+    },
+    "accessibleViaAutreOffre": {
+      "description": "Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.",
+      "type": "boolean"
+    },
+    "débutPrévente": {
+      "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "débutDisponibilitéGénérale": {
+      "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "sansLienAcquisition": {
+      "description": "Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.",
+      "type": "boolean"
+    },
+    "lienAcquisition": {
+      "description": "URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "gratuit": { "const": false },
+          "accessibleViaAutreOffre": { "const": false },
+          "sansLienAcquisition": { "const": false }
+        },
+        "required": ["gratuit", "accessibleViaAutreOffre", "sansLienAcquisition"]
+      },
+      "then": {
+        "required": ["lienAcquisition"]
+      }
+    }
+  ]
+}

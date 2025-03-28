@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/types/partielles/balisesHtmlAutorisees.schema.json",
+  "$id": "https://datascene.ca/datatypes/partielles/balisesHtmlAutorisees.schema.json",
   "title": "Les balises HTML autorisées",
   "type": "string",
   "pattern": "^(?!.*<[^bius][^>]*>)(?!.*</?(?!b|i|u|sup|sub)[^>]*>).*$"

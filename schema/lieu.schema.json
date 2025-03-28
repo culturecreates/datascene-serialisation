@@ -16,7 +16,7 @@
       "const": "https://datascence.ca/context.jsonld"
     },
     "type": {
-      "const": "Lieu"
+      "$ref": "./vocabulaires/lieuType.schema.json"
     },
     "identifiant": {
       "$ref": "./utilitaires/identifiant.schema.json"
@@ -28,7 +28,7 @@
     "description": {
       "type": "array",
       "items": {
-        "$ref": "./types/texteMultilingue.schema.json"
+        "$ref": "./datatypes/texteLongMultilingue.schema.json"
       },
       "minItems": 1
     },
@@ -40,7 +40,29 @@
       "items": {
         "$ref": "./salle.schema.json"
       },
-      "minItems": 0
+      "description": "Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle."
+    },
+    "adresse": {
+      "description": "Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilitaires/adresse.schema.json"
+      }
+    },"url": {
+      "description": "URL vers des pages web donnant plus d'information sur le lieu. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },"accessibilitéUniverselle": {
+      "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
+      "type": "array",
+      "items": {
+        "$ref": "./vocabulaires/accessibilitéUniverselleTermes.schema.json"
+      }
+    },"coordGéo": {
+      "$ref": "./datatypes/coordGéo.schema.json"
     }
   }
 }

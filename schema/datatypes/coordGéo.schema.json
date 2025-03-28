@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/datatypes/coordGéo.schema.json",
+  "title": "Coordonnées géographiques d'un point.",
+  "description": "Coordonnées géographiques",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type":"number"
+    },
+    "latitude": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "longitude",
+    "latitude"
+  ]
+}

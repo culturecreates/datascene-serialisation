@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/datatypes/texteLongMultilingue.schema.json",
+  "title": "Texte court multilingue",
+  "description": "Énumération de textes longs associés à un code de langue au standard ISO 639-1.",
+  "type": "object",
+  "properties": {
+    "langue": {
+      "$ref": "./references/langue.schema.json"
+    },
+    "texte": {
+      "type": "string",
+      "minLength": 400,
+      "maxLength": 600
+    }
+  },
+  "required": [
+    "langue",
+    "texte"
+  ]
+}

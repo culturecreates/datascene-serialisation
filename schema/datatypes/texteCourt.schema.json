@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/types/texteCourt.schema.json",
+  "$id": "https://datascene.ca/datatypes/texteCourt.schema.json",
   "title": "Texte court",
   "description": "Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)",
   "type": "string",

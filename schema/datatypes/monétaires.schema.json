@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/datatypes/monétaires.schema.json",
+  "title": "Montant Monétaire",
+  "description": "Montant en dollars canadiens, sans le signe dollar ($), avec une ou deux décimales.",
+  "type": "string",
+  "pattern": "^\\d{1,3}(,\\d{3})*(\\.\\d{1,2})?$"
+}

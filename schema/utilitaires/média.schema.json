@@ -19,31 +19,32 @@
     },
     "notesUsage": {
       "description": "Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).",
-       "$ref": "../types/texteCourt.schema.json"
+       "$ref": "../datatypes/texteCourt.schema.json"
     },
     "url":{
       "description": "URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible",
-      "$ref": "../types/url.schema.json"
+      "type": "string",
+      "format": "uri"
     },
     "licence": {
       "description": "Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.",
       "type":"array",
       "items": {
-        "$ref": "../types/texteCourt.schema.json"
+        "$ref": "../datatypes/texteCourt.schema.json"
       }
     },
     "crédits": {
       "description": "Crédits associés au média.",
       "type":"array",
       "items": {
-        "$ref": "../types/texteCourt.schema.json"
+        "$ref": "../datatypes/texteCourt.schema.json"
       }
     },
     "description": {
       "description": "Description courte (pouvant par exemple servir de «alt description» sur le web).",
       "type":"array",
       "items": {
-        "$ref": "../types/texteCourt.schema.json"
+        "$ref": "../datatypes/texteCourt.schema.json"
       }
     }
   }

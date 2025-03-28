@@ -4,6 +4,10 @@
   "title": "Identifiant",
   "description": "classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.",
   "type": "array",
+  "required": [
+    "type",
+    "value"
+  ],
   "items": {
     "type": "object",
     "properties": {
@@ -19,11 +23,7 @@
         "minLength": 1,
         "maxLength": 100
       }
-    },
-    "required": [
-      "type",
-      "value"
-    ]
+    }
   },
   "minItems": 1,
   "uniqueItems": true

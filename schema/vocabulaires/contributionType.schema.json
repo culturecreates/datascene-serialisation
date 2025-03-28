@@ -1,0 +1,9 @@
+{
+  "types": [
+    "performer",
+    "designer",
+    "sound designer",
+    "producer",
+    "director"
+  ]
+}

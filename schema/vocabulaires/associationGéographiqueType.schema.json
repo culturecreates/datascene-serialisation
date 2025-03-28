@@ -1,0 +1,9 @@
+{
+  "types": [
+    "placeOfResidence",
+    "placeOfBirth",
+    "placeOfDeath",
+    "placeOfWork",
+    "citizenship"
+  ]
+}

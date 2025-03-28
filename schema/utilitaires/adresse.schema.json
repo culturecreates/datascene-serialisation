@@ -9,7 +9,7 @@
     "type de rue",
     "rue",
     "ville",
-    "province",
+    "région",
     "pays",
     "codePostal"
   ],
@@ -20,39 +20,40 @@
     },
     "unité": {
       "description": "Numéro d’unité, bureau ou appartement\n\nNote: cette propriété et les propriétés suivantes sont inspirées des directrices sur l'adressage de Postes Canada.",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "numéro": {
       "description": "Numéro municipal",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "type de rue": {
       "description": "Abréviation de type de rue recommandée par Postes Canada",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "rue": {
       "description": "Nom de la rue",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "ville": {
       "description": "Nom de la ville",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "directionDeRue": {
       "description": "Abréviation des points cardinaux de Postes Canada",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "province": {
-      "description": "Abréviation des noms de provinces recommandés par Postes Canada",
-      "$ref": "../types/texteCourt.schema"
+    "région": {
+      "description": "Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.",
+      "$ref": "../datatypes/région.schema.json"
     },
     "pays": {
       "description": "Code de pays à 3 caractères selon le standard ISO 3166-1",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/pays.schema.json"
     },
     "codePostal": {
       "description": "Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/codePostalCanadien.schema.json"
     }
-  }
+  },
+  "$ref": "../datatypes/partielles/codeProvincesSiCanada.schema.json"
 }

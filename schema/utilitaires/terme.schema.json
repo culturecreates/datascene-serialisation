@@ -16,19 +16,22 @@
     },
     "vocabulaire": {
       "description": "Identification du vocabulaire duquel est tiré le terme.\n\nTypiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "version": {
       "description": "Version du vocabulaire utilisé, lorsque c'est applicable",
-      "$ref": "../types/texteCourt.schema"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "code": {
-      "$ref": "../types/texteCourt.schema"
+      "description": "Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.",
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "étiquette": {
-      "$ref": "../types/texteMultilingue.schema"
+      "description": "Version textuelle du terme tiré du vocabulaire choisi",
+      "$ref": "../datatypes/texteLongMultilingue.schema.json"
     },
     "numéroDeSéquence": {
+      "description": "Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).",
       "type": "integer"
     }
   }

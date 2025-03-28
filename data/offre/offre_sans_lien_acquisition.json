@@ -1,0 +1,19 @@
+{
+  "type": "Offre",
+  "lieu": {
+    "identifiant": [
+      {
+        "type": "uri",
+        "value": "http://123"
+      }
+    ],
+    "type": "Theatre",
+    "lieuVirtuel": false,
+    "nom": "Theatre Verdun"
+  },
+  "complet": false,
+  "statut": "confirmée",
+  "gratuit": false,
+  "accessibleViaAutreOffre": false,
+  "sansLienAcquisition": true
+}

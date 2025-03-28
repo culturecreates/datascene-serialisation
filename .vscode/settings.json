@@ -8,6 +8,14 @@
     {
       "fileMatch": ["data/salle/*.json"],
       "url": "./schema/salle.schema.json"
+    },
+    {
+      "fileMatch": ["data/adresse/*.json"],
+      "url": "./schema/utilitaires/adresse.schema.json"
+    },
+    {
+      "fileMatch": ["data/offre/*.json"],
+      "url": "./schema/offre.schema.json"
     }
   ]
 }

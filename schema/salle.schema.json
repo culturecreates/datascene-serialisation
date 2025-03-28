@@ -11,11 +11,15 @@
     {
       "if": {
         "properties": {
-          "nomIdentiqueAuLieu": { "const": false }
+          "nomIdentiqueAuLieu": {
+            "const": false
+          }
         }
       },
       "then": {
-        "required": ["nom"]
+        "required": [
+          "nom"
+        ]
       }
     }
   ],
@@ -32,8 +36,8 @@
       "$ref": "./utilitaires/identifiant.schema.json"
     },
     "nom": {
-      "description":"Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
-      "$ref": "./types/texteLong.schema.json"
+      "description": "Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
+      "$ref": "./datatypes/texteLong.schema.json"
     },
     "nomIdentiqueAuLieu": {
       "type": "boolean"
@@ -41,21 +45,14 @@
     "description": {
       "type": "array",
       "items": {
-        "$ref": "./types/texteMultilingue.schema.json"
+        "$ref": "./datatypes/texteLongMultilingue.schema.json"
       }
     },
     "descriptionCourte": {
       "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
       "type": "array",
       "items": {
-        "allOf": [
-          { "$ref": "./types/texteMultilingue.schema.json" },
-          {
-            "type": "string",
-            "minLength": 200,
-            "maxLength": 400
-          }
-        ]
+        "$ref": "./datatypes/texteCourtMultilingue.schema.json"
       }
     },
     "lieuVirtuel": {

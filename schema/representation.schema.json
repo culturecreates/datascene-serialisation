@@ -22,11 +22,11 @@
       "description": "Énumération des identifiants connus.",
       "$ref": "./utilitaires/identifiant.schema.json"
     },
-    "spectacle":{
+    "spectacle": {
       "description": "Identification du spectacle dont fait partie la représentation",
       "$ref": "./spectacle.schema.json"
     },
-    "série":{
+    "série": {
       "type": "array",
       "items": {
         "$ref": "./serie.schema.json"
@@ -56,62 +56,52 @@
       "type": "boolean",
       "description": "Indique la présence d'une ou plusieurs entractes"
     },
-    "supplémentaire":{
+    "supplémentaire": {
       "type": "boolean",
       "description": "Indique si la représentation est une représentation supplémentaire"
     },
     "description": {
-      "type": "array",
-      "items": {
-        "$ref": "./types/texteMultilingue.schema.json"
-      },
+      "$ref": "./datatypes/texteLongMultilingue.schema.json",
       "description": "Propriété utilisée seulement si la description de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent."
     },
-    "descriptionCourte":{
+    "descriptionCourte": {
       "description": "Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
-      "type": "string",
-      "allOf": [
-        { "$ref": "./types/texteMultilingue.schema.json" },
-        {
-          "type": "string",
-          "minLength": 200,
-          "maxLength": 400
-        }
-      ]
+      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "médias":{
+    "médias": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) supplémentaires associés à la représentation, lorsqu'ils sont disponibles et qu'il n'est pas possible de les associer au spectacle. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
       "type": "array",
       "items": {
         "$ref": "./utilitaires/média.schema.json"
       }
     },
-    "autreNom":{
+    "autreNom": {
       "description": "Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent",
-      "$ref": "./types/texteMultilingue.schema.json"
+      "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "url": {
       "description": "Propriété utilisée seulement si l'URL associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
-      "$ref": "./types/url.schema.json"
+      "type": "string",
+      "format": "uri"
     },
-    "contributionsSupplémentaires":{
+    "contributionsSupplémentaires": {
       "type": "array",
       "items": {
-        "$ref": "./types/contribution.schema.json"
+        "$ref": "./datatypes/contribution.schema.json"
       },
       "description": "Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées."
     },
-    "contributionsRetirées":{
+    "contributionsRetirées": {
       "type": "array",
       "items": {
         "$ref": "./utilitaires/contribution.schema.json"
       },
       "description": "Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées"
     },
-    "offres":{
+    "offres": {
       "type": "array",
       "items": {
-        "$ref": "./types/offre.schema.json"
+        "$ref": "./datatypes/offre.schema.json"
       },
       "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres."
     }

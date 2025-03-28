@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/vocabulaires/accessibilitéUniverselleTermes.schema.json",
+  "title": "Accessibilités Universelles",
+  "description": "Vocabulaire contrôlé pour les termes d'accessibilité universelle.",
+  "type": "string",
+  "enum": [
+    "fauteuilRoulant",
+    "animauxAdmis",
+    "langueDesSignes",
+    "garderie",
+    "stationnement",
+    "toilettesAccessibles",
+    "toilettesNonGenrees",
+    "traductionChuchotee"
+  ]
+}

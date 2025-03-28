@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/types/texteMultilingue.schema.json",
+  "$id": "https://datascene.ca/datatypes/texteLongMultilingue.schema.json",
   "title": "Texte long multilingue",
   "description": "Énumération de textes longs associés à un code de langue au standard ISO 639-1.",
   "type": "object",
@@ -9,7 +9,12 @@
       "$ref": "./references/langue.schema.json"
     },
     "texte": {
-      "type": "string"
+      "type": "string",
+      "allOf": [
+        {
+          "$ref": "./partielles/balisesHtmlAutorisees.schema.json"
+        }
+      ]
     }
   },
   "required": [

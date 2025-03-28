@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "@vocab": "https://datascene.ca/modelle#",
+    "@base": "https://datascene.ca/vocabulaire/",
+    "type": {
+      "@type": "@id",
+      "@id": "type"
+    }
+  },
+  "type": "Offre",
+  "lieu": {
+    "identifiant": [
+      {
+        "type": "uri",
+        "value": "http://123"
+      }
+    ],
+    "type": "Theatre",
+    "lieuVirtuel": false,
+    "nom": "Theatre Verdun"
+  },
+  "complet": false,
+  "statut": "confirmée",
+  "gratuit": true,
+  "accessibleViaAutreOffre": false,
+  "sansLienAcquisition": false
+}

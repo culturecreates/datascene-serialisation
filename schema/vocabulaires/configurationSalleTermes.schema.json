@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/vocabulaires/configurationSalleTermes.schema.json",
+  "title": "Configuration de Salle",
+  "description": "Vocabulaire contrôlé pour les configurations de salle.",
+  "type": "string",
+  "enum": [
+    "italienne",
+    "cabaret",
+    "theatre",
+    "debout",
+    "multifonctionnelle",
+    "conference",
+    "amphitheatre",
+    "hybrideMixte"
+  ]
+}
