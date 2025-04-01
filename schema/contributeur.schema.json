@@ -6,30 +6,26 @@
   "required": [
     "type",
     "identifiant",
-    "nom",
-    "contributeurType"
+    "nom"
   ],
   "type": "object",
   "properties": {
-    "@context": {
-      "type": "string",
-      "const": "https://datascence.ca/context.jsonld"
-    },
     "type": {
-      "const": "Contributeur"
+      "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
+      "$ref": "./vocabulaires/contributeurType.schema.json"
     },
     "identifiant": {
       "$ref": "./utilitaires/identifiant.schema.json"
     },
     "nom": {
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
-      "$ref": "./datatypes/textLong.schema.json"
+      "$ref": "./datatypes/texteLong.schema.json"
     },
     "nomsAlternatif":{
       "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
       "type": "array",
       "items": {
-        "$ref": "./datatypes/textLong.schema.json"
+        "$ref": "./datatypes/texteLong.schema.json"
       }
     },
     "description": {
@@ -43,10 +39,7 @@
       "$ref": "./utilitaires/média.schema.json",
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
     },
-    "contributeurType": {
-      "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
-      "$ref": "./vocabulaires/contributeurType.schema.json"
-    },
+    
     "contributionTypeHabituelle": {
       "type": "array",
       "items": {
@@ -54,11 +47,11 @@
       },
       "description": "Énumération des types de contributions habituellement faites par le contributeur."
     },
-    "associationsGéographiques": {
+    "associationGéographique": {
       "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
       "type": "array",
       "items": {
-        "$ref": "./vocabulaires/associationGéographique.schema.json"
+        "$ref": "./utilitaires/associationGéographique.schema.json"
       }
     },"composéDe": {
       "description": "Énumération des membres des groupes, troupes et collectifs, etc.",

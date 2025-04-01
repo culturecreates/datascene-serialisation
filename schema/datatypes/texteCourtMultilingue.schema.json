@@ -6,11 +6,11 @@
   "type": "object",
   "properties": {
     "langue": {
-      "$ref": "./references/langue.schema.json"
+      "$ref": "./partielles/langue.schema.json"
     },
     "texte": {
       "type": "string",
-      "minLength": 400,
+      "minLength": 2,
       "maxLength": 600
     }
   },

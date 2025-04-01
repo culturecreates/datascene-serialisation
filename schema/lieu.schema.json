@@ -11,10 +11,6 @@
   ],
   "type": "object",
   "properties": {
-    "@context": {
-      "type": "string",
-      "const": "https://datascence.ca/context.jsonld"
-    },
     "type": {
       "$ref": "./vocabulaires/lieuType.schema.json"
     },

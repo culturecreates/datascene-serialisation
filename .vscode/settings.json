@@ -16,6 +16,14 @@
     {
       "fileMatch": ["data/offre/*.json"],
       "url": "./schema/offre.schema.json"
+    },
+    {
+      "fileMatch": ["data/spectacle/*.json"],
+      "url": "./schema/spectacle.schema.json"
+    },
+    {
+      "fileMatch": ["data/représentation/*.json"],
+      "url": "./schema/représentation.schema.json"
     }
   ]
 }

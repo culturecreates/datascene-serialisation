@@ -12,7 +12,7 @@
     "type": {
       "type":"array",
       "items": {
-         "$ref": "../vocabularie/contributionType.schema.json"
+         "$ref": "../vocabulaires/contributionType.schema.json"
       },
       "description": "Identification des types de contribution."
     },

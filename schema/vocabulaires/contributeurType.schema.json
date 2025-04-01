@@ -1,7 +1,12 @@
 {
-  "types": [
-    "musicGroup",
-    "presenter",
-    "organizer"
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modelles/TypeDeContributeurType",
+  "title": "Type de contributeurs",
+  "description": "Vocabulaire contrôlé pour les types de contributeurs.",
+  "source":"https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
+  "type": "string",
+  "enum": [
+    "PersonnePhysique",
+    "Groupe"
   ]
 }

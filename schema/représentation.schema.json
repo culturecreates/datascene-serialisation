@@ -1,12 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/representation.schema.json",
-  "title": "Representation",
+  "$id": "https://datascene.ca/modelle/Représentation",
+  "title": "Représentation",
   "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
   "required": [
     "type",
     "identifiant",
-    "spectacle",
     "début"
   ],
   "type": "object",
@@ -16,7 +15,7 @@
       "const": "https://datascence.ca/context.jsonld"
     },
     "type": {
-      "const": "Representation"
+      "const": "Représentation"
     },
     "identifiant": {
       "description": "Énumération des identifiants connus.",
@@ -87,7 +86,7 @@
     "contributionsSupplémentaires": {
       "type": "array",
       "items": {
-        "$ref": "./datatypes/contribution.schema.json"
+        "$ref": "./utilitaires/contribution.schema.json"
       },
       "description": "Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées."
     },
@@ -101,7 +100,7 @@
     "offres": {
       "type": "array",
       "items": {
-        "$ref": "./datatypes/offre.schema.json"
+        "$ref": "./offre.schema.json"
       },
       "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres."
     }

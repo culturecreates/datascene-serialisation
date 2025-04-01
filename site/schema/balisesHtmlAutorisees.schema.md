@@ -1,0 +1,2 @@
+# Les balises HTML autorisées
+

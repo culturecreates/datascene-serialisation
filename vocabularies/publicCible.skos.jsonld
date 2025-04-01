@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "datascene": "https://datascene.ca/modelle/",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "fr"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "fr"
+    },
+    "Concept": "skos:Concept",
+    "ConceptScheme": "skos:ConceptScheme",
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id"
+    }
+  },
+  "@id": "datascene:PublicCible",
+  "@type": "ConceptScheme",
+  "prefLabel": "Public Cible",
+  "hasTopConcept": [
+    {
+      "@id": "datascene:ToutPublics",
+      "@type": "Concept",
+      "prefLabel": "Tout publics",
+      "definition": "Un public général sans restriction d'âge ou de catégorie."
+    },
+    {
+      "@id": "datascene:AvecBebe",
+      "@type": "Concept",
+      "prefLabel": "Avec bébé",
+      "definition": "Un public accompagné de bébés."
+    },
+    {
+      "@id": "datascene:ToutPetits",
+      "@type": "Concept",
+      "prefLabel": "Tout-petits (0 à 3 ans)",
+      "definition": "Un public composé de jeunes enfants âgés de 0 à 3 ans."
+    },
+    {
+      "@id": "datascene:PetiteEnfance",
+      "@type": "Concept",
+      "prefLabel": "Petite enfance (4 à 7 ans)",
+      "definition": "Un public composé d'enfants âgés de 4 à 7 ans."
+    },
+    {
+      "@id": "datascene:Enfance",
+      "@type": "Concept",
+      "prefLabel": "Enfance (8 à 12 ans)",
+      "definition": "Un public composé d'enfants âgés de 8 à 12 ans."
+    },
+    {
+      "@id": "datascene:Jeunesse",
+      "@type": "Concept",
+      "prefLabel": "Jeunesse (13 ans à 16 ans)",
+      "definition": "Un public composé de jeunes âgés de 13 à 16 ans."
+    },
+    {
+      "@id": "datascene:Adultes",
+      "@type": "Concept",
+      "prefLabel": "Adultes",
+      "definition": "Un public composé d'adultes."
+    },
+    {
+      "@id": "datascene:Aines",
+      "@type": "Concept",
+      "prefLabel": "Aînés",
+      "definition": "Un public composé de personnes âgées."
+    },
+    {
+      "@id": "datascene:Familles",
+      "@type": "Concept",
+      "prefLabel": "Familles",
+      "definition": "Un public composé de familles, incluant plusieurs générations."
+    }
+  ]
+}

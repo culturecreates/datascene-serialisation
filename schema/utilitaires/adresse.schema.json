@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://datascene.ca/utilitaires/terme.schema.json",
-  "title": "Address",
+  "title": "Adresse",
   "description": "permet d’indiquer l’adresse d’un lieu.",
   "required": [
     "type",
     "numéro",
-    "type de rue",
+    "typeDeRue",
     "rue",
     "ville",
     "région",
@@ -16,7 +16,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Address"
+      "const": "Adresse"
     },
     "unité": {
       "description": "Numéro d’unité, bureau ou appartement\n\nNote: cette propriété et les propriétés suivantes sont inspirées des directrices sur l'adressage de Postes Canada.",
@@ -26,7 +26,7 @@
       "description": "Numéro municipal",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "type de rue": {
+    "typeDeRue": {
       "description": "Abréviation de type de rue recommandée par Postes Canada",
       "$ref": "../datatypes/texteCourt.schema.json"
     },

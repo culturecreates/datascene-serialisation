@@ -1,6 +1,6 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
-  "type":"Lieu",
+  "type":"Theatre",
   "nom": "Grand Théâtre de Québec",
   "identifiant": [
     {

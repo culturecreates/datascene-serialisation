@@ -1,0 +1,10 @@
+site_name: Documentation du Projet
+plugins:
+  - search
+  - schema_reader:
+      include: 
+        - "./schema/"
+theme:
+  name: material
+nav:
+  - Home: index.md

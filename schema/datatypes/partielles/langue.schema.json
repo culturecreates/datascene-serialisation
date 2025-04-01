@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://datascene.ca/type/partilles/langue.schema.json",
-  "title": "Multiligual String",
-  "description": "String in a specified language. Language tags can look like fr, fr-CA, and de-CH-1901. See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+  "title": "Texte multilingue",
+  "description": " code de langue au standard ISO 639-1 (fr, fr-CA, de-CH-1901).\n\nVoir https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry et https://www.rfc-editor.org/rfc/rfc5646.html",
   "type": "string",
   "minLength": 2,
   "regex": "^[a-z]{2,3}(-[a-zA-Z0-9]+)*$"

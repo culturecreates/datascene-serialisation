@@ -1,0 +1,99 @@
+{
+  "@context": "https://datascence.ca/context.jsonld",
+  "type": "Spectacle",
+  "identifiant": [
+    {
+      "type": "uri",
+      "value": "http://lavitrine.com/spectacle/123456"
+    }
+  ],
+  "nom": {
+    "langue": "fr",
+    "texte": "Hommage à Michel Louvain."
+  },
+  "description": {
+    "langue": "fr",
+    "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
+  },
+  "médias": [
+    {
+      "type": "Média",
+      "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
+      "notesUsage": "(ne sont pas affichées)"
+    }
+  ],
+  "contribution": [
+    {
+      "type": [
+        "Artiste sur scène"
+      ],
+      "contributeur": {
+        "type": "Groupe",
+        "identifiant": [
+          {
+            "type": "uri",
+            "value": "http://lavitrine.com/123456"
+          }
+        ],
+        "nom": "Un certain souvenir"
+      }
+    }
+  ],
+  "url": [
+    "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+  ],
+  "discipline": [
+    "Chanson"
+  ],
+  "publicCible": [
+    "ToutPublics"
+  ],
+  "langues": [
+    "fr"
+  ],
+  "spectacleSansParole": false,
+  "représentation": [
+    {
+      "type": "Représentation",
+      "identifiant": [
+        {
+          "type": "uri",
+          "value": "http://lavitrine.com/representation/123456"
+        }
+      ],
+      "début": "2023-02-26T15:00:00-05:00",
+      "offre": {
+        "type": "Offre",
+        "lieu": {
+          "type": "Theatre",
+          "identifiant": [
+            {
+              "type": "uri",
+              "value": "http://lavitrine.com/representation/7567567"
+            }
+          ],
+          "nom": {
+            "langue": "fr",
+            "texte": "Salle Albert-Rousseau"
+          },
+          "adresse": {
+            "type": "Adresse",
+            "numéro": "2410",
+            "typeDeRue": "CH",
+            "rue": "Sainte-Foy",
+            "ville": "Québec",
+            "région": "QC",
+            "pays": "CAN",
+            "codePostal": "G1V 1T3"
+          }
+        },
+        "complet": false,
+        "statut": "confirmée",
+        "gratuit": false,
+        "accessibleViaAutreOffre": false,
+        "sansLienAcquisition": false,
+        "lienAcquisition":  "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+      }
+    }
+  ]
+}

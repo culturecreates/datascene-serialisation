@@ -1,9 +1,9 @@
 {
+  "type": "Adresse",
   "ville": "Montréal",
   "région": "QC",
   "pays": "CAN",
   "codePostal": "H2X 1Y4",
-  "type": "Address",
   "numéro": "1234",
   "type de rue": "rue",
   "rue": "Saint-Laurent",

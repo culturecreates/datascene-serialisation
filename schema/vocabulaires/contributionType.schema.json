@@ -1,9 +1,16 @@
 {
-  "types": [
-    "performer",
-    "designer",
-    "sound designer",
-    "producer",
-    "director"
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modelles/TypeDeContribution",
+  "title": "Type de contribution",
+  "description": "Vocabulaire contrôlé pour les types de contributions.",
+  "type": "string",
+  "enum": [
+    "Artiste sur scène",
+    "Auteur, créateur ou membre de l'équipe de création",
+    "Personnel technique",
+    "Mise en scène, direction artistique, direction créative",
+    "Producteur, organisateur, promoteur",
+    "Commanditaire",
+    "Autre"
   ]
 }
