@@ -4,6 +4,7 @@
   "title": "Salle",
   "description": "certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.",
   "required": [
+    "type",
     "identifiants",
     "nomIdentiqueAuLieu"
   ],
@@ -25,10 +26,6 @@
   ],
   "type": "object",
   "properties": {
-    "@context": {
-      "type": "string",
-      "const": "https://datascence.ca/context.jsonld"
-    },
     "type": {
       "const": "Salle"
     },

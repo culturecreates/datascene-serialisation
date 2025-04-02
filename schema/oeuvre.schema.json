@@ -4,6 +4,7 @@
   "title": "Oeuvre",
   "description": "cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.",
   "required": [
+    "type",
     "identifiants",
     "nom"
   ],
