@@ -89,7 +89,7 @@
       },
       "description": "Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées"
     },
-    "offres": {
+    "offre": {
       "type": "array",
       "items": {
         "$ref": "./offre.schema.json"

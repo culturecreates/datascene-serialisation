@@ -30,8 +30,7 @@
       "$ref": "./utilitaires/identifiant.schema.json"
     },
     "nom": {
-      "type": "string",
-      "minLength": 1
+      "$ref": "./datatypes/texteLong.schema.json"
     },
     "description": {
       "type": "array",
