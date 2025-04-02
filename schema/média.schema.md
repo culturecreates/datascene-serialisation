@@ -1,10 +1,10 @@
-# Médias
+# Objet Média
 
 *cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.*
 
 ## Properties
 
-- <a id="properties/type"></a>**`type`**: Must be: `"M\u00e9dia"`.
+- <a id="properties/type"></a>**`type`**: Must be: `"ObjetM\u00e9dia"`.
 - <a id="properties/num%C3%A9roDeS%C3%A9quence"></a>**`numéroDeSéquence`** *(integer)*: Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).
 - <a id="properties/notesUsage"></a>**`notesUsage`**: Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication). Refer to *[../datatypes/texteCourt.schema.json](#/datatypes/texteCourt.schema.json)*.
 - <a id="properties/url"></a>**`url`** *(string, format: uri, required)*: URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.
