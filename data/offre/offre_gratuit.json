@@ -15,9 +15,9 @@
         "value": "http://123"
       }
     ],
-    "type": "Theatre",
-    "lieuVirtuel": false,
-    "nom": "Theatre Verdun"
+    "type": "LieuVirtuel",
+    "lieuVirtuel": true,
+    "nom": "Zoom"
   },
   "complet": false,
   "statut": "confirmée",

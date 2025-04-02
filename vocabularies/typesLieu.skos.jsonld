@@ -74,6 +74,12 @@
       "@type": "Concept",
       "prefLabel": "Espace extérieur",
       "definition": "Un lieu en plein air utilisé pour des événements ou des activités culturelles."
+    },
+    {
+      "@id": "https://datascene.ca/vocabulaires/LieuVirtuel",
+      "@type": "Concept",
+      "prefLabel": "Lieu Virtuel",
+      "definition": "Un lieu virtuel utilisé pour des événements en ligne ou à distance."
     }
   ]
 }
