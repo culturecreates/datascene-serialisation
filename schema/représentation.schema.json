@@ -21,10 +21,6 @@
       "description": "Énumération des identifiants connus.",
       "$ref": "./utilitaires/identifiant.schema.json"
     },
-    "spectacle": {
-      "description": "Identification du spectacle dont fait partie la représentation",
-      "$ref": "./spectacle.schema.json"
-    },
     "série": {
       "type": "array",
       "items": {
