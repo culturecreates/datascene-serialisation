@@ -5,11 +5,11 @@
   "description": "Vocabulaire contrôlé pour les types de contributions.",
   "type": "string",
   "enum": [
-    "Artiste sur scène",
-    "Auteur, créateur ou membre de l'équipe de création",
-    "Personnel technique",
-    "Mise en scène, direction artistique, direction créative",
-    "Producteur, organisateur, promoteur",
+    "ArtisteSurScène",
+    "AuteurCréateur",
+    "PersonnelTechnique",
+    "DirectionArtistiqueCréative",
+    "ProducteurOrganisateurPromoteur",
     "Commanditaire",
     "Autre"
   ]
