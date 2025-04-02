@@ -5,7 +5,7 @@
   "pays": "CAN",
   "codePostal": "H2X 1Y4",
   "numéro": "1234",
-  "type de rue": "rue",
+  "typeDeRue": "rue",
   "rue": "Saint-Laurent",
   "unité": "Bureau 567",
   "directionDeRue": "O"
