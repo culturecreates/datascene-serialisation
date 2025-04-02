@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://datascene.ca/type/partilles/langue.schema.json",
-  "title": "Texte multilingue",
-  "description": " code de langue au standard ISO 639-1 (fr, fr-CA, de-CH-1901).\n\nVoir https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry et https://www.rfc-editor.org/rfc/rfc5646.html",
+  "title": "Code de langue",
+  "source": "https://www.rfc-editor.org/rfc/rfc5646.html",
+  "description": "Code de langue au standard ISO 639-1 (fr, fr-CA, de-CH-1901). Voir https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
   "type": "string",
   "minLength": 2,
   "regex": "^[a-z]{2,3}(-[a-zA-Z0-9]+)*$"

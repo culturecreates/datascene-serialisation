@@ -4,16 +4,31 @@
   "title": "Types de publics cibles",
   "description": "Vocabulaire contrôlé pour les types de publics cibles.",
   "source": "https://docs.google.com/spreadsheets/d/1Qw6YF3GE5w5VgItOrMkRumgx_oqgXujO8UsQlv0vhMk/edit?gid=2079564911#gid=2079564911",
-  "type": "string",
-  "enum": [
-    "ToutPublics",
-    "AvecBebe",
-    "ToutPetits",
-    "PetiteEnfance",
-    "Enfance",
-    "Jeunesse",
-    "Adultes",
-    "Aines",
-    "Familles"
+  "allOf": [
+    {
+      "$ref": "../utilitaires/terme.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "ToutPublics",
+            "AvecBebe",
+            "ToutPetits",
+            "PetiteEnfance",
+            "Enfance",
+            "Jeunesse",
+            "Adultes",
+            "Aines",
+            "Familles"
+          ]
+        }
+      },
+      "required": [
+        "code"
+      ]
+    }
   ]
 }

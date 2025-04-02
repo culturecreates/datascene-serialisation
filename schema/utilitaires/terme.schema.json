@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/utilitaires/terme.schema.json",
+  "$id": "https://datascene.ca/modelle/Terme",
   "title": "Terme",
   "description": "permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.",
   "required": [
     "type",
     "vocabulaire",
     "code",
-    "numeroDeSequence"
+    "numéroDeSéquence"
   ],
   "type": "object",
   "properties": {
@@ -15,6 +15,7 @@
       "const": "Terme"
     },
     "vocabulaire": {
+      "name": "Vocabulaire",
       "description": "Identification du vocabulaire duquel est tiré le terme.\n\nTypiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
@@ -28,7 +29,7 @@
     },
     "étiquette": {
       "description": "Version textuelle du terme tiré du vocabulaire choisi",
-      "$ref": "../datatypes/texteLongMultilingue.schema.json"
+      "$ref": "../datatypes/texteCourtMultilingue.schema.json"
     },
     "numéroDeSéquence": {
       "description": "Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).",

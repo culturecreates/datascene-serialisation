@@ -9,9 +9,10 @@
       "$ref": "./partielles/langue.schema.json"
     },
     "texte": {
+      "title": "Texte court",
       "type": "string",
-      "minLength": 2,
-      "maxLength": 600
+      "minLength": 1,
+      "maxLength": 500
     }
   },
   "required": [

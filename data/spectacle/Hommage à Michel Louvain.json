@@ -15,9 +15,9 @@
     "langue": "fr",
     "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
   },
-  "médias": [
+  "média": [
     {
-      "type": "Média",
+      "type": "ObjetMédia",
       "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
       "notesUsage": "(ne sont pas affichées)"
     }
@@ -40,13 +40,23 @@
     }
   ],
   "url": [
-    "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+    "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/",
+    "https://www.sallealbertrousseau.com/events/un-certain-souvenir/"
   ],
   "discipline": [
     "Chanson"
   ],
   "publicCible": [
-    "ToutPublics"
+    {
+      "type": "Terme",
+      "vocabulaire": "PublicCible",
+      "code": "ToutPublics",
+      "étiquette": {
+        "langue": "fr",
+        "texte": "Tout publics"
+      },
+      "numéroDeSéquence": 1
+    }
   ],
   "langues": [
     "fr"
@@ -92,7 +102,7 @@
         "gratuit": false,
         "accessibleViaAutreOffre": false,
         "sansLienAcquisition": false,
-        "lienAcquisition":  "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+        "lienAcquisition": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
       }
     }
   ]

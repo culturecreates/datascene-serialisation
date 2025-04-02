@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modelle/Médias",
-  "title": "Médias",
+  "$id": "https://datascene.ca/modelle/ObjetMédia",
+  "title": "Objet Média",
   "description": "cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.",
   "required": [
     "type",
@@ -11,7 +11,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Média"
+      "const": "ObjetMédia"
     },
     "numéroDeSéquence": {
       "type": "integer",

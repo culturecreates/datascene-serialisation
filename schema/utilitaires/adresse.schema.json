@@ -34,12 +34,12 @@
       "description": "Nom de la rue",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "ville": {
-      "description": "Nom de la ville",
-      "$ref": "../datatypes/texteCourt.schema.json"
-    },
     "directionDeRue": {
       "description": "Abréviation des points cardinaux de Postes Canada",
+      "$ref": "../datatypes/texteCourt.schema.json"
+    },
+    "ville": {
+      "description": "Nom de la ville",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
     "région": {

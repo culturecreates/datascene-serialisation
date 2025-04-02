@@ -35,7 +35,7 @@
       "description": "Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "médias": {
+    "média": {
       "$ref": "./utilitaires/média.schema.json",
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
     },

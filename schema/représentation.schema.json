@@ -67,7 +67,7 @@
       "description": "Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "médias": {
+    "média": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) supplémentaires associés à la représentation, lorsqu'ils sont disponibles et qu'il n'est pas possible de les associer au spectacle. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
       "type": "array",
       "items": {

@@ -12,7 +12,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
   - <a id="properties/nomsAlternatif/items"></a>**Items**: Refer to *[./datatypes/texteLong.schema.json](#datatypes/texteLong.schema.json)*.
 - <a id="properties/description"></a>**`description`**: Refer to *[./datatypes/texteLongMultilingue.schema.json](#datatypes/texteLongMultilingue.schema.json)*.
 - <a id="properties/descriptionCourte"></a>**`descriptionCourte`**: Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage. Refer to *[./datatypes/texteCourtMultilingue.schema.json](#datatypes/texteCourtMultilingue.schema.json)*.
-- <a id="properties/m%C3%A9dias"></a>**`médias`**: Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur. Refer to *[./utilitaires/média.schema.json](#utilitaires/m%C3%A9dia.schema.json)*.
+- <a id="properties/m%C3%A9dia"></a>**`média`**: Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur. Refer to *[./utilitaires/média.schema.json](#utilitaires/m%C3%A9dia.schema.json)*.
 - <a id="properties/contributionTypeHabituelle"></a>**`contributionTypeHabituelle`** *(array)*: Énumération des types de contributions habituellement faites par le contributeur.
   - <a id="properties/contributionTypeHabituelle/items"></a>**Items**: Refer to *[./vocabulaires/contributionType.schema.json](#vocabulaires/contributionType.schema.json)*.
 - <a id="properties/associationG%C3%A9ographique"></a>**`associationGéographique`** *(array)*: Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.

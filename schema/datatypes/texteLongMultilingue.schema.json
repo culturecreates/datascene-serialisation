@@ -10,6 +10,9 @@
     },
     "texte": {
       "type": "string",
+      "title": "Texte long",
+      "description": "Texte long avec formatage, incluant des paragraphes et des balises HTML.",
+      "maxLength": 6000,
       "allOf": [
         {
           "$ref": "./partielles/balisesHtmlAutorisees.schema.json"
