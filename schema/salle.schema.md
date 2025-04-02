@@ -4,7 +4,6 @@
 
 ## Properties
 
-- <a id="properties/%40context"></a>**`@context`** *(string)*: Must be: `"https://datascence.ca/context.jsonld"`.
 - <a id="properties/type"></a>**`type`**: Must be: `"Salle"`.
 - <a id="properties/identifiant"></a>**`identifiant`**: Refer to *[./utilitaires/identifiant.schema.json](#utilitaires/identifiant.schema.json)*.
 - <a id="properties/nom"></a>**`nom`**: Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Refer to *[./datatypes/texteLong.schema.json](#datatypes/texteLong.schema.json)*.

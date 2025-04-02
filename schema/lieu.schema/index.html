@@ -1051,14 +1051,13 @@
 <ul>
 <li><a id="properties/type"></a><strong><code>type</code></strong>: Refer to <em><a href="#vocabulaires/lieuType.schema.json">./vocabulaires/lieuType.schema.json</a></em>.</li>
 <li><a id="properties/identifiant"></a><strong><code>identifiant</code></strong>: Refer to <em><a href="#utilitaires/identifiant.schema.json">./utilitaires/identifiant.schema.json</a></em>.</li>
-<li><a id="properties/nom"></a><strong><code>nom</code></strong> <em>(string, required)</em>: Length must be at least 1.</li>
+<li><a id="properties/nom"></a><strong><code>nom</code></strong>: Refer to <em><a href="#datatypes/texteLong.schema.json">./datatypes/texteLong.schema.json</a></em>.</li>
 <li><a id="properties/description"></a><strong><code>description</code></strong> <em>(array)</em>: Length must be at least 1.</li>
 <li><a id="properties/description/items"></a><strong>Items</strong>: Refer to <em><a href="#datatypes/texteLongMultilingue.schema.json">./datatypes/texteLongMultilingue.schema.json</a></em>.</li>
 <li><a id="properties/lieuVirtuel"></a><strong><code>lieuVirtuel</code></strong> <em>(boolean, required)</em></li>
 <li><a id="properties/salle"></a><strong><code>salle</code></strong> <em>(array)</em>: Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.</li>
 <li><a id="properties/salle/items"></a><strong>Items</strong>: Refer to <em><a href="#salle.schema.json">./salle.schema.json</a></em>.</li>
-<li><a id="properties/adresse"></a><strong><code>adresse</code></strong> <em>(array)</em>: Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.</li>
-<li><a id="properties/adresse/items"></a><strong>Items</strong>: Refer to <em><a href="#utilitaires/adresse.schema.json">./utilitaires/adresse.schema.json</a></em>.</li>
+<li><a id="properties/adresse"></a><strong><code>adresse</code></strong>: Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu. Refer to <em><a href="#utilitaires/adresse.schema.json">./utilitaires/adresse.schema.json</a></em>.</li>
 <li><a id="properties/url"></a><strong><code>url</code></strong> <em>(array)</em>: URL vers des pages web donnant plus d'information sur le lieu. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.</li>
 <li><a id="properties/url/items"></a><strong>Items</strong> <em>(string, format: uri)</em></li>
 <li><a id="properties/accessibilit%C3%A9Universelle"></a><strong><code>accessibilitéUniverselle</code></strong> <em>(array)</em>: Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.</li>

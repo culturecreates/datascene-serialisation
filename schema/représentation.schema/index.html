@@ -1049,10 +1049,8 @@
 <p><em>Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.</em></p>
 <h2 id="properties">Properties</h2>
 <ul>
-<li><a id="properties/%40context"></a><strong><code>@context</code></strong> <em>(string)</em>: Must be: <code>"https://datascence.ca/context.jsonld"</code>.</li>
 <li><a id="properties/type"></a><strong><code>type</code></strong>: Must be: <code>"Repr\u00e9sentation"</code>.</li>
 <li><a id="properties/identifiant"></a><strong><code>identifiant</code></strong>: Énumération des identifiants connus. Refer to <em><a href="#utilitaires/identifiant.schema.json">./utilitaires/identifiant.schema.json</a></em>.</li>
-<li><a id="properties/spectacle"></a><strong><code>spectacle</code></strong>: Identification du spectacle dont fait partie la représentation. Refer to <em><a href="#spectacle.schema.json">./spectacle.schema.json</a></em>.</li>
 <li><a id="properties/s%C3%A9rie"></a><strong><code>série</code></strong> <em>(array)</em>: Identification des séries desquelles fait partie le spectacle.</li>
 <li><a id="properties/s%C3%A9rie/items"></a><strong>Items</strong>: Refer to <em><a href="#serie.schema.json">./serie.schema.json</a></em>.</li>
 <li><a id="properties/d%C3%A9but"></a><strong><code>début</code></strong> <em>(string, format: date-time, required)</em>: Date et heure de début de la représentation.</li>
@@ -1071,8 +1069,8 @@
 <li><a id="properties/contributionsSuppl%C3%A9mentaires/items"></a><strong>Items</strong>: Refer to <em><a href="#utilitaires/contribution.schema.json">./utilitaires/contribution.schema.json</a></em>.</li>
 <li><a id="properties/contributionsRetir%C3%A9es"></a><strong><code>contributionsRetirées</code></strong> <em>(array)</em>: Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées.</li>
 <li><a id="properties/contributionsRetir%C3%A9es/items"></a><strong>Items</strong>: Refer to <em><a href="#utilitaires/contribution.schema.json">./utilitaires/contribution.schema.json</a></em>.</li>
-<li><a id="properties/offres"></a><strong><code>offres</code></strong> <em>(array)</em>: Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.</li>
-<li><a id="properties/offres/items"></a><strong>Items</strong>: Refer to <em><a href="#offre.schema.json">./offre.schema.json</a></em>.</li>
+<li><a id="properties/offre"></a><strong><code>offre</code></strong> <em>(array)</em>: Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.</li>
+<li><a id="properties/offre/items"></a><strong>Items</strong>: Refer to <em><a href="#offre.schema.json">./offre.schema.json</a></em>.</li>
 </ul>
 
 
