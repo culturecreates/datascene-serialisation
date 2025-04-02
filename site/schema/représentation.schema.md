@@ -4,10 +4,8 @@
 
 ## Properties
 
-- <a id="properties/%40context"></a>**`@context`** *(string)*: Must be: `"https://datascence.ca/context.jsonld"`.
 - <a id="properties/type"></a>**`type`**: Must be: `"Repr\u00e9sentation"`.
 - <a id="properties/identifiant"></a>**`identifiant`**: Énumération des identifiants connus. Refer to *[./utilitaires/identifiant.schema.json](#utilitaires/identifiant.schema.json)*.
-- <a id="properties/spectacle"></a>**`spectacle`**: Identification du spectacle dont fait partie la représentation. Refer to *[./spectacle.schema.json](#spectacle.schema.json)*.
 - <a id="properties/s%C3%A9rie"></a>**`série`** *(array)*: Identification des séries desquelles fait partie le spectacle.
   - <a id="properties/s%C3%A9rie/items"></a>**Items**: Refer to *[./serie.schema.json](#serie.schema.json)*.
 - <a id="properties/d%C3%A9but"></a>**`début`** *(string, format: date-time, required)*: Date et heure de début de la représentation.
@@ -26,5 +24,5 @@
   - <a id="properties/contributionsSuppl%C3%A9mentaires/items"></a>**Items**: Refer to *[./utilitaires/contribution.schema.json](#utilitaires/contribution.schema.json)*.
 - <a id="properties/contributionsRetir%C3%A9es"></a>**`contributionsRetirées`** *(array)*: Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées.
   - <a id="properties/contributionsRetir%C3%A9es/items"></a>**Items**: Refer to *[./utilitaires/contribution.schema.json](#utilitaires/contribution.schema.json)*.
-- <a id="properties/offres"></a>**`offres`** *(array)*: Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.
-  - <a id="properties/offres/items"></a>**Items**: Refer to *[./offre.schema.json](#offre.schema.json)*.
+- <a id="properties/offre"></a>**`offre`** *(array)*: Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.
+  - <a id="properties/offre/items"></a>**Items**: Refer to *[./offre.schema.json](#offre.schema.json)*.

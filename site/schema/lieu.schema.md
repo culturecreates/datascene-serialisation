@@ -6,14 +6,13 @@
 
 - <a id="properties/type"></a>**`type`**: Refer to *[./vocabulaires/lieuType.schema.json](#vocabulaires/lieuType.schema.json)*.
 - <a id="properties/identifiant"></a>**`identifiant`**: Refer to *[./utilitaires/identifiant.schema.json](#utilitaires/identifiant.schema.json)*.
-- <a id="properties/nom"></a>**`nom`** *(string, required)*: Length must be at least 1.
+- <a id="properties/nom"></a>**`nom`**: Refer to *[./datatypes/texteLong.schema.json](#datatypes/texteLong.schema.json)*.
 - <a id="properties/description"></a>**`description`** *(array)*: Length must be at least 1.
   - <a id="properties/description/items"></a>**Items**: Refer to *[./datatypes/texteLongMultilingue.schema.json](#datatypes/texteLongMultilingue.schema.json)*.
 - <a id="properties/lieuVirtuel"></a>**`lieuVirtuel`** *(boolean, required)*
 - <a id="properties/salle"></a>**`salle`** *(array)*: Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.
   - <a id="properties/salle/items"></a>**Items**: Refer to *[./salle.schema.json](#salle.schema.json)*.
-- <a id="properties/adresse"></a>**`adresse`** *(array)*: Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.
-  - <a id="properties/adresse/items"></a>**Items**: Refer to *[./utilitaires/adresse.schema.json](#utilitaires/adresse.schema.json)*.
+- <a id="properties/adresse"></a>**`adresse`**: Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu. Refer to *[./utilitaires/adresse.schema.json](#utilitaires/adresse.schema.json)*.
 - <a id="properties/url"></a>**`url`** *(array)*: URL vers des pages web donnant plus d'information sur le lieu. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.
   - <a id="properties/url/items"></a>**Items** *(string, format: uri)*
 - <a id="properties/accessibilit%C3%A9Universelle"></a>**`accessibilitéUniverselle`** *(array)*: Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.
