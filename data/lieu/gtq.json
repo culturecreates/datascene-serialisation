@@ -1,6 +1,6 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
-  "type":"Theatre",
+  "type": "Theatre",
   "nom": "Grand Théâtre de Québec",
   "identifiant": [
     {
@@ -23,6 +23,17 @@
     }
   ],
   "lieuVirtuel": false,
+  "adresse": {
+    "type": "Adresse",
+    "numéro": "269",
+    "directionDeRue": "Est",
+    "typeDeRue": "boulevard",
+    "rue":"boulevard René-Lévesque",
+    "ville": "Québec",
+    "région": "QC",
+    "codePostal": "G1R 2B3",
+    "pays": "CAN"
+  },
   "salle": [
     {
       "identifiants": [
@@ -31,26 +42,35 @@
           "value": "http://kg.artsdata.ca/resource/K5-179"
         }
       ],
+      "type": "Salle",
       "nom": "Salle Louis-Fréchette",
       "nomIdentiqueAuLieu": false,
-      "description": [{
-        "langue": "fr",
-        "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
-      }]
+      "description": [
+        {
+          "langue": "fr",
+          "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+        }
+      ]
     },
-    {"identifiants": [
+    {
+      "type": "Salle",
+      "identifiants": [
         {
           "type": "uri",
           "value": "http://lavitrine.com/1234"
         }
       ],
-     "nomIdentiqueAuLieu": true,
-      "description": [{
-        "langue": "fr", 
-        "texte": "Une salle plus intime pour des performances variées."
-      }]
+      "nomIdentiqueAuLieu": true,
+      "description": [
+        {
+          "langue": "fr",
+          "texte": "Une salle plus intime pour des performances variées."
+        }
+      ]
     },
-    {"identifiants": [
+    {
+      "type": "Salle",
+      "identifiants": [
         {
           "type": "uri",
           "value": "http://lavitrine.com/4567"
@@ -58,10 +78,12 @@
       ],
       "nom": "STUDIOTELUS",
       "nomIdentiqueAuLieu": false,
-      "description": [{
-        "langue": "fr",
-        "texte": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
-      }] 
+      "description": [
+        {
+          "langue": "fr",
+          "texte": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
+        }
+      ]
     }
   ]
 }

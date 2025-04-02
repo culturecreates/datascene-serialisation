@@ -9,6 +9,18 @@
     "nom",
     "lieuVirtuel"
   ],
+  "if": {
+    "properties": {
+      "lieuVirtuel": {
+        "const": false
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "adresse"
+    ]
+  },
   "type": "object",
   "properties": {
     "type": {
@@ -40,24 +52,24 @@
     },
     "adresse": {
       "description": "Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.",
-      "type": "array",
-      "items": {
-        "$ref": "./utilitaires/adresse.schema.json"
-      }
-    },"url": {
+      "$ref": "./utilitaires/adresse.schema.json"
+    },
+    "url": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.",
       "type": "array",
       "items": {
         "type": "string",
         "format": "uri"
       }
-    },"accessibilitéUniverselle": {
+    },
+    "accessibilitéUniverselle": {
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {
         "$ref": "./vocabulaires/accessibilitéUniverselleTermes.schema.json"
       }
-    },"coordGéo": {
+    },
+    "coordGéo": {
       "$ref": "./datatypes/coordGéo.schema.json"
     }
   }
