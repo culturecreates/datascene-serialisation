@@ -4,27 +4,36 @@
   "title": "Identifiant",
   "description": "classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.",
   "type": "array",
-  "required": [
-    "type",
-    "value"
-  ],
   "items": {
     "type": "object",
+    "required": [
+      "type",
+      "valeur"
+    ],
     "properties": {
       "type": {
-        "description": "Type d'identifiant",
+        "name": "Type d'identifiant",
+        "description": "Type d'identifiant utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, en spécifiant la valeur uri pour le type, et l'URI complet comme valeur. Lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: type doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules.\n\nIl est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.",
         "type": "string",
-        "minLength": 1,
-        "maxLength": 100
+        "minLength": 1
       },
-      "value": {
-        "description": "Valeur de l'identifiant",
+      "valeur": {
+        "description": "L'identifiant lui-même",
         "type": "string",
-        "minLength": 1,
-        "maxLength": 100
+        "minLength": 1
       }
     }
   },
   "minItems": 1,
-  "uniqueItems": true
+  "uniqueItems": true,
+  "examples": [
+    {
+      "type": "uri",
+      "valeur": "https://isni.org/isni/000000012124423X"
+    },
+    {
+      "type": "isni",
+      "valeur": "000000012124423X"
+    }
+  ]
 }

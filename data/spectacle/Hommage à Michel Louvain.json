@@ -4,7 +4,7 @@
   "identifiant": [
     {
       "type": "uri",
-      "value": "http://lavitrine.com/spectacle/123456"
+      "valeur": "http://lavitrine.com/spectacle/123456"
     }
   ],
   "nom": {
@@ -32,7 +32,7 @@
         "identifiant": [
           {
             "type": "uri",
-            "value": "http://lavitrine.com/123456"
+            "valeur": "http://lavitrine.com/123456"
           }
         ],
         "nom": "Un certain souvenir"
@@ -47,6 +47,7 @@
     "Chanson"
   ],
   "publicCible": [
+    "ToutPublics",
     {
       "type": "Terme",
       "vocabulaire": "PublicCible",
@@ -68,7 +69,7 @@
       "identifiant": [
         {
           "type": "uri",
-          "value": "http://lavitrine.com/representation/123456"
+          "valeur": "http://lavitrine.com/representation/123456"
         }
       ],
       "début": "2023-02-26T15:00:00-05:00",
@@ -80,7 +81,7 @@
           "identifiant": [
             {
               "type": "uri",
-              "value": "http://lavitrine.com/representation/7567567"
+              "valeur": "http://lavitrine.com/representation/7567567"
             }
           ],
           "nom": "Salle Albert-Rousseau",

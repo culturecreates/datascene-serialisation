@@ -4,30 +4,46 @@
   "title": "Types de publics cibles",
   "description": "Vocabulaire contrôlé pour les types de publics cibles.",
   "source": "https://docs.google.com/spreadsheets/d/1Qw6YF3GE5w5VgItOrMkRumgx_oqgXujO8UsQlv0vhMk/edit?gid=2079564911#gid=2079564911",
-  "allOf": [
+  "anyOf": [
     {
+      "examples": [
+        {
+          "type": "Spectacle",
+          "publicCible": [
+            {
+              "type": "Terme",
+              "vocabulaire": "PublicCible",
+              "code": "ToutPublics",
+              "version": "1.0",
+              "numéroDeSéquence": 1
+            }
+          ]
+        }
+      ],
       "$ref": "../utilitaires/terme.schema.json"
     },
     {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "string",
-          "enum": [
-            "ToutPublics",
-            "AvecBebe",
-            "ToutPetits",
-            "PetiteEnfance",
-            "Enfance",
-            "Jeunesse",
-            "Adultes",
-            "Aines",
-            "Familles"
+      "type": "string",
+      "title": "enum",
+      "examples": [
+        {
+          "type": "Spectacle",
+          "publicCible": [
+            "ToutPublics"
           ]
         }
-      },
-      "required": [
-        "code"
+      ],
+      "description": "Vocabulaire contrôlé pour les types de publics cibles. Voir definition SKOS ici.",
+      "enum": [
+        "ToutPublics",
+        "AvecBebe",
+        "ToutPetits",
+        "PetiteEnfance",
+        "Enfance",
+        "Jeunesse",
+        "Adultes",
+        "Aines",
+        "Familles"
       ]
     }
   ]

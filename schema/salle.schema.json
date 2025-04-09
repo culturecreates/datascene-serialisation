@@ -5,7 +5,7 @@
   "description": "certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.",
   "required": [
     "type",
-    "identifiants",
+    "identifiant",
     "nomIdentiqueAuLieu"
   ],
   "allOf": [

@@ -1,10 +1,10 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Salle",
-  "identifiants": [
+  "identifiant": [
     {
       "type": "uri",
-      "value": "http://kg.artsdata.ca/resource/K5-179"
+      "valeur": "http://kg.artsdata.ca/resource/K5-179"
     }
   ],
   "nom": "Salle Louis-Fréchette",

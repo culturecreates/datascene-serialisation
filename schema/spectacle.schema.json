@@ -32,7 +32,6 @@
   "type": "object",
   "properties": {
     "@context": {
-      "type": "string",
       "const": "https://datascence.ca/context.jsonld"
     },
     "type": {
@@ -149,29 +148,35 @@
       }
     }
   },
-    "definitions": {
-      "OeuvreAssociée": {
-        "$id": "https://datascene.ca/modelle/OeuvreAssociée",
-        "title": "Oeuvre Associée",
-        "description": "Objets d'association à une oeuvre.",
-        "required": [
-          "type",
-          "oeuvre"
-        ],
-        "type": "object",
-        "properties": {
-          "type": {
-            "const": "OeuvreAssociée"
-          },
-          "ouevre": {
-            "description": "Identification de l'oeuvre.",
-            "$ref": "./oeuvre.schema.json"
-          },
-          "explications": {
-            "description": "Notes sur le lien entre l'oeuvre et le spectacle",
-            "$ref": "./datatypes/texteCourtMultilingue.schema.json"
-          }
+  "definitions": {
+    "OeuvreAssociée": {
+      "$id": "https://datascene.ca/modelle/OeuvreAssociée",
+      "title": "Oeuvre Associée",
+      "description": "Objets d'association à une oeuvre.",
+      "required": [
+        "type",
+        "oeuvre"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "OeuvreAssociée"
+        },
+        "ouevre": {
+          "description": "Identification de l'oeuvre.",
+          "$ref": "./oeuvre.schema.json"
+        },
+        "explications": {
+          "description": "Notes sur le lien entre l'oeuvre et le spectacle",
+          "$ref": "./datatypes/texteCourtMultilingue.schema.json"
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "@context": "https://datascence.ca/context.jsonld",
+      "type": "Spectacle"
+    }
+  ]
+}
