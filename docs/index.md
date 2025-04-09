@@ -1,3 +1,8 @@
-## Exemple de site Web
+# Sérialisation Datascene
 
-Ceci est généré par mkdocs (test partiel) à partir des JSON Schema.
+## Site de révision
+Ceci est généré par json-schema-for-humans. 
+
+[Spectacle](spectacle.html)
+
+
