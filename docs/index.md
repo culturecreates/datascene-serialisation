@@ -3,6 +3,7 @@
 # Site de révision
 Ceci est généré par json-schema-for-humans. 
 
+### Classes principales
 - [Spectacle](spectacle.html)
 - [Représentation](représentation.html)
 - [Série](série.html)
@@ -12,5 +13,8 @@ Ceci est généré par json-schema-for-humans.
 - [Contributeur](contributeur.html)
 - [Oeuvre](oeuvre.html)
 
+### Classes utilitaires
+
+### Vocabulaires contrôlés
 
 

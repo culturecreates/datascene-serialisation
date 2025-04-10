@@ -6,4 +6,4 @@ generate-schema-doc /Users/saumier/Sites/Datascene/schema/contributeur.schema.js
 generate-schema-doc /Users/saumier/Sites/Datascene/schema/lieu.schema.json ./docs/lieu.html
 generate-schema-doc /Users/saumier/Sites/Datascene/schema/oeuvre.schema.json ./docs/oeuvre.html
 generate-schema-doc /Users/saumier/Sites/Datascene/schema/salle.schema.json ./docs/salle.html
-generate-schema-doc /Users/saumier/Sites/Datascene/schema/serie.schema.json ./docs/serie.html
+generate-schema-doc /Users/saumier/Sites/Datascene/schema/série.schema.json ./docs/série.html
