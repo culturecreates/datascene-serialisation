@@ -14,6 +14,12 @@ Ceci est généré par json-schema-for-humans.
 - [Oeuvre](oeuvre.html)
 
 ### Classes utilitaires
+- [Adresse](utilitaires/adresse.html)
+- [AssociationGéographique](utilitaires/associationGéographique.html)
+- [Contribution](utilitaires/contribution.html)
+- [Identifiant](utilitaires/identifiant.html)
+- [Média](utilitaires/média.html)
+- [Terme](utilitaires/terme.html)
 
 ### Vocabulaires contrôlés
 

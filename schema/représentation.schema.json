@@ -20,7 +20,7 @@
     "série": {
       "type": "array",
       "items": {
-        "$ref": "./serie.schema.json"
+        "$ref": "./série.schema.json"
       },
       "description": "Identification des séries desquelles fait partie le spectacle"
     },
