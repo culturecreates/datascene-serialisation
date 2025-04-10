@@ -1,0 +1,1392 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,800">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="schema_doc.css">
+    <script src="https://use.fontawesome.com/facf9fa52c.js"></script>
+    <script src="schema_doc.min.js"></script>
+    <meta charset="utf-8"/>
+        
+    
+    <title>Contributeur</title>
+</head>
+<body onload="anchorOnLoad();" id="root">
+
+    <div class="breadcrumbs"></div> <h1>Contributeur</h1><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).</p>
+</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordiontype">
+    <div class="card">
+        <div class="card-header" id="headingtype">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#type"
+                        aria-expanded="" aria-controls="type" onclick="setAnchor('#type')"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="type"
+             class="collapse property-definition-div" aria-labelledby="headingtype"
+             data-parent="#accordiontype">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#type" onclick="anchorLink('type')">type</a></div><h4>Type de contributeurs</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+<span class="description"><p>Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.</p>
+</span>
+
+    <div class="enum-value" id="type_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"PersonnePhysique"</li><li class="list-group-item enum-item">"Groupe"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionidentifiant">
+    <div class="card">
+        <div class="card-header" id="headingidentifiant">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#identifiant"
+                        aria-expanded="" aria-controls="identifiant" onclick="setAnchor('#identifiant')"><span class="property-name">identifiant</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="identifiant"
+             class="collapse property-definition-div" aria-labelledby="headingidentifiant"
+             data-parent="#accordionidentifiant">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant" onclick="anchorLink('identifiant')">identifiant</a></div><h4>Identifiant</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.</p>
+</span>
+
+    
+        
+
+        
+        
+
+        <p><span class="badge badge-light restriction min-items-restriction" id="identifiant_minItems">Must contain a minimum of <code>1</code> items</span></p><p><span class="badge badge-light restriction unique-items-restriction" id="identifiant_uniqueItems">All items must be unique</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="identifiant_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant" onclick="anchorLink('identifiant')">identifiant</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant_items" onclick="anchorLink('identifiant_items')">identifiant items</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionidentifiant_items_type">
+    <div class="card">
+        <div class="card-header" id="headingidentifiant_items_type">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#identifiant_items_type"
+                        aria-expanded="" aria-controls="identifiant_items_type" onclick="setAnchor('#identifiant_items_type')"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="identifiant_items_type"
+             class="collapse property-definition-div" aria-labelledby="headingidentifiant_items_type"
+             data-parent="#accordionidentifiant_items_type">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant" onclick="anchorLink('identifiant')">identifiant</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant_items" onclick="anchorLink('identifiant_items')">identifiant items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant_items_type" onclick="anchorLink('identifiant_items_type')">type</a></div><span class="badge badge-dark value-type">Type: string</span><br/>
+<div class="description collapse" id="collapseDescription_identifiant_items_type">
+            <p>Type d'identifiant utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, en spécifiant la valeur uri pour le type, et l'URI complet comme valeur. Lorsque ce n'est pas possible, <a href="https://schema.org/docs/datamodel.html#identifierBg">l'approche préconisée par Schema.org</a> est utilisée: type doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules.</p>
+
+<p>Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.</p>
+
+        </div>
+        <div>
+            <a class="collapse-description-link collapsed" data-toggle="collapse" href="#collapseDescription_identifiant_items_type"
+               aria-expanded="false" aria-controls="collapseDescriptionidentifiant_items_type"
+            ></a>
+        </div>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="identifiant_items_type_minLength">Must be at least <code>1</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionidentifiant_items_valeur">
+    <div class="card">
+        <div class="card-header" id="headingidentifiant_items_valeur">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#identifiant_items_valeur"
+                        aria-expanded="" aria-controls="identifiant_items_valeur" onclick="setAnchor('#identifiant_items_valeur')"><span class="property-name">valeur</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="identifiant_items_valeur"
+             class="collapse property-definition-div" aria-labelledby="headingidentifiant_items_valeur"
+             data-parent="#accordionidentifiant_items_valeur">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant" onclick="anchorLink('identifiant')">identifiant</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant_items" onclick="anchorLink('identifiant_items')">identifiant items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#identifiant_items_valeur" onclick="anchorLink('identifiant_items_valeur')">valeur</a></div><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>L'identifiant lui-même</p>
+</span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="identifiant_items_valeur_minLength">Must be at least <code>1</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div><br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="identifiant_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://isni.org/isni/000000012124423X&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div><div id="identifiant_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;isni&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;000000012124423X&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionnom">
+    <div class="card">
+        <div class="card-header" id="headingnom">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#nom"
+                        aria-expanded="" aria-controls="nom" onclick="setAnchor('#nom')"><span class="property-name">nom</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="nom"
+             class="collapse property-definition-div" aria-labelledby="headingnom"
+             data-parent="#accordionnom">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom" onclick="anchorLink('nom')">nom</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<div class="description collapse" id="collapseDescription_nom">
+            <p>Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.</p>
+
+<p>Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.</p>
+
+        </div>
+        <div>
+            <a class="collapse-description-link collapsed" data-toggle="collapse" href="#collapseDescription_nom"
+               aria-expanded="false" aria-controls="collapseDescriptionnom"
+            ></a>
+        </div>
+
+    
+
+    <span class="pattern-value" id="nom_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="nom_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="nom_maxLength">Must be at most <code>6000</code> characters long</span></p>
+
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="nom_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</pre></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionnomsAlternatif">
+    <div class="card">
+        <div class="card-header" id="headingnomsAlternatif">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#nomsAlternatif"
+                        aria-expanded="" aria-controls="nomsAlternatif" onclick="setAnchor('#nomsAlternatif')"><span class="property-name">nomsAlternatif</span></button>
+            </h2>
+        </div>
+
+        <div id="nomsAlternatif"
+             class="collapse property-definition-div" aria-labelledby="headingnomsAlternatif"
+             data-parent="#accordionnomsAlternatif">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nomsAlternatif" onclick="anchorLink('nomsAlternatif')">nomsAlternatif</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Autres appellations parfois utilisées pour le contributeur.</p>
+
+<p>Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».<br />
+Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="nomsAlternatif_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nomsAlternatif" onclick="anchorLink('nomsAlternatif')">nomsAlternatif</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nomsAlternatif_items" onclick="anchorLink('nomsAlternatif_items')">Texte long</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte sans formatage, avec des changements de paragraphes (typiquement affiché sur plusieurs lignes).</p>
+
+<p>Les textes longs ne sont pas prévus pour inclure des éléments de mise en page, mais permettent l'inclusion de quelques balises HTML lorsqu'elles sont nécessaires pour s'assurer que la description est compréhensible. Les balises HTML autorisées sont b, i, u, sup et sub.</p>
+</span><a href="#nom" onclick="anchorLink('nom')" class="ref-link">Same definition as nom</a>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordiondescription">
+    <div class="card">
+        <div class="card-header" id="headingdescription">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description"
+                        aria-expanded="" aria-controls="description" onclick="setAnchor('#description')"><span class="property-name">description</span></button>
+            </h2>
+        </div>
+
+        <div id="description"
+             class="collapse property-definition-div" aria-labelledby="headingdescription"
+             data-parent="#accordiondescription">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description" onclick="anchorLink('description')">description</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Énumération de textes longs associés à un code de langue au standard ISO 639-1.</p>
+</span>
+
+    
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordiondescription_langue">
+    <div class="card">
+        <div class="card-header" id="headingdescription_langue">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_langue"
+                        aria-expanded="" aria-controls="description_langue" onclick="setAnchor('#description_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="description_langue"
+             class="collapse property-definition-div" aria-labelledby="headingdescription_langue"
+             data-parent="#accordiondescription_langue">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description" onclick="anchorLink('description')">description</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description_langue" onclick="anchorLink('description_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
+</span>
+
+    <span class="pattern-value" id="description_langue_pattern">Must match regular expression: <code>^[a-z]{2,3}$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="description_langue_minLength">Must be at least <code>2</code> characters long</span></p>
+
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="description_langue_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;fr&quot;</span>
+</pre></div>
+</div><div id="description_langue_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;en&quot;</span>
+</pre></div>
+</div><div id="description_langue_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;acf&quot;</span>
+</pre></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordiondescription_texte">
+    <div class="card">
+        <div class="card-header" id="headingdescription_texte">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_texte"
+                        aria-expanded="" aria-controls="description_texte" onclick="setAnchor('#description_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="description_texte"
+             class="collapse property-definition-div" aria-labelledby="headingdescription_texte"
+             data-parent="#accordiondescription_texte">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description" onclick="anchorLink('description')">description</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description_texte" onclick="anchorLink('description_texte')">texte</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte long avec formatage, incluant des paragraphes et des balises HTML.</p>
+</span>
+
+    <span class="pattern-value" id="nom_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction max-length-restriction" id="description_texte_maxLength">Must be at most <code>6000</code> characters long</span></p>
+
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="nom_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</pre></div>
+</div><div id="nom_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</pre></div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordiondescriptionCourte">
+    <div class="card">
+        <div class="card-header" id="headingdescriptionCourte">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#descriptionCourte"
+                        aria-expanded="" aria-controls="descriptionCourte" onclick="setAnchor('#descriptionCourte')"><span class="property-name">descriptionCourte</span></button>
+            </h2>
+        </div>
+
+        <div id="descriptionCourte"
+             class="collapse property-definition-div" aria-labelledby="headingdescriptionCourte"
+             data-parent="#accordiondescriptionCourte">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.</p>
+</span>
+
+    
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordiondescriptionCourte_langue">
+    <div class="card">
+        <div class="card-header" id="headingdescriptionCourte_langue">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#descriptionCourte_langue"
+                        aria-expanded="" aria-controls="descriptionCourte_langue" onclick="setAnchor('#descriptionCourte_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="descriptionCourte_langue"
+             class="collapse property-definition-div" aria-labelledby="headingdescriptionCourte_langue"
+             data-parent="#accordiondescriptionCourte_langue">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#descriptionCourte_langue" onclick="anchorLink('descriptionCourte_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
+</span><a href="#description_langue" onclick="anchorLink('description_langue')" class="ref-link">Same definition as langue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordiondescriptionCourte_texte">
+    <div class="card">
+        <div class="card-header" id="headingdescriptionCourte_texte">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#descriptionCourte_texte"
+                        aria-expanded="" aria-controls="descriptionCourte_texte" onclick="setAnchor('#descriptionCourte_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="descriptionCourte_texte"
+             class="collapse property-definition-div" aria-labelledby="headingdescriptionCourte_texte"
+             data-parent="#accordiondescriptionCourte_texte">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#descriptionCourte_texte" onclick="anchorLink('descriptionCourte_texte')">texte</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="descriptionCourte_texte_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="descriptionCourte_texte_maxLength">Must be at most <code>500</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia">
+    <div class="card">
+        <div class="card-header" id="headingmédia">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média"
+                        aria-expanded="" aria-controls="média" onclick="setAnchor('#média')"><span class="property-name">média</span></button>
+            </h2>
+        </div>
+
+        <div id="média"
+             class="collapse property-definition-div" aria-labelledby="headingmédia"
+             data-parent="#accordionmédia">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a></div><h4>Objet Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.</p>
+</span>
+
+    
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionmédia_type">
+    <div class="card">
+        <div class="card-header" id="headingmédia_type">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_type"
+                        aria-expanded="" aria-controls="média_type" onclick="setAnchor('#média_type')"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="média_type"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_type"
+             data-parent="#accordionmédia_type">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_type" onclick="anchorLink('média_type')">type</a></div><span class="badge badge-dark value-type">Type: const</span><br/>
+<span class="const-value" id="média_type_const">Specific value: <code>"ObjetMédia"</code></span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_numéroDeSéquence">
+    <div class="card">
+        <div class="card-header" id="headingmédia_numéroDeSéquence">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_numéroDeSéquence"
+                        aria-expanded="" aria-controls="média_numéroDeSéquence" onclick="setAnchor('#média_numéroDeSéquence')"><span class="property-name">numéroDeSéquence</span></button>
+            </h2>
+        </div>
+
+        <div id="média_numéroDeSéquence"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_numéroDeSéquence"
+             data-parent="#accordionmédia_numéroDeSéquence">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_numéroDeSéquence" onclick="anchorLink('média_numéroDeSéquence')">numéroDeSéquence</a></div><span class="badge badge-dark value-type">Type: integer</span><br/>
+<span class="description"><p>Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_notesUsage">
+    <div class="card">
+        <div class="card-header" id="headingmédia_notesUsage">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_notesUsage"
+                        aria-expanded="" aria-controls="média_notesUsage" onclick="setAnchor('#média_notesUsage')"><span class="property-name">notesUsage</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="média_notesUsage"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_notesUsage"
+             data-parent="#accordionmédia_notesUsage">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')">notesUsage</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).</p>
+</span>
+
+    
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="média_notesUsage_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="média_notesUsage_maxLength">Must be at most <code>500</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_url">
+    <div class="card">
+        <div class="card-header" id="headingmédia_url">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_url"
+                        aria-expanded="" aria-controls="média_url" onclick="setAnchor('#média_url')"><span class="property-name">url</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="média_url"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_url"
+             data-parent="#accordionmédia_url">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_url" onclick="anchorLink('média_url')">url</a></div><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: uri</span><br/>
+<span class="description"><p>URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_licence">
+    <div class="card">
+        <div class="card-header" id="headingmédia_licence">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_licence"
+                        aria-expanded="" aria-controls="média_licence" onclick="setAnchor('#média_licence')"><span class="property-name">licence</span></button>
+            </h2>
+        </div>
+
+        <div id="média_licence"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_licence"
+             data-parent="#accordionmédia_licence">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_licence" onclick="anchorLink('média_licence')">licence</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="média_licence_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_licence" onclick="anchorLink('média_licence')">licence</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_licence_items" onclick="anchorLink('média_licence_items')">Texte court</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)</p>
+</span><a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')" class="ref-link">Same definition as notesUsage</a>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_crédits">
+    <div class="card">
+        <div class="card-header" id="headingmédia_crédits">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_crédits"
+                        aria-expanded="" aria-controls="média_crédits" onclick="setAnchor('#média_crédits')"><span class="property-name">crédits</span></button>
+            </h2>
+        </div>
+
+        <div id="média_crédits"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_crédits"
+             data-parent="#accordionmédia_crédits">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_crédits" onclick="anchorLink('média_crédits')">crédits</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Crédits associés au média.</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="média_crédits_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_crédits" onclick="anchorLink('média_crédits')">crédits</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_crédits_items" onclick="anchorLink('média_crédits_items')">Texte court</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)</p>
+</span><a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')" class="ref-link">Same definition as notesUsage</a>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionmédia_description">
+    <div class="card">
+        <div class="card-header" id="headingmédia_description">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#média_description"
+                        aria-expanded="" aria-controls="média_description" onclick="setAnchor('#média_description')"><span class="property-name">description</span></button>
+            </h2>
+        </div>
+
+        <div id="média_description"
+             class="collapse property-definition-div" aria-labelledby="headingmédia_description"
+             data-parent="#accordionmédia_description">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_description" onclick="anchorLink('média_description')">description</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Description courte (pouvant par exemple servir de «alt description» sur le web).</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="média_description_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média" onclick="anchorLink('média')">média</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_description" onclick="anchorLink('média_description')">description</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#média_description_items" onclick="anchorLink('média_description_items')">Texte court</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)</p>
+</span><a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')" class="ref-link">Same definition as notesUsage</a>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordioncontributionTypeHabituelle">
+    <div class="card">
+        <div class="card-header" id="headingcontributionTypeHabituelle">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#contributionTypeHabituelle"
+                        aria-expanded="" aria-controls="contributionTypeHabituelle" onclick="setAnchor('#contributionTypeHabituelle')"><span class="property-name">contributionTypeHabituelle</span></button>
+            </h2>
+        </div>
+
+        <div id="contributionTypeHabituelle"
+             class="collapse property-definition-div" aria-labelledby="headingcontributionTypeHabituelle"
+             data-parent="#accordioncontributionTypeHabituelle">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#contributionTypeHabituelle" onclick="anchorLink('contributionTypeHabituelle')">contributionTypeHabituelle</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Énumération des types de contributions habituellement faites par le contributeur.</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="contributionTypeHabituelle_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#contributionTypeHabituelle" onclick="anchorLink('contributionTypeHabituelle')">contributionTypeHabituelle</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#contributionTypeHabituelle_items" onclick="anchorLink('contributionTypeHabituelle_items')">Type de contribution</a></div><h4>Type de contribution</h4><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+<span class="description"><p>Vocabulaire contrôlé pour les types de contributions.</p>
+</span>
+
+    <div class="enum-value" id="contributionTypeHabituelle_items_enum">
+            <h4>Must be one of:</h4>
+            <ul class="list-group"><li class="list-group-item enum-item">"ArtisteSurScène"</li><li class="list-group-item enum-item">"AuteurCréateur"</li><li class="list-group-item enum-item">"PersonnelTechnique"</li><li class="list-group-item enum-item">"DirectionArtistiqueCréative"</li><li class="list-group-item enum-item">"ProducteurOrganisateurPromoteur"</li><li class="list-group-item enum-item">"Commanditaire"</li><li class="list-group-item enum-item">"Autre"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionassociationGéographique">
+    <div class="card">
+        <div class="card-header" id="headingassociationGéographique">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#associationGéographique"
+                        aria-expanded="" aria-controls="associationGéographique" onclick="setAnchor('#associationGéographique')"><span class="property-name">associationGéographique</span></button>
+            </h2>
+        </div>
+
+        <div id="associationGéographique"
+             class="collapse property-definition-div" aria-labelledby="headingassociationGéographique"
+             data-parent="#accordionassociationGéographique">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
+<span class="description"><p>Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.</p>
+</span>
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="associationGéographique_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items" onclick="anchorLink('associationGéographique_items')">Association Géographique</a></div><h4>Association Géographique</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.</p>
+</span>
+
+    
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionassociationGéographique_items_type">
+    <div class="card">
+        <div class="card-header" id="headingassociationGéographique_items_type">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#associationGéographique_items_type"
+                        aria-expanded="" aria-controls="associationGéographique_items_type" onclick="setAnchor('#associationGéographique_items_type')"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="associationGéographique_items_type"
+             class="collapse property-definition-div" aria-labelledby="headingassociationGéographique_items_type"
+             data-parent="#accordionassociationGéographique_items_type">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items" onclick="anchorLink('associationGéographique_items')">Association Géographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items_type" onclick="anchorLink('associationGéographique_items_type')">type</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+
+
+    
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionassociationGéographique_items_pays">
+    <div class="card">
+        <div class="card-header" id="headingassociationGéographique_items_pays">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#associationGéographique_items_pays"
+                        aria-expanded="" aria-controls="associationGéographique_items_pays" onclick="setAnchor('#associationGéographique_items_pays')"><span class="property-name">pays</span></button>
+            </h2>
+        </div>
+
+        <div id="associationGéographique_items_pays"
+             class="collapse property-definition-div" aria-labelledby="headingassociationGéographique_items_pays"
+             data-parent="#accordionassociationGéographique_items_pays">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items" onclick="anchorLink('associationGéographique_items')">Association Géographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items_pays" onclick="anchorLink('associationGéographique_items_pays')">pays</a></div><h4>Code Pays</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.</p>
+</span>
+
+    <span class="pattern-value" id="associationGéographique_items_pays_pattern">Must match regular expression: <code>^[A-Z]{3}$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="associationGéographique_items_pays_minLength">Must be at least <code>3</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="associationGéographique_items_pays_maxLength">Must be at most <code>3</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionassociationGéographique_items_région">
+    <div class="card">
+        <div class="card-header" id="headingassociationGéographique_items_région">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#associationGéographique_items_région"
+                        aria-expanded="" aria-controls="associationGéographique_items_région" onclick="setAnchor('#associationGéographique_items_région')"><span class="property-name">région</span></button>
+            </h2>
+        </div>
+
+        <div id="associationGéographique_items_région"
+             class="collapse property-definition-div" aria-labelledby="headingassociationGéographique_items_région"
+             data-parent="#accordionassociationGéographique_items_région">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items" onclick="anchorLink('associationGéographique_items')">Association Géographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items_région" onclick="anchorLink('associationGéographique_items_région')">région</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+
+
+    
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionassociationGéographique_items_ville">
+    <div class="card">
+        <div class="card-header" id="headingassociationGéographique_items_ville">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#associationGéographique_items_ville"
+                        aria-expanded="" aria-controls="associationGéographique_items_ville" onclick="setAnchor('#associationGéographique_items_ville')"><span class="property-name">ville</span></button>
+            </h2>
+        </div>
+
+        <div id="associationGéographique_items_ville"
+             class="collapse property-definition-div" aria-labelledby="headingassociationGéographique_items_ville"
+             data-parent="#accordionassociationGéographique_items_ville">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique" onclick="anchorLink('associationGéographique')">associationGéographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items" onclick="anchorLink('associationGéographique_items')">Association Géographique</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#associationGéographique_items_ville" onclick="anchorLink('associationGéographique_items_ville')">ville</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)</p>
+</span><a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')" class="ref-link">Same definition as notesUsage</a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordioncomposéDe">
+    <div class="card">
+        <div class="card-header" id="headingcomposéDe">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#composéDe"
+                        aria-expanded="" aria-controls="composéDe" onclick="setAnchor('#composéDe')"><span class="property-name">composéDe</span></button>
+            </h2>
+        </div>
+
+        <div id="composéDe"
+             class="collapse property-definition-div" aria-labelledby="headingcomposéDe"
+             data-parent="#accordioncomposéDe">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#composéDe" onclick="anchorLink('composéDe')">composéDe</a></div><h4>Contributeur</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Énumération des membres des groupes, troupes et collectifs, etc.</p>
+</span><a href="#root" onclick="anchorLink('root')" class="ref-link">Same definition as Contributeur</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-04-10 at 09:23:28 -0400</p>
+    </footer></body>
+</html>
