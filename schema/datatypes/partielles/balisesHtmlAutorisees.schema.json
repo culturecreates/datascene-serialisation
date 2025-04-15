@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/datatypes/partielles/balisesHtmlAutorisees.schema.json",
   "title": "Les balises HTML autorisées",
   "description": "Les balises HTML autorisées b, i, u, sup et sub.",
   "examples": [

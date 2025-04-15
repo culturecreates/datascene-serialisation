@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/utilitaires/terme.schema.json",
+  "$id": "https://datascene.ca/utilitaires/adressePostale.schema.json",
   "title": "Adresse Postale",
-  "description": "permet d’indiquer l’adresse d’un lieu.",
+  "description": "Permet d’indiquer l’adresse d’un lieu.",
   "required": [
     "type",
     "numéro",
@@ -16,7 +16,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Adresse"
+      "const": "AdressePostale"
     },
     "unité": {
       "description": "Numéro d’unité, bureau ou appartement\n\nNote: cette propriété et les propriétés suivantes sont inspirées des directrices sur l'adressage de Postes Canada.",
@@ -28,7 +28,7 @@
     },
     "typeDeRue": {
       "description": "Abréviation de type de rue recommandée par Postes Canada",
-      "$ref": "../datatypes/texteCourt.schema.json"
+      "$ref": "../vocabulaires/typesDeRoute.schema.json"
     },
     "rue": {
       "description": "Nom de la rue",
@@ -44,7 +44,7 @@
     },
     "région": {
       "description": "Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.",
-      "$ref": "../datatypes/région.schema.json"
+      "type": "string"
     },
     "pays": {
       "description": "Code de pays à 3 caractères selon le standard ISO 3166-1",
@@ -55,5 +55,33 @@
       "$ref": "../datatypes/codePostalCanadien.schema.json"
     }
   },
-  "$ref": "../datatypes/partielles/codeProvincesSiCanada.schema.json"
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "pays": {
+            "const": "CAN"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "région": {
+            "enum": [
+              "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "région": {
+            "type": "string",
+            "description": "Nom de la région, province ou état. Peut être un code de pays à 2 caractères selon le standard ISO 3166-1.",
+            "pattern": "^[A-Z]{2}$"
+          }
+        }
+      }
+    }
+  ]
 }

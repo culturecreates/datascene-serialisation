@@ -23,7 +23,7 @@ graph << RDF::Graph.load('https://www.w3.org/2009/08/skos-reference/skos')
 graph << RDF::Graph.load('http://www.w3.org/1999/02/22-rdf-syntax-ns')
 
 skos = RDF::Vocabulary.new("http://www.w3.org/2004/02/skos/core#")
-datascene = RDF::Vocabulary.new("http://datascene.ca/vocab#")
+# datascene = RDF::Vocabulary.new("http://datascene.ca/vocab#")
 
 query = RDF::Query.new({
   concept: {

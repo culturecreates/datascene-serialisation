@@ -15,7 +15,7 @@
       "$ref": "../datatypes/pays.schema.json"
     },
     "région": {
-      "$ref": "../datatypes/région.schema.json"
+      "$ref": "../datatypes/texteCourt.schema.json"
     },
     "ville": {
       "$ref": "../datatypes/texteCourt.schema.json"

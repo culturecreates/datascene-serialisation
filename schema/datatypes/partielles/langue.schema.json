@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/type/partilles/langue.schema.json",
   "title": "Code de langue",
   "source": "https://www.rfc-editor.org/rfc/rfc5646.html",
   "description": "Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).",

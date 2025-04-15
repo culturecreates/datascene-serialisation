@@ -1,386 +1,321 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,800">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="schema_doc.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="schema_doc.css">
     <script src="https://use.fontawesome.com/facf9fa52c.js"></script>
     <script src="schema_doc.min.js"></script>
-    <meta charset="utf-8" />
-
-
+    <meta charset="utf-8"/>
+        
+    
     <title>Terme</title>
 </head>
-
 <body onload="anchorOnLoad();" id="root">
 
-    <div class="breadcrumbs"></div>
-    <h1>Terme</h1><span class="badge badge-dark value-type">Type: object</span><br />
-    <span class="description">
-        <p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
-    </span>
+    <div class="breadcrumbs"></div> <h1>Terme</h1><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+</span>
+        
 
+        
+        
 
+        
+<div class="accordion" id="accordiontype">
+    <div class="card">
+        <div class="card-header" id="headingtype">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#type"
+                        aria-expanded="" aria-controls="type" onclick="setAnchor('#type')"><span class="property-name">type</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
 
+        <div id="type"
+             class="collapse property-definition-div" aria-labelledby="headingtype"
+             data-parent="#accordiontype">
+            <div class="card-body pl-5">
 
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#type" onclick="anchorLink('type')">type</a></div><span class="badge badge-dark value-type">Type: const</span><br/>
+<span class="const-value" id="type_const">Specific value: <code>"Terme"</code></span>
+        
 
+        
+        
 
-    <div class="accordion" id="accordiontype">
-        <div class="card">
-            <div class="card-header" id="headingtype">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#type" aria-expanded="" aria-controls="type" onclick="setAnchor('#type')"><span
-                            class="property-name">type</span> <span
-                            class="badge badge-warning required-property">Required</span></button>
-                </h2>
-            </div>
-
-            <div id="type" class="collapse property-definition-div" aria-labelledby="headingtype"
-                data-parent="#accordiontype">
-                <div class="card-body pl-5">
-
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#type" onclick="anchorLink('type')">type</a>
-                    </div><span class="badge badge-dark value-type">Type: const</span><br />
-                    <span class="const-value" id="type_const">Specific value: <code>"Terme"</code></span>
-
-
-
-
-
-
-                </div>
+        
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordionvocabulaire">
-        <div class="card">
-            <div class="card-header" id="headingvocabulaire">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#vocabulaire" aria-expanded="" aria-controls="vocabulaire"
-                        onclick="setAnchor('#vocabulaire')"><span class="property-name">vocabulaire</span> <span
-                            class="badge badge-warning required-property">Required</span></button>
-                </h2>
-            </div>
+</div>
+<div class="accordion" id="accordionvocabulaire">
+    <div class="card">
+        <div class="card-header" id="headingvocabulaire">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#vocabulaire"
+                        aria-expanded="" aria-controls="vocabulaire" onclick="setAnchor('#vocabulaire')"><span class="property-name">vocabulaire</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
 
-            <div id="vocabulaire" class="collapse property-definition-div" aria-labelledby="headingvocabulaire"
-                data-parent="#accordionvocabulaire">
-                <div class="card-body pl-5">
+        <div id="vocabulaire"
+             class="collapse property-definition-div" aria-labelledby="headingvocabulaire"
+             data-parent="#accordionvocabulaire">
+            <div class="card-body pl-5">
 
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#vocabulaire" onclick="anchorLink('vocabulaire')">vocabulaire</a>
-                    </div>
-                    <h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br />
-                    <span class="description">
-                        <p>Identification du vocabulaire duquel est tiré le terme.</p>
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#vocabulaire" onclick="anchorLink('vocabulaire')">vocabulaire</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Identification du vocabulaire duquel est tiré le terme.</p>
 
-                        <p>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est
-                            le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des
-                            barres de soulignement.</p>
-                    </span>
+<p>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.</p>
+</span>
 
+    
+        
 
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="vocabulaire_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="vocabulaire_maxLength">Must be at most <code>500</code> characters long</span></p>
 
-
-
-                    <p><span class="badge badge-light restriction min-length-restriction"
-                            id="vocabulaire_minLength">Must be at least <code>1</code> characters long</span></p>
-                    <p><span class="badge badge-light restriction max-length-restriction"
-                            id="vocabulaire_maxLength">Must be at most <code>500</code> characters long</span></p>
-
-
-                </div>
+        
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordionversion">
-        <div class="card">
-            <div class="card-header" id="headingversion">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#version" aria-expanded="" aria-controls="version"
-                        onclick="setAnchor('#version')"><span class="property-name">version</span></button>
-                </h2>
-            </div>
+</div>
+<div class="accordion" id="accordionversion">
+    <div class="card">
+        <div class="card-header" id="headingversion">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#version"
+                        aria-expanded="" aria-controls="version" onclick="setAnchor('#version')"><span class="property-name">version</span></button>
+            </h2>
+        </div>
 
-            <div id="version" class="collapse property-definition-div" aria-labelledby="headingversion"
-                data-parent="#accordionversion">
-                <div class="card-body pl-5">
+        <div id="version"
+             class="collapse property-definition-div" aria-labelledby="headingversion"
+             data-parent="#accordionversion">
+            <div class="card-body pl-5">
 
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#version" onclick="anchorLink('version')">version</a>
-                    </div>
-                    <h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br />
-                    <span class="description">
-                        <p>Version du vocabulaire utilisé, lorsque c'est applicable</p>
-                    </span><a href="#vocabulaire" onclick="anchorLink('vocabulaire')" class="ref-link">Same definition
-                        as vocabulaire</a>
-                </div>
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#version" onclick="anchorLink('version')">version</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Version du vocabulaire utilisé, lorsque c'est applicable</p>
+</span><a href="#vocabulaire" onclick="anchorLink('vocabulaire')" class="ref-link">Same definition as vocabulaire</a>
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordioncode">
-        <div class="card">
-            <div class="card-header" id="headingcode">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#code" aria-expanded="" aria-controls="code" onclick="setAnchor('#code')"><span
-                            class="property-name">code</span> <span
-                            class="badge badge-warning required-property">Required</span></button>
-                </h2>
-            </div>
+</div>
+<div class="accordion" id="accordioncode">
+    <div class="card">
+        <div class="card-header" id="headingcode">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#code"
+                        aria-expanded="" aria-controls="code" onclick="setAnchor('#code')"><span class="property-name">code</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
 
-            <div id="code" class="collapse property-definition-div" aria-labelledby="headingcode"
-                data-parent="#accordioncode">
-                <div class="card-body pl-5">
+        <div id="code"
+             class="collapse property-definition-div" aria-labelledby="headingcode"
+             data-parent="#accordioncode">
+            <div class="card-body pl-5">
 
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#code" onclick="anchorLink('code')">code</a>
-                    </div>
-                    <h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br />
-                    <span class="description">
-                        <p>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre
-                            l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</p>
-                    </span><a href="#vocabulaire" onclick="anchorLink('vocabulaire')" class="ref-link">Same definition
-                        as vocabulaire</a>
-                </div>
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#code" onclick="anchorLink('code')">code</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</p>
+</span><a href="#vocabulaire" onclick="anchorLink('vocabulaire')" class="ref-link">Same definition as vocabulaire</a>
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordionétiquette">
-        <div class="card">
-            <div class="card-header" id="headingétiquette">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#étiquette" aria-expanded="" aria-controls="étiquette"
-                        onclick="setAnchor('#étiquette')"><span class="property-name">étiquette</span></button>
-                </h2>
-            </div>
+</div>
+<div class="accordion" id="accordionétiquette">
+    <div class="card">
+        <div class="card-header" id="headingétiquette">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#étiquette"
+                        aria-expanded="" aria-controls="étiquette" onclick="setAnchor('#étiquette')"><span class="property-name">étiquette</span></button>
+            </h2>
+        </div>
 
-            <div id="étiquette" class="collapse property-definition-div" aria-labelledby="headingétiquette"
-                data-parent="#accordionétiquette">
-                <div class="card-body pl-5">
+        <div id="étiquette"
+             class="collapse property-definition-div" aria-labelledby="headingétiquette"
+             data-parent="#accordionétiquette">
+            <div class="card-body pl-5">
 
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a>
-                    </div>
-                    <h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br />
-                    <span class="description">
-                        <p>Version textuelle du terme tiré du vocabulaire choisi</p>
-                    </span>
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+<span class="description"><p>Version textuelle du terme tiré du vocabulaire choisi</p>
+</span>
 
+    
+        
 
+        
+        
 
+        
+<div class="accordion" id="accordionétiquette_langue">
+    <div class="card">
+        <div class="card-header" id="headingétiquette_langue">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#étiquette_langue"
+                        aria-expanded="" aria-controls="étiquette_langue" onclick="setAnchor('#étiquette_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
 
+        <div id="étiquette_langue"
+             class="collapse property-definition-div" aria-labelledby="headingétiquette_langue"
+             data-parent="#accordionétiquette_langue">
+            <div class="card-body pl-5">
 
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#étiquette_langue" onclick="anchorLink('étiquette_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
+</span>
 
+    <span class="pattern-value" id="étiquette_langue_pattern">Must match regular expression: <code>^[a-z]{2,3}$</code></span>
+        
 
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="étiquette_langue_minLength">Must be at least <code>2</code> characters long</span></p>
 
-                    <div class="accordion" id="accordionétiquette_langue">
-                        <div class="card">
-                            <div class="card-header" id="headingétiquette_langue">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link property-name-button" type="button"
-                                        data-toggle="collapse" data-target="#étiquette_langue" aria-expanded=""
-                                        aria-controls="étiquette_langue" onclick="setAnchor('#étiquette_langue')"><span
-                                            class="property-name">langue</span> <span
-                                            class="badge badge-warning required-property">Required</span></button>
-                                </h2>
-                            </div>
-
-                            <div id="étiquette_langue" class="collapse property-definition-div"
-                                aria-labelledby="headingétiquette_langue" data-parent="#accordionétiquette_langue">
-                                <div class="card-body pl-5">
-
-                                    <div class="breadcrumbs">root
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                            class="bi bi-arrow-right-short" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                        </svg>
-                                        <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a>
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                            class="bi bi-arrow-right-short" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                        </svg>
-                                        <a href="#étiquette_langue" onclick="anchorLink('étiquette_langue')">langue</a>
-                                    </div>
-                                    <h4>Code de langue</h4><span class="badge badge-dark value-type">Type:
-                                        string</span><br />
-                                    <span class="description">
-                                        <p>Code de langue au standard ISO 639-1. Voir <a
-                                                href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.
-                                        </p>
-                                    </span>
-
-                                    <span class="pattern-value" id="étiquette_langue_pattern">Must match regular
-                                        expression: <code>^[a-z]{2,3}$</code></span>
-
-
-
-                                    <p><span class="badge badge-light restriction min-length-restriction"
-                                            id="étiquette_langue_minLength">Must be at least <code>2</code> characters
-                                            long</span></p>
-
-                                    <br />
-                                    <div class="badge badge-secondary">Examples:</div>
-                                    <br />
-                                    <div id="étiquette_langue_ex1" class="jumbotron examples">
-                                        <div class="highlight">
-                                            <pre><span></span><span class="s2">&quot;fr&quot;</span>
-</pre>
-                                        </div>
-                                    </div>
-                                    <div id="étiquette_langue_ex2" class="jumbotron examples">
-                                        <div class="highlight">
-                                            <pre><span></span><span class="s2">&quot;en&quot;</span>
-</pre>
-                                        </div>
-                                    </div>
-                                    <div id="étiquette_langue_ex3" class="jumbotron examples">
-                                        <div class="highlight">
-                                            <pre><span></span><span class="s2">&quot;acf&quot;</span>
-</pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionétiquette_texte">
-                        <div class="card">
-                            <div class="card-header" id="headingétiquette_texte">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link property-name-button" type="button"
-                                        data-toggle="collapse" data-target="#étiquette_texte" aria-expanded=""
-                                        aria-controls="étiquette_texte" onclick="setAnchor('#étiquette_texte')"><span
-                                            class="property-name">texte</span> <span
-                                            class="badge badge-warning required-property">Required</span></button>
-                                </h2>
-                            </div>
-
-                            <div id="étiquette_texte" class="collapse property-definition-div"
-                                aria-labelledby="headingétiquette_texte" data-parent="#accordionétiquette_texte">
-                                <div class="card-body pl-5">
-
-                                    <div class="breadcrumbs">root
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                            class="bi bi-arrow-right-short" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                        </svg>
-                                        <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a>
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                            class="bi bi-arrow-right-short" fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                        </svg>
-                                        <a href="#étiquette_texte" onclick="anchorLink('étiquette_texte')">texte</a>
-                                    </div>
-                                    <h4>Texte court</h4><span class="badge badge-dark value-type">Type:
-                                        string</span><br />
-
-
-
-
-                                    <p><span class="badge badge-light restriction min-length-restriction"
-                                            id="étiquette_texte_minLength">Must be at least <code>1</code> characters
-                                            long</span></p>
-                                    <p><span class="badge badge-light restriction max-length-restriction"
-                                            id="étiquette_texte_maxLength">Must be at most <code>500</code> characters
-                                            long</span></p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="étiquette_langue_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;fr&quot;</span>
+</pre></div>
+</div><div id="étiquette_langue_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;en&quot;</span>
+</pre></div>
+</div><div id="étiquette_langue_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;acf&quot;</span>
+</pre></div>
+</div>
             </div>
         </div>
     </div>
-    <div class="accordion" id="accordionnuméroDeSéquence">
-        <div class="card">
-            <div class="card-header" id="headingnuméroDeSéquence">
-                <h2 class="mb-0">
-                    <button class="btn btn-link property-name-button" type="button" data-toggle="collapse"
-                        data-target="#numéroDeSéquence" aria-expanded="" aria-controls="numéroDeSéquence"
-                        onclick="setAnchor('#numéroDeSéquence')"><span class="property-name">numéroDeSéquence</span>
-                        <span class="badge badge-warning required-property">Required</span></button>
-                </h2>
-            </div>
+</div>
+<div class="accordion" id="accordionétiquette_texte">
+    <div class="card">
+        <div class="card-header" id="headingétiquette_texte">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#étiquette_texte"
+                        aria-expanded="" aria-controls="étiquette_texte" onclick="setAnchor('#étiquette_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
 
-            <div id="numéroDeSéquence" class="collapse property-definition-div"
-                aria-labelledby="headingnuméroDeSéquence" data-parent="#accordionnuméroDeSéquence">
-                <div class="card-body pl-5">
+        <div id="étiquette_texte"
+             class="collapse property-definition-div" aria-labelledby="headingétiquette_texte"
+             data-parent="#accordionétiquette_texte">
+            <div class="card-body pl-5">
 
-                    <div class="breadcrumbs">root
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short"
-                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
-                        <a href="#numéroDeSéquence" onclick="anchorLink('numéroDeSéquence')">numéroDeSéquence</a>
-                    </div><span class="badge badge-dark value-type">Type: integer</span><br />
-                    <span class="description">
-                        <p>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité
-                            plus élevé).</p>
-                    </span>
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#étiquette" onclick="anchorLink('étiquette')">étiquette</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#étiquette_texte" onclick="anchorLink('étiquette_texte')">texte</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
 
+        
 
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="étiquette_texte_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="étiquette_texte_maxLength">Must be at most <code>500</code> characters long</span></p>
 
-
-
-
-                </div>
+        
             </div>
         </div>
     </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionnuméroDeSéquence">
+    <div class="card">
+        <div class="card-header" id="headingnuméroDeSéquence">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#numéroDeSéquence"
+                        aria-expanded="" aria-controls="numéroDeSéquence" onclick="setAnchor('#numéroDeSéquence')"><span class="property-name">numéroDeSéquence</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="numéroDeSéquence"
+             class="collapse property-definition-div" aria-labelledby="headingnuméroDeSéquence"
+             data-parent="#accordionnuméroDeSéquence">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#numéroDeSéquence" onclick="anchorLink('numéroDeSéquence')">numéroDeSéquence</a></div><span class="badge badge-dark value-type">Type: integer</span><br/>
+<span class="description"><p>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).</p>
+</span>
+        
+
+        
+        
+
+        
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a
-                href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-04-10 at
-            09:55:48 -0400</p>
-    </footer>
-</body>
-
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-04-15 at 14:04:09 -0400</p>
+    </footer></body>
 </html>

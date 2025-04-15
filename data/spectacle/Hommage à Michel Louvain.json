@@ -86,9 +86,9 @@
           ],
           "nom": "Salle Albert-Rousseau",
           "adresse": {
-            "type": "Adresse",
+            "type": "AdressePostale",
             "numéro": "2410",
-            "typeDeRue": "CH",
+            "typeDeRue": "Chemin",
             "rue": "Sainte-Foy",
             "ville": "Québec",
             "région": "QC",
