@@ -74,10 +74,10 @@ template = <<-HTML
 <body>
   <div class="container mt-5">
     <h1 class="mb-4"><%= meta[:title] %></h1>
-    <span class="badge badge-dark value-type">Type: ConceptScheme</span>
     <p class="lead"><%= meta[:definition]%> </p>
-    <p><strong>URI:</strong> <a href="<%= meta[:uri] %>" target="_blank"><%= meta[:uri] %></a></p>
-    <p><strong>Version:</strong>#{ meta[:version]}</p>
+    <span class="badge badge-dark value-type">Type: ConceptScheme</span>
+    <p><strong>URI: </strong><a href="<%= meta[:uri] %>" target="_blank"><%= meta[:uri] %></a></p>
+    <p><strong>Version: </strong>#{ meta[:version]}</p>
     <div class="accordion" id="conceptAccordion">
       <% top_level_concepts.each_with_index do |concept, index| %>
         <div class="card">
