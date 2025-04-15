@@ -1,5 +1,7 @@
 {
   "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -15,61 +17,62 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/2025/avertissements",
+  "@id": "https://datascene.ca/Avertissements",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Avertissements",
   "definition": "Fournir des informations liées à la santé et sécurité du public.",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/2025/avertissements#ClignotementsEtEffetsStroboscopiques",
+      "@id": "https://datascene.ca/Avertissements#ClignotementsEtEffetsStroboscopiques",
       "@type": "Concept",
       "prefLabel": "Clignotements et effets stroboscopiques",
       "definition": "Présence de lumières clignotantes ou d'effets stroboscopiques pouvant affecter les personnes sensibles."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#Mouvement",
+      "@id": "https://datascene.ca/Avertissements#Mouvement",
       "@type": "Concept",
       "prefLabel": "Mouvement",
       "definition": "Des mouvements rapides ou intenses pouvant provoquer des sensations de vertige ou d'inconfort."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#SimulationDeMouvement",
+      "@id": "https://datascene.ca/Avertissements#SimulationDeMouvement",
       "@type": "Concept",
       "prefLabel": "Simulation de mouvement",
       "definition": "Effets visuels ou mécaniques simulant des mouvements pouvant affecter les personnes sensibles."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#PetardsExplosionsArtificesPyrotechnique",
+      "@id": "https://datascene.ca/Avertissements#PetardsExplosionsArtificesPyrotechnique",
       "@type": "Concept",
       "prefLabel": "Pétards, explosions, artifices, pyrotechnique",
       "definition": "Utilisation d'effets pyrotechniques ou d'explosions pouvant surprendre ou effrayer le public."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#FumeeOuVapeur",
+      "@id": "https://datascene.ca/Avertissements#FumeeOuVapeur",
       "@type": "Concept",
       "prefLabel": "Fumée ou vapeur",
       "definition": "Présence de fumée ou de vapeur pouvant gêner les personnes souffrant de problèmes respiratoires."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#Animaux",
+      "@id": "https://datascene.ca/Avertissements#Animaux",
       "@type": "Concept",
       "prefLabel": "Animaux",
       "definition": "Présence d'animaux vivants sur scène pouvant provoquer des allergies ou des réactions inattendues."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#SonsElevesEtSonsDeBasseFrequence",
+      "@id": "https://datascene.ca/Avertissements#SonsElevesEtSonsDeBasseFrequence",
       "@type": "Concept",
       "prefLabel": "Sons élevés et sons de basse fréquence",
       "definition": "Utilisation de sons très forts ou de basses fréquences pouvant affecter les personnes sensibles."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#LumieresEblouissantesLasers",
+      "@id": "https://datascene.ca/Avertissements#LumieresEblouissantesLasers",
       "@type": "Concept",
       "prefLabel": "Lumières éblouissantes, lasers",
       "definition": "Présence de lumières intenses ou de lasers pouvant gêner les spectateurs."
     },
     {
-      "@id": "https://datascene.ca/2025/avertissements#MouvementsRapides",
+      "@id": "https://datascene.ca/Avertissements#MouvementsRapides",
       "@type": "Concept",
       "prefLabel": "Mouvements rapides",
       "definition": "Des actions rapides ou soudaines pouvant surprendre ou désorienter le public."

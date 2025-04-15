@@ -21,6 +21,7 @@
   },
   "@id": "https://datascene.ca/2025/directionsDeRue",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Directions de rue au Canada",
   "definition": "Vocabulaire contrôlé pour les directions de rue au Canada, basé sur les abréviations et symboles de Postes Canada.",
   "hasTopConcept": [

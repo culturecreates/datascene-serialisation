@@ -20,6 +20,7 @@
   },
   "@id": "datascene:PublicCible",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Public Cible",
   "hasTopConcept": [
     {

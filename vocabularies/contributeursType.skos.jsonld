@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://datascene.ca/vocabularies/contributeurType",
+  "@type": "skos:ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
+  "skos:prefLabel": {
+    "@language": "fr",
+    "@value": "Type de contributeurs"
+  },
+  "dcterms:description": {
+    "@language": "fr",
+    "@value": "Vocabulaire contrôlé pour les types de contributeurs."
+  },
+  "dcterms:source": "https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
+  "skos:hasTopConcept": [
+    {
+      "@id": "https://datascene.ca/vocabularies/contributeurType#PersonnePhysique",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@language": "fr",
+        "@value": "Personne physique"
+      },
+      "skos:definition": {
+        "@language": "fr",
+        "@value": "Un individu ou une personne en tant que contributeur."
+      }
+    },
+    {
+      "@id": "https://datascene.ca/vocabularies/contributeurType#Groupe",
+      "@type": "skos:Concept",
+      "skos:prefLabel": {
+        "@language": "fr",
+        "@value": "Groupe"
+      },
+      "skos:definition": {
+        "@language": "fr",
+        "@value": "Un groupe ou une entité collective en tant que contributeur."
+      }
+    }
+  ]
+}

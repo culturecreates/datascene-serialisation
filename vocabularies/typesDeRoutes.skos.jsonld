@@ -17,6 +17,7 @@
   },
   "@id": "https://datascene.ca/2025/typesDeRoutes",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Types de routes au Canada",
   "definition": "Vocabulaire contrôlé pour les types de routes au Canada, basé sur les abréviations et symboles de Postes Canada.",
   "hasTopConcept": [

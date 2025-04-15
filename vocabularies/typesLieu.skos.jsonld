@@ -19,6 +19,8 @@
   },
   "@id": "https://datascene.ca/TypesLieu",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
+  "definition":"Vocabulaire contrôlé pour les types de lieux.",
   "prefLabel": "Types de Lieu",
   "hasTopConcept": [
     {

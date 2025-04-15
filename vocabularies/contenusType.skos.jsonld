@@ -17,6 +17,7 @@
   },
   "@id": "https://datascene.ca/2025/contenusType",
   "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Types de contenus sensibles",
   "definition": "Liste des types de contenus sensibles pouvant nécessiter un avertissement pour le public.",
   "hasTopConcept": [
