@@ -6,7 +6,8 @@
   "required": [
     "type",
     "identifiant",
-    "début"
+    "début",
+    "aOffre"
   ],
   "type": "object",
   "properties": {
@@ -17,7 +18,7 @@
       "description": "Énumération des identifiants connus.",
       "$ref": "./utilitaires/identifiant.schema.json"
     },
-    "série": {
+    "aSérie": {
       "type": "array",
       "items": {
         "$ref": "./série.schema.json"
@@ -75,26 +76,28 @@
       "type": "string",
       "format": "uri"
     },
-    "contributionsSupplémentaires": {
+    "aContributionSupplémentaire": {
       "type": "array",
       "items": {
         "$ref": "./utilitaires/contribution.schema.json"
       },
       "description": "Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées."
     },
-    "contributionsRetirées": {
+    "aContributionRetirée": {
       "type": "array",
       "items": {
         "$ref": "./utilitaires/contribution.schema.json"
       },
       "description": "Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées"
     },
-    "offre": {
+    "aOffre": {
       "type": "array",
       "items": {
         "$ref": "./offre.schema.json"
       },
-      "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres."
+      "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.",
+      "minItems": 1,
+      "maxItems": 2
     }
   }
 }

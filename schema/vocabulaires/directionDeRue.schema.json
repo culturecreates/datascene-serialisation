@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/2025/directionDeRue",
+  "title": "Directions de rue au Canada",
+  "description": "Vocabulaire contrôlé pour les directions de rue au Canada, basé sur les abréviations et symboles de Postes Canada.",
+  "source": "https://www.canadapost-postescanada.ca/cpc/en/support/articles/addressing-guidelines/symbols-and-abbreviations.page",
+  "type": "string",
+  "enum": [
+    "N",
+    "S",
+    "E",
+    "O",
+    "NE",
+    "NO",
+    "SE",
+    "SO"
+  ]
+}

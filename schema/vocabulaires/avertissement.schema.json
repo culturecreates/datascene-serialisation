@@ -1,1 +1,19 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/2025/avertissements",
+  "title": "Avertissements",
+  "description": "fournir des informations liées à la santé et sécurité du public.",
+  "source": "https://datascene.ca/references/vocabulaires/avertissements/",
+  "type": "string",
+  "enum": [
+    "Clignotements et effets stroboscopiques",
+    "Mouvement",
+    "Simulation de mouvement",
+    "Pétards, explosions, artifices, pyrotechnique",
+    "Fumée ou vapeur",
+    "Animaux",
+    "Sons élevés et sons de basse fréquence",
+    "Lumières éblouissantes, lasers",
+    "Mouvements rapides"
+  ]
+}

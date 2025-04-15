@@ -42,7 +42,7 @@
     "lieuVirtuel": {
       "type": "boolean"
     },
-    "salle": {
+    "aSalle": {
       "type": "array",
       "items": {
         "$ref": "./salle.schema.json"
@@ -51,7 +51,7 @@
     },
     "adresse": {
       "description": "Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.",
-      "$ref": "./utilitaires/adresse.schema.json"
+      "$ref": "./utilitaires/adressePostale.schema.json"
     },
     "url": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.",

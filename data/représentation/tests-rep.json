@@ -7,7 +7,7 @@
     }
   ],
   "début": "2023-02-26T15:00:00-05:00",
-  "offre": {
+  "aOffre": {
     "type": "Offre",
     "lieu": {
       "type": "Lieu",

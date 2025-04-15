@@ -17,7 +17,7 @@
   },
   "média": [
     {
-      "type": "ObjetMédia",
+      "type": "Média",
       "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
       "notesUsage": "(ne sont pas affichées)"
     }
@@ -63,7 +63,7 @@
     "fr"
   ],
   "spectacleSansParole": false,
-  "représentation": [
+  "aReprésentation": [
     {
       "type": "Représentation",
       "identifiant": [
@@ -73,16 +73,16 @@
         }
       ],
       "début": "2023-02-26T15:00:00-05:00",
-      "offre": [{
+      "aOffre": [{
         "type": "Offre",
-        "lieu": {
+        "aLieu": {
           "type": "Theatre",
           "lieuVirtuel": false,
           "identifiant": [
             {
               "type": "uri",
               "valeur": "http://lavitrine.com/representation/7567567"
-            }
+            },"http://lavitrine.com/representation/7567567"
           ],
           "nom": "Salle Albert-Rousseau",
           "adresse": {

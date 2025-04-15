@@ -9,7 +9,7 @@
     "nom",
     "description",
     "début",
-    "offre"
+    "aOffre"
   ],
   "type": "object",
   "properties": {
@@ -49,7 +49,7 @@
         "$ref": "./utilitaires/média.schema.json"
       }
     },
-    "contributions": {
+    "aContribution": {
       "description": "Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.\n\nExemple: un commanditaire d'un festival a une contribution à la série.\n\nContre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même.",
       "type": "array",
       "items": {
@@ -74,14 +74,14 @@
       "type": "string",
       "format": "date-time"
     },
-    "représentation": {
+    "aReprésentation": {
       "description": "Identification des représentations faisant partie de la série.",
       "type": "array",
       "items": {
         "$ref": "./représentation.schema.json"
       }
     },
-    "offre": {
+    "aOffre": {
       "description": "Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.",
       "type": "array",
       "items": {

@@ -1,1 +1,22 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/2025/contenusType",
+  "title": "Types de contenus sensibles",
+  "description": "Liste des types de contenus sensibles pouvant nécessiter un avertissement pour le public.",
+  "source": "https://datascene.ca/references/vocabulaires/types_de_contenus/",
+  "type": "string",
+  "enum": [
+    "Alcool",
+    "Drogues et narcotiques",
+    "Nudité",
+    "Déconseillé aux jeunes enfants",
+    "Érotisme ou sexualité",
+    "Cigarette, tabac, nicotine",
+    "Langage vulgaire",
+    "Horreur",
+    "Violence",
+    "Armes",
+    "Questions ou sujets controversés",
+    "Autres contenus sensibles"
+  ]
+}

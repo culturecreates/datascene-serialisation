@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "fr"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "fr"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "fr"
+    },
+    "Concept": "skos:Concept",
+    "ConceptScheme": "skos:ConceptScheme",
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id"
+    }
+  },
+  "@id": "https://datascene.ca/2025/directionsDeRue",
+  "@type": "ConceptScheme",
+  "prefLabel": "Directions de rue au Canada",
+  "definition": "Vocabulaire contrôlé pour les directions de rue au Canada, basé sur les abréviations et symboles de Postes Canada.",
+  "hasTopConcept": [
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Nord",
+      "@type": "Concept",
+      "prefLabel": "Nord",
+      "altLabel": "N",
+      "definition": "Direction indiquant le nord géographique ou cardinal."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Sud",
+      "@type": "Concept",
+      "prefLabel": "Sud",
+      "altLabel": "S",
+      "definition": "Direction indiquant le sud géographique ou cardinal."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Est",
+      "@type": "Concept",
+      "prefLabel": "Est",
+      "altLabel": "E",
+      "definition": "Direction indiquant l'est géographique ou cardinal."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Ouest",
+      "@type": "Concept",
+      "prefLabel": "Ouest",
+      "altLabel": "O",
+      "definition": "Direction indiquant l'ouest géographique ou cardinal."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Nord-Est",
+      "@type": "Concept",
+      "prefLabel": "Nord-Est",
+      "altLabel": "NE",
+      "definition": "Direction intermédiaire entre le nord et l'est."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Nord-Ouest",
+      "@type": "Concept",
+      "prefLabel": "Nord-Ouest",
+      "altLabel": "NO",
+      "definition": "Direction intermédiaire entre le nord et l'ouest."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Sud-Est",
+      "@type": "Concept",
+      "prefLabel": "Sud-Est",
+      "altLabel": "SE",
+      "definition": "Direction intermédiaire entre le sud et l'est."
+    },
+    {
+      "@id": "https://datascene.ca/2025/directionsDeRue#Sud-Ouest",
+      "@type": "Concept",
+      "prefLabel": "Sud-Ouest",
+      "altLabel": "SO",
+      "definition": "Direction intermédiaire entre le sud et l'ouest."
+    }
+  ]
+}

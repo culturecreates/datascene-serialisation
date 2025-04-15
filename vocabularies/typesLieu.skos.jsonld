@@ -17,7 +17,7 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/vocabulaires/typesLieu",
+  "@id": "https://datascene.ca/TypesLieu",
   "@type": "ConceptScheme",
   "prefLabel": "Types de Lieu",
   "hasTopConcept": [

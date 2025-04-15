@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "fr"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "fr"
+    },
+    "Concept": "skos:Concept",
+    "ConceptScheme": "skos:ConceptScheme",
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id"
+    }
+  },
+  "@id": "https://datascene.ca/2025/typesDeRoutes",
+  "@type": "ConceptScheme",
+  "prefLabel": "Types de routes au Canada",
+  "definition": "Vocabulaire contrôlé pour les types de routes au Canada, basé sur les abréviations et symboles de Postes Canada.",
+  "hasTopConcept": [
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Autoroute",
+      "@type": "Concept",
+      "prefLabel": "Autoroute",
+      "definition": "Route à grande vitesse reliant des villes ou des régions, souvent avec des voies multiples."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Avenue",
+      "@type": "Concept",
+      "prefLabel": "Avenue",
+      "definition": "Large voie urbaine bordée d'arbres ou de bâtiments."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Boulevard",
+      "@type": "Concept",
+      "prefLabel": "Boulevard",
+      "definition": "Large rue souvent bordée d'arbres, utilisée pour la circulation urbaine."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Chemin",
+      "@type": "Concept",
+      "prefLabel": "Chemin",
+      "definition": "Route ou sentier souvent utilisé dans des zones rurales ou pour des accès spécifiques."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Cote",
+      "@type": "Concept",
+      "prefLabel": "Côte",
+      "definition": "Route située sur une pente ou une colline."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Cours",
+      "@type": "Concept",
+      "prefLabel": "Cours",
+      "definition": "Petite voie ou allée souvent utilisée dans des zones résidentielles."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Croissant",
+      "@type": "Concept",
+      "prefLabel": "Croissant",
+      "definition": "Rue résidentielle en forme d'arc ou de demi-cercle."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Esplanade",
+      "@type": "Concept",
+      "prefLabel": "Esplanade",
+      "definition": "Large espace ouvert ou voie souvent utilisée pour des promenades ou des événements publics."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Impasse",
+      "@type": "Concept",
+      "prefLabel": "Impasse",
+      "definition": "Rue sans issue, souvent utilisée dans des zones résidentielles."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Montee",
+      "@type": "Concept",
+      "prefLabel": "Montée",
+      "definition": "Route en pente ascendante, souvent utilisée dans des zones vallonnées."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Parc",
+      "@type": "Concept",
+      "prefLabel": "Parc",
+      "definition": "Route ou voie située à proximité ou à l'intérieur d'un parc."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Passage",
+      "@type": "Concept",
+      "prefLabel": "Passage",
+      "definition": "Petite voie ou allée permettant de traverser une zone."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Place",
+      "@type": "Concept",
+      "prefLabel": "Place",
+      "definition": "Espace ouvert entouré de bâtiments, souvent utilisé comme point de rencontre."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Promenade",
+      "@type": "Concept",
+      "prefLabel": "Promenade",
+      "definition": "Voie ou espace destiné aux piétons, souvent utilisé pour des balades."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Quai",
+      "@type": "Concept",
+      "prefLabel": "Quai",
+      "definition": "Route ou espace situé le long d'une rivière, d'un lac ou d'un port."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Rang",
+      "@type": "Concept",
+      "prefLabel": "Rang",
+      "definition": "Route rurale souvent utilisée dans des zones agricoles."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Route",
+      "@type": "Concept",
+      "prefLabel": "Route",
+      "definition": "Voie principale reliant des villes ou des régions."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Rue",
+      "@type": "Concept",
+      "prefLabel": "Rue",
+      "definition": "Voie urbaine utilisée pour la circulation et les adresses."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Sentier",
+      "@type": "Concept",
+      "prefLabel": "Sentier",
+      "definition": "Petite voie ou chemin souvent utilisé pour des randonnées ou des promenades."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Terrasse",
+      "@type": "Concept",
+      "prefLabel": "Terrasse",
+      "definition": "Voie résidentielle ou espace ouvert souvent situé en hauteur."
+    },
+    {
+      "@id": "https://datascene.ca/2025/typesDeRoutes#Voie",
+      "@type": "Concept",
+      "prefLabel": "Voie",
+      "definition": "Petite rue ou passage souvent utilisé dans des zones résidentielles."
+    }
+  ]
+}

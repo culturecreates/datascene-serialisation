@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "datascene": "https://datascene.ca/2025/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "type": "@type",
+    "id": "@id"
+  }
+}

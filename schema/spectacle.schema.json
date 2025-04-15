@@ -65,7 +65,7 @@
         "$ref": "./utilitaires/média.schema.json"
       }
     },
-    "contribution": {
+    "aContribution": {
       "description": "Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).\n\nLe contributeur peut être une personne ou une organisation.\n\nIl s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.\n\nSi un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.",
       "type": "array",
       "items": {
@@ -80,7 +80,7 @@
         "format": "uri"
       }
     },
-    "oeuvreAssociée": {
+    "aOeuvreAssociée": {
       "description": "Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.\n\nExemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.\n\nExemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.\n\nContre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs.",
       "type": "array",
       "items": {
@@ -133,7 +133,7 @@
         "$ref": "./vocabulaires/avertissement.schema.json"
       }
     },
-    "représentation": {
+    "aReprésentation": {
       "description": "Énumération des représentations du spectacle, qu'elles soient passées ou futures.",
       "type": "array",
       "items": {
@@ -166,7 +166,7 @@
           "description": "Identification de l'oeuvre.",
           "$ref": "./oeuvre.schema.json"
         },
-        "explications": {
+        "note": {
           "description": "Notes sur le lien entre l'oeuvre et le spectacle",
           "$ref": "./datatypes/texteCourtMultilingue.schema.json"
         }

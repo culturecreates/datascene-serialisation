@@ -39,7 +39,6 @@
       "$ref": "./utilitaires/média.schema.json",
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
     },
-    
     "contributionTypeHabituelle": {
       "type": "array",
       "items": {
@@ -47,7 +46,7 @@
       },
       "description": "Énumération des types de contributions habituellement faites par le contributeur."
     },
-    "associationGéographique": {
+    "aAssociationGéographique": {
       "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
       "type": "array",
       "items": {
