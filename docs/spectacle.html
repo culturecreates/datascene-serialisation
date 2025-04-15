@@ -137,9 +137,116 @@
 
         <br/>
 <div class="badge badge-secondary">Example:</div>
-<br/><div id="root_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+<br/><button class="btn btn-light example-show collapsed" data-toggle="collapse" data-target="#root_ex1" aria-controls="root_ex1"></button><div id="root_ex1" class="collapse jumbotron examples"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;@context&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://datascence.ca/context.jsonld&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Spectacle&quot;</span>
+<span class="w">    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Spectacle&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;identifiant&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://lavitrine.com/spectacle/123456&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;nom&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;langue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;texte&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hommage à Michel Louvain.&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;langue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;texte&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de...&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="s2">&quot;média&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Média&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;notesUsage&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;(ne sont pas affichées)&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;contribution&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">&quot;ArtisteSurScène&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;contributeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Groupe&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;identifiant&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://lavitrine.com/123456&quot;</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">],</span>
+<span class="w">                </span><span class="s2">&quot;nom&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Un certain souvenir&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;url&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://www.sallealbertrousseau.com/events/un-certain-souvenir/&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;discipline&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Chanson&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;publicCible&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;ToutPublics&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Terme&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;vocabulaire&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PublicCible&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ToutPublics&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;étiquette&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">&quot;langue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;texte&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Tout publics&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="s2">&quot;numéroDeSéquence&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;langues&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;fr&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">&quot;spectacleSansParole&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;aReprésentation&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Représentation&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;identifiant&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://lavitrine.com/representation/123456&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;début&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2023-02-26T15:00:00-05:00&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;aOffre&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Offre&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;aLieu&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Theatre&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;lieuVirtuel&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;identifiant&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="s2">&quot;valeur&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://lavitrine.com/representation/7567567&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="s2">&quot;http://lavitrine.com/representation/7567567&quot;</span>
+<span class="w">                        </span><span class="p">],</span>
+<span class="w">                        </span><span class="s2">&quot;nom&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Salle Albert-Rousseau&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;adresse&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AdressePostale&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;numéro&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2410&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;typeDeRue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Chemin&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;rue&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Sainte-Foy&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;ville&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Québec&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;région&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;QC&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;pays&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;CAN&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="s2">&quot;codePostal&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;G1V 1T3&quot;</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="s2">&quot;complet&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;statut&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;confirmée&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;gratuit&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;accessibleViaAutreOffre&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;sansLienAcquisition&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;lienAcquisition&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -11935,6 +12042,6 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 </div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-04-15 at 17:18:13 -0400</p>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-04-15 at 17:20:11 -0400</p>
     </footer></body>
 </html>

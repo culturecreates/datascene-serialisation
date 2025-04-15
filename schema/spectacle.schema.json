@@ -176,7 +176,111 @@
   "examples": [
     {
       "@context": "https://datascence.ca/context.jsonld",
-      "type": "Spectacle"
+      "type": "Spectacle",
+      "identifiant": [
+        {
+          "type": "uri",
+          "valeur": "http://lavitrine.com/spectacle/123456"
+        }
+      ],
+      "nom": {
+        "langue": "fr",
+        "texte": "Hommage à Michel Louvain."
+      },
+      "description": {
+        "langue": "fr",
+        "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
+      },
+      "média": [
+        {
+          "type": "Média",
+          "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
+          "notesUsage": "(ne sont pas affichées)"
+        }
+      ],
+      "contribution": [
+        {
+          "type": [
+            "ArtisteSurScène"
+          ],
+          "contributeur": {
+            "type": "Groupe",
+            "identifiant": [
+              {
+                "type": "uri",
+                "valeur": "http://lavitrine.com/123456"
+              }
+            ],
+            "nom": "Un certain souvenir"
+          }
+        }
+      ],
+      "url": [
+        "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/",
+        "https://www.sallealbertrousseau.com/events/un-certain-souvenir/"
+      ],
+      "discipline": [
+        "Chanson"
+      ],
+      "publicCible": [
+        "ToutPublics",
+        {
+          "type": "Terme",
+          "vocabulaire": "PublicCible",
+          "code": "ToutPublics",
+          "étiquette": {
+            "langue": "fr",
+            "texte": "Tout publics"
+          },
+          "numéroDeSéquence": 1
+        }
+      ],
+      "langues": [
+        "fr"
+      ],
+      "spectacleSansParole": false,
+      "aReprésentation": [
+        {
+          "type": "Représentation",
+          "identifiant": [
+            {
+              "type": "uri",
+              "valeur": "http://lavitrine.com/representation/123456"
+            }
+          ],
+          "début": "2023-02-26T15:00:00-05:00",
+          "aOffre": [{
+            "type": "Offre",
+            "aLieu": {
+              "type": "Theatre",
+              "lieuVirtuel": false,
+              "identifiant": [
+                {
+                  "type": "uri",
+                  "valeur": "http://lavitrine.com/representation/7567567"
+                },"http://lavitrine.com/representation/7567567"
+              ],
+              "nom": "Salle Albert-Rousseau",
+              "adresse": {
+                "type": "AdressePostale",
+                "numéro": "2410",
+                "typeDeRue": "Chemin",
+                "rue": "Sainte-Foy",
+                "ville": "Québec",
+                "région": "QC",
+                "pays": "CAN",
+                "codePostal": "G1V 1T3"
+              }
+            },
+            "complet": false,
+            "statut": "confirmée",
+            "gratuit": false,
+            "accessibleViaAutreOffre": false,
+            "sansLienAcquisition": false,
+            "lienAcquisition": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+          }]
+        }
+      ]
     }
   ]
 }
