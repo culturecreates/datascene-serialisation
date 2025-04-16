@@ -10,3 +10,4 @@ ruby skosForHumans.rb publicCible.skos.jsonld
 ruby skosForHumans.rb typesDeRoutes.skos.jsonld 
 ruby skosForHumans.rb typesLieu.skos.jsonld
 ruby skosForHumans.rb contributeursType.skos.jsonld
+ruby skosForHumans.rb contributionType.skos
