@@ -3,7 +3,7 @@
 - Voir `/pdf` pour l'historique des présentations
 - Voir `/schema` pour tous les JSON Schema
 - Voir `/vocabulaires` pour les SKOS
-- Voir https://culturecreates.github.io/datascene-serialisation/ pour la documentation générée par mkdocs (test partiel)
+- Voir https://culturecreates.github.io/datascene-serialisation/ pour la documentation générée
 
 
 # Attention
