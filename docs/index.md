@@ -24,7 +24,7 @@ Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/j
 - [Accessibilité Universelle](vocabulaires/accessibilitéUniversellesTermes.skos.html)
 - [Avertissements](vocabulaires/avertissement.skos.html)
 - [Disciplines artistiques](vocabulaires/disciplines-asq.html)
-- [Public Cible](vocabulaires/publicCible.skos.html)
+- [Public cible](vocabulaires/publicCible.skos.html)
 - Statut d’offre - voir énumération dans classe Offre
 - [Types d’association géographiques](vocabulaires/associationGéographiqueType.skos.html)
 - [Types de configurations de salles](vocabulaires/configurationSalleTermes.skos.html)
