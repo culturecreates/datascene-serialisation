@@ -57,7 +57,8 @@ meta = {
   title:  graph.query([concept_scheme, RDF::Vocab::SKOS.prefLabel, :label]).first&.object.to_s,
   uri: concept_scheme.to_s,
   version: graph.query([concept_scheme, RDF::URI("http://www.w3.org/2002/07/owl#versionInfo"), :version]).first&.object&.to_s,
-  definition: graph.query([concept_scheme, RDF::Vocab::SKOS.definition, :definition]).first&.object&.to_s
+  definition: graph.query([concept_scheme, RDF::Vocab::SKOS.definition, :definition]).first&.object&.to_s,
+  source: graph.query([concept_scheme, RDF::Vocab::PROV.wasDerivedFrom, :source]).first&.object&.to_s
 }
 
 # Generate HTML using ERB
@@ -75,7 +76,10 @@ template = <<-HTML
   <div class="container mt-5">
     <h1 class="mb-4"><%= meta[:title] %></h1>
     <p class="lead"><%= meta[:definition]%> </p>
-    <span class="badge badge-dark value-type">Type: ConceptScheme</span>
+    <p><span class="badge badge-dark value-type">Type: ConceptScheme</span></p>
+    <% if  meta[:source] %>
+    <p><strong>Source: </strong><a href="<%= meta[:source] %>" target="_blank"><%= meta[:source] %></a></p>
+    <% end %>
     <p><strong>URI: </strong><a href="<%= meta[:uri] %>" target="_blank"><%= meta[:uri] %></a></p>
     <p><strong>Version: </strong>#{ meta[:version]}</p>
     <div class="accordion" id="conceptAccordion">

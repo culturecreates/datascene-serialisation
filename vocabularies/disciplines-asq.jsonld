@@ -45,6 +45,11 @@
       "@id": "https://github.com/culturecreates/disciplines-asq"
     }
   ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom": [
+    {
+      "@id": "https://github.com/culturecreates/disciplines-asq"
+    }
+  ],
   "http://purl.org/vocab/vann/changes": [
     {
       "@id": "https://github.com/culturecreates/disciplines-asq/commits/master/src/disciplines-asq.ttl"

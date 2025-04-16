@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/vocabulaires/configurationSalleTermes.schema.json",
+  "$id": "https://datascene.ca/configurationSalleTermes",
   "title": "Configuration de Salle",
   "description": "Vocabulaire contrôlé pour les configurations de salle.",
   "type": "string",

@@ -2,7 +2,26 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "fr"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "fr"
+    },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "Concept": "skos:Concept",
+    "ConceptScheme": "skos:ConceptScheme",
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id"
+    }
   },
   "@id": "https://datascene.ca/vocabularies/contributeurType",
   "@type": "skos:ConceptScheme",
@@ -11,11 +30,8 @@
     "@language": "fr",
     "@value": "Type de contributeurs"
   },
-  "dcterms:description": {
-    "@language": "fr",
-    "@value": "Vocabulaire contrôlé pour les types de contributeurs."
-  },
-  "dcterms:source": "https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
+  "definition": "Vocabulaire contrôlé pour les types de contributeurs.",
+  "source": "https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
   "skos:hasTopConcept": [
     {
       "@id": "https://datascene.ca/vocabularies/contributeurType#PersonnePhysique",

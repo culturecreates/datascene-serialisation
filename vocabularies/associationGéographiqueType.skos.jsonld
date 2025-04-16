@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "fr"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "fr"
+    },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "Concept": "skos:Concept",
+    "ConceptScheme": "skos:ConceptScheme",
+    "hasTopConcept": {
+      "@id": "skos:hasTopConcept",
+      "@type": "@id"
+    }
+  },
+  "@id": "https://datascene.ca/AssociationGeographiqueType",
+  "@type": "ConceptScheme",
+  "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
+  "prefLabel": "Types d'associations géographiques",
+  "definition": "Vocabulaire contrôlé pour les types d'associations géographiques.",
+  "hasTopConcept": [
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#naissance",
+      "@type": "Concept",
+      "prefLabel": "Naissance",
+      "definition": "Lieu de naissance d'une personne ou d'un contributeur."
+    },
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#deces",
+      "@type": "Concept",
+      "prefLabel": "Décès",
+      "definition": "Lieu de décès d'une personne ou d'un contributeur."
+    },
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#residence",
+      "@type": "Concept",
+      "prefLabel": "Résidence",
+      "definition": "Lieu de résidence d'une personne ou d'un contributeur."
+    },
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#nationalite",
+      "@type": "Concept",
+      "prefLabel": "Nationalité",
+      "definition": "Nationalité associée à une personne ou un contributeur."
+    },
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#lieuDeFondation",
+      "@type": "Concept",
+      "prefLabel": "Lieu de fondation",
+      "definition": "Lieu où une organisation ou un groupe a été fondé."
+    },
+    {
+      "@id": "https://datascene.ca/AssociationGeographiqueType#lieuDuSiegeSocial",
+      "@type": "Concept",
+      "prefLabel": "Lieu du siège social",
+      "definition": "Lieu où se trouve le siège social d'une organisation ou d'un groupe."
+    }
+  ]
+}

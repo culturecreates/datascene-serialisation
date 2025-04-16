@@ -5,11 +5,11 @@
   "identifiant": [
     {
       "type": "uri",
-      "value": "http://kg.artsdata.ca/resource/K5-180"
+      "valeur": "http://kg.artsdata.ca/resource/K5-180"
     },
     {
       "type": "uri",
-      "value": "http://www.wikidata.org/entity/Q3114610"
+      "valeur": "http://www.wikidata.org/entity/Q3114610"
     }
   ],
   "description": [
@@ -24,10 +24,10 @@
   ],
   "lieuVirtuel": false,
   "adresse": {
-    "type": "Adresse",
+    "type": "AdressePostale",
     "numéro": "269",
-    "directionDeRue": "Est",
-    "typeDeRue": "boulevard",
+    "directionDeRue": "E",
+    "typeDeRue": "Boulevard",
     "rue":"boulevard René-Lévesque",
     "ville": "Québec",
     "région": "QC",

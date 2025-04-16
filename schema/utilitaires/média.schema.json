@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/2025/Média",
+  "$id": "https://datascene.ca/Média",
   "title": "Média",
   "description": "cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.",
   "required": [

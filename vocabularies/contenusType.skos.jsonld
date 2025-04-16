@@ -1,5 +1,8 @@
 {
   "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -8,6 +11,10 @@
       "@id": "skos:definition",
       "@language": "fr"
     },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
     "Concept": "skos:Concept",
     "ConceptScheme": "skos:ConceptScheme",
     "hasTopConcept": {
@@ -15,80 +22,80 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/2025/contenusType",
+  "@id": "https://datascene.ca/contenusType",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Types de contenus sensibles",
   "definition": "Liste des types de contenus sensibles pouvant nécessiter un avertissement pour le public.",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/2025/contenusType#Alcool",
+      "@id": "https://datascene.ca/contenusType#Alcool",
       "@type": "Concept",
       "prefLabel": "Alcool",
       "definition": "Présence ou consommation d'alcool dans le contenu."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#DroguesEtNarcotiques",
+      "@id": "https://datascene.ca/contenusType#DroguesEtNarcotiques",
       "@type": "Concept",
       "prefLabel": "Drogues et narcotiques",
       "definition": "Références ou représentations de drogues ou de substances narcotiques."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#Nudite",
+      "@id": "https://datascene.ca/contenusType#Nudite",
       "@type": "Concept",
       "prefLabel": "Nudité",
       "definition": "Présence de nudité dans le contenu."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#DeconseilleAuxJeunesEnfants",
+      "@id": "https://datascene.ca/contenusType#DeconseilleAuxJeunesEnfants",
       "@type": "Concept",
       "prefLabel": "Déconseillé aux jeunes enfants",
       "definition": "Contenu inapproprié ou potentiellement perturbant pour les jeunes enfants."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#ErotismeOuSexualite",
+      "@id": "https://datascene.ca/contenusType#ErotismeOuSexualite",
       "@type": "Concept",
       "prefLabel": "Érotisme ou sexualité",
       "definition": "Présence de thèmes érotiques ou sexuels dans le contenu."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#CigaretteTabacNicotine",
+      "@id": "https://datascene.ca/contenusType#CigaretteTabacNicotine",
       "@type": "Concept",
       "prefLabel": "Cigarette, tabac, nicotine",
       "definition": "Références ou représentations de l'usage de cigarettes, de tabac ou de nicotine."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#LangageVulgaire",
+      "@id": "https://datascene.ca/contenusType#LangageVulgaire",
       "@type": "Concept",
       "prefLabel": "Langage vulgaire",
       "definition": "Utilisation de langage grossier ou vulgaire dans le contenu."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#Horreur",
+      "@id": "https://datascene.ca/contenusType#Horreur",
       "@type": "Concept",
       "prefLabel": "Horreur",
       "definition": "Contenu effrayant ou terrifiant pouvant provoquer de l'anxiété ou de la peur."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#Violence",
+      "@id": "https://datascene.ca/contenusType#Violence",
       "@type": "Concept",
       "prefLabel": "Violence",
       "definition": "Présence de scènes violentes ou de comportements agressifs."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#Armes",
+      "@id": "https://datascene.ca/contenusType#Armes",
       "@type": "Concept",
       "prefLabel": "Armes",
       "definition": "Références ou représentations d'armes dans le contenu."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#QuestionsOuSujetsControverses",
+      "@id": "https://datascene.ca/contenusType#QuestionsOuSujetsControverses",
       "@type": "Concept",
       "prefLabel": "Questions ou sujets controversés",
       "definition": "Thèmes ou sujets pouvant susciter des débats ou des controverses."
     },
     {
-      "@id": "https://datascene.ca/2025/contenusType#AutresContenusSensibles",
+      "@id": "https://datascene.ca/contenusType#AutresContenusSensibles",
       "@type": "Concept",
       "prefLabel": "Autres contenus sensibles",
       "definition": "Autres types de contenus pouvant nécessiter un avertissement pour le public."

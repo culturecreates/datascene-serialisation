@@ -8,11 +8,11 @@
     }
   },
   "type": "Offre",
-  "lieu": {
+  "aLieu": {
     "identifiant": [
       {
         "type": "uri",
-        "value": "http://123"
+        "valeur": "http://123"
       }
     ],
     "type": "LieuVirtuel",

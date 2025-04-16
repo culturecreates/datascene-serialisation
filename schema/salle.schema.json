@@ -52,8 +52,32 @@
         "$ref": "./datatypes/texteCourtMultilingue.schema.json"
       }
     },
-    "lieuVirtuel": {
-      "type": "boolean"
+    "médias": {
+      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilitaires/média.schema.json"
+      }
+    }, "aLieu": {
+      "description": "Lieu associé à l'offre (physique ou virtuel).",
+      "$ref": "./lieu.schema.json"
+    },"adresse": {
+      "description": "Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.",
+      "$ref": "./utilitaires/adressePostale.schema.json"
+    }, "accessibilitéUniverselle": {
+      "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
+      "type": "array",
+      "items": {
+        "$ref": "./vocabulaires/accessibilitéUniverselleTermes.schema.json"
+      }
+    },
+    "aConfigurationSalle": {
+      "description": "Précisions sur les configurations possibles de la salle.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilitaires/configurationSalle.schema.json"
+      }
     }
+    
   }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/2025/contenusType",
+  "$id": "https://datascene.ca/contenusType",
   "title": "Types de contenus sensibles",
   "description": "Liste des types de contenus sensibles pouvant nécessiter un avertissement pour le public.",
   "source": "https://datascene.ca/references/vocabulaires/types_de_contenus/",

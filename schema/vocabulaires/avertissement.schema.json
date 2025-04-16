@@ -1,19 +1,30 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/2025/avertissements",
+  "$id": "https://datascene.ca/avertissements",
   "title": "Avertissements",
-  "description": "fournir des informations liées à la santé et sécurité du public.",
+  "description": "Fournir des informations liées à la santé et sécurité du public.",
   "source": "https://datascene.ca/references/vocabulaires/avertissements/",
   "type": "string",
   "enum": [
-    "Clignotements et effets stroboscopiques",
+    "Clignotements",
     "Mouvement",
-    "Simulation de mouvement",
-    "Pétards, explosions, artifices, pyrotechnique",
-    "Fumée ou vapeur",
+    "SimulationMouvement",
+    "Pyrotechnique",
+    "FumeeVapeur",
     "Animaux",
-    "Sons élevés et sons de basse fréquence",
-    "Lumières éblouissantes, lasers",
-    "Mouvements rapides"
-  ]
+    "SonsEleves",
+    "LumieresEblouissantes",
+    "MouvementsRapides"
+  ],
+  "enumLabels": {
+    "Clignotements": "Clignotements et effets stroboscopiques",
+    "Mouvement": "Mouvement",
+    "SimulationMouvement": "Simulation de mouvement",
+    "Pyrotechnique": "Pétards, explosions, artifices, pyrotechnique",
+    "FumeeVapeur": "Fumée ou vapeur",
+    "Animaux": "Animaux",
+    "SonsEleves": "Sons élevés et sons de basse fréquence",
+    "LumieresEblouissantes": "Lumières éblouissantes, lasers",
+    "MouvementsRapides": "Mouvements rapides"
+  }
 }

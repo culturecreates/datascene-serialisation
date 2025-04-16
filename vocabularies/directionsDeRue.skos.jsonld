@@ -1,5 +1,8 @@
 {
   "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -12,6 +15,10 @@
       "@id": "skos:definition",
       "@language": "fr"
     },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
     "Concept": "skos:Concept",
     "ConceptScheme": "skos:ConceptScheme",
     "hasTopConcept": {
@@ -19,63 +26,65 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/2025/directionsDeRue",
+  "@id": "https://datascene.ca/directionsDeRue",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
-  "prefLabel": "Directions de rue au Canada",
+  "prefLabel": "Points cardinaux",
+  "altLabel": "Directions de rue",
+  "source": "https://www.canadapost-postescanada.ca/cpc/en/support/articles/addressing-guidelines/symbols-and-abbreviations.page",
   "definition": "Vocabulaire contrôlé pour les directions de rue au Canada, basé sur les abréviations et symboles de Postes Canada.",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Nord",
+      "@id": "https://datascene.ca/directionsDeRue#Nord",
       "@type": "Concept",
       "prefLabel": "Nord",
       "altLabel": "N",
       "definition": "Direction indiquant le nord géographique ou cardinal."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Sud",
+      "@id": "https://datascene.ca/directionsDeRue#Sud",
       "@type": "Concept",
       "prefLabel": "Sud",
       "altLabel": "S",
       "definition": "Direction indiquant le sud géographique ou cardinal."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Est",
+      "@id": "https://datascene.ca/directionsDeRue#Est",
       "@type": "Concept",
       "prefLabel": "Est",
       "altLabel": "E",
       "definition": "Direction indiquant l'est géographique ou cardinal."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Ouest",
+      "@id": "https://datascene.ca/directionsDeRue#Ouest",
       "@type": "Concept",
       "prefLabel": "Ouest",
       "altLabel": "O",
       "definition": "Direction indiquant l'ouest géographique ou cardinal."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Nord-Est",
+      "@id": "https://datascene.ca/directionsDeRue#Nord-Est",
       "@type": "Concept",
       "prefLabel": "Nord-Est",
       "altLabel": "NE",
       "definition": "Direction intermédiaire entre le nord et l'est."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Nord-Ouest",
+      "@id": "https://datascene.ca/directionsDeRue#Nord-Ouest",
       "@type": "Concept",
       "prefLabel": "Nord-Ouest",
       "altLabel": "NO",
       "definition": "Direction intermédiaire entre le nord et l'ouest."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Sud-Est",
+      "@id": "https://datascene.ca/directionsDeRue#Sud-Est",
       "@type": "Concept",
       "prefLabel": "Sud-Est",
       "altLabel": "SE",
       "definition": "Direction intermédiaire entre le sud et l'est."
     },
     {
-      "@id": "https://datascene.ca/2025/directionsDeRue#Sud-Ouest",
+      "@id": "https://datascene.ca/directionsDeRue#Sud-Ouest",
       "@type": "Concept",
       "prefLabel": "Sud-Ouest",
       "altLabel": "SO",

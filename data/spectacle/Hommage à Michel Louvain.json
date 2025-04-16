@@ -59,7 +59,7 @@
       "numéroDeSéquence": 1
     }
   ],
-  "langues": [
+  "enLangue": [
     "fr"
   ],
   "spectacleSansParole": false,
@@ -73,36 +73,41 @@
         }
       ],
       "début": "2023-02-26T15:00:00-05:00",
-      "aOffre": [{
-        "type": "Offre",
-        "aLieu": {
-          "type": "Theatre",
-          "lieuVirtuel": false,
-          "identifiant": [
-            {
-              "type": "uri",
-              "valeur": "http://lavitrine.com/representation/7567567"
-            },"http://lavitrine.com/representation/7567567"
-          ],
-          "nom": "Salle Albert-Rousseau",
-          "adresse": {
-            "type": "AdressePostale",
-            "numéro": "2410",
-            "typeDeRue": "Chemin",
-            "rue": "Sainte-Foy",
-            "ville": "Québec",
-            "région": "QC",
-            "pays": "CAN",
-            "codePostal": "G1V 1T3"
-          }
-        },
-        "complet": false,
-        "statut": "confirmée",
-        "gratuit": false,
-        "accessibleViaAutreOffre": false,
-        "sansLienAcquisition": false,
-        "lienAcquisition": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
-      }]
+      "aOffre": [
+        {
+          "type": "Offre",
+          "aConfigurationSalle": {
+            "type": "cabaret"
+          },
+          "aLieu": {
+            "type": "Theatre",
+            "lieuVirtuel": false,
+            "identifiant": [
+              {
+                "type": "uri",
+                "valeur": "http://lavitrine.com/representation/7567567"
+              }
+            ],
+            "nom": "Salle Albert-Rousseau",
+            "adresse": {
+              "type": "AdressePostale",
+              "numéro": "2410",
+              "typeDeRue": "Chemin",
+              "rue": "Sainte-Foy",
+              "ville": "Québec",
+              "région": "QC",
+              "pays": "CAN",
+              "codePostal": "G1V 1T3"
+            }
+          },
+          "complet": false,
+          "statut": "confirmée",
+          "gratuit": false,
+          "accessibleViaAutreOffre": false,
+          "sansLienAcquisition": false,
+          "lienAcquisition": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+        }
+      ]
     }
   ]
 }

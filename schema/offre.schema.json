@@ -25,9 +25,9 @@
       "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
       "$ref": "./salle.schema.json"
     },
-    "configurationSalle": {
+    "aConfigurationSalle": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
-      "$ref": "./vocabulaires/configurationSalleTermes.schema.json"
+      "$ref": "./utilitaires/configurationSalle.schema.json"
     },
     "complet": {
       "description": "Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.",

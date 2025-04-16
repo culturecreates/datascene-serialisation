@@ -5,6 +5,7 @@
   "description": "Vocabulaire contrôlé pour les types de lieu.",
   "type": "string",
   "enum": [
+    "Lieu",
     "Theatre",
     "Cinema",
     "SalleConcert",

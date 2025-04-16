@@ -2,6 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -9,6 +10,10 @@
     "definition": {
       "@id": "skos:definition",
       "@language": "fr"
+    },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
     },
     "Concept": "skos:Concept",
     "ConceptScheme": "skos:ConceptScheme",
@@ -20,7 +25,9 @@
   "@id": "https://datascene.ca/AccessibilitéUniversellesTermes",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
-  "prefLabel": "Accessibilités Universelles",
+  "prefLabel": "Accessibilités universelles",
+  "definition": "Vocabulaire contrôlé pour les accessibilités universelles.",
+  "source": "https://guide.caligram.com/concepts/classifications#accessibilite",
   "hasTopConcept": [
     {
       "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#fauteuilRoulant",

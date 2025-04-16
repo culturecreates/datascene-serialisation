@@ -2,6 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov": "http://www.w3.org/ns/prov#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -9,6 +10,10 @@
     "definition": {
       "@id": "skos:definition",
       "@language": "fr"
+    },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
     },
     "Concept": "skos:Concept",
     "ConceptScheme": "skos:ConceptScheme",

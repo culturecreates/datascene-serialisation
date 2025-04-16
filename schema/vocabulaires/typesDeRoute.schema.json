@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/2025/typesDeRoutes",
+  "$id": "https://datascene.ca/typesDeRoutes",
   "title": "Types de routes au Canada",
   "description": "Vocabulaire contrôlé pour les types de routes au Canada, basé sur les abréviations et symboles de Postes Canada.",
   "source": "https://www.canadapost-postescanada.ca/cpc/en/support/articles/addressing-guidelines/symbols-and-abbreviations.page",
