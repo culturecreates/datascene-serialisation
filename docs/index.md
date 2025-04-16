@@ -1,7 +1,11 @@
 # Site de révision
-Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans). 
+
+
+![](images/modelle.png)
+
 
 ### Classes principales
+Ces pages sont généré par [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans). 
 - [Spectacle](spectacle.html)
 - [Représentation](représentation.html)
 - [Série](série.html)
