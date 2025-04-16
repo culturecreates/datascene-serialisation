@@ -13,8 +13,9 @@ Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/j
 
 ### Classes utilitaires
 - [Adresse](utilitaires/adressePostale.html)
-- [AssociationGéographique](utilitaires/associationGéographique.html)
+- [Association géographique](utilitaires/associationGéographique.html)
 - [Contribution](utilitaires/contribution.html)
+- [Configuration de salle](utilitaires/configurationSalle.html)
 - [Identifiant](utilitaires/identifiant.html)
 - [Média](utilitaires/média.html)
 - [Terme](utilitaires/terme.html)
