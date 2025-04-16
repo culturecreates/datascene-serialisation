@@ -21,15 +21,22 @@ Ceci est généré par json-schema-for-humans.
 
 ### Vocabulaires contrôlés
 - [Accessibilité Universelle](vocabulaires/accessibilitéUniversellesTermes.skos.html)
-- [Types de Lieu](vocabulaires/typesLieu.skos.html)
 - [Avertissements](vocabulaires/avertissement.skos.html)
-- [Types de Routes](vocabulaires/typesDeRoutes.skos.html)
-- [Directions de Rue](vocabulaires/directionsDeRue.skos.html)
-- [Types de Contenus Sensibles](vocabulaires/contenusType.skos.html)
-- [Types de Contributeurs](vocabulaires/contributeurType.skos.html)
-- [Configurations de Salle](vocabulaires/configurationSalleTermes.skos.html)
-- [Disciplines](vocabulaires/disciplines-asq.html)
+- [Disciplines artistiques](vocabulaires/disciplines-asq.html)
 - [Public Cible](vocabulaires/publicCible.skos.html)
+- Statut d’offre - voir Offre
+- [Types d’association géographiques](vocabulaires/associationGéographiqueType.skos.html)
+- [Types de configurations de salles](vocabulaires/configurationSalleTermes.skos.html)
+- [Types de contenus](vocabulaires/contenusType.skos.html)
+- [Types de contributeurs](vocabulaires/contributeursType.skos.html)
+- [Types de contributions](vocabulaires/contributionType.skos.html)
+- [Types de lieu](vocabulaires/typesLieu.skos.html)
+- [Types de rue](vocabulaires/typesDeRoutes.skos.html)
+- [Points cardinaux](vocabulaires/directionsDeRue.skos.html)
+- Régions au Canada - voir Classe Adresse
+
+
+
 
 
 
