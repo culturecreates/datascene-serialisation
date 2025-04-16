@@ -25,7 +25,7 @@ Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/j
 - [Avertissements](vocabulaires/avertissement.skos.html)
 - [Disciplines artistiques](vocabulaires/disciplines-asq.html)
 - [Public Cible](vocabulaires/publicCible.skos.html)
-- Statut d’offre - voir Offre
+- Statut d’offre - voir enum dans classe Offre
 - [Types d’association géographiques](vocabulaires/associationGéographiqueType.skos.html)
 - [Types de configurations de salles](vocabulaires/configurationSalleTermes.skos.html)
 - [Types de contenus](vocabulaires/contenusType.skos.html)
@@ -34,7 +34,7 @@ Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/j
 - [Types de lieu](vocabulaires/typesLieu.skos.html)
 - [Types de rue](vocabulaires/typesDeRoutes.skos.html)
 - [Points cardinaux](vocabulaires/directionsDeRue.skos.html)
-- Régions au Canada - voir Classe Adresse
+- Régions au Canada - voir enum dans classe Adresse
 
 
 
