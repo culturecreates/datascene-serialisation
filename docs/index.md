@@ -1,5 +1,5 @@
 # Site de révision
-Ceci est généré par json-schema-for-humans. 
+Ce site est généré par [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans). 
 
 ### Classes principales
 - [Spectacle](spectacle.html)
