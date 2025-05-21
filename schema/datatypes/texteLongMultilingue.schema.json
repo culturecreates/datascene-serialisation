@@ -3,25 +3,30 @@
   "$id": "https://datascene.ca/datatypes/texteLongMultilingue.schema.json",
   "title": "Texte long multilingue",
   "description": "Énumération de textes longs associés à un code de langue au standard ISO 639-1.",
-  "type": "object",
-  "properties": {
-    "langue": {
-      "$ref": "./partielles/langue.schema.json"
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "langue": {
+        "$ref": "./partielles/langue.schema.json"
+      },
+      "texte": {
+        "type": "string",
+        "title": "Texte long",
+        "description": "Texte long avec formatage, incluant des paragraphes et des balises HTML.",
+        "maxLength": 6000,
+        "allOf": [
+          {
+            "$ref": "./partielles/balisesHtmlAutorisees.schema.json"
+          }
+        ]
+      }
     },
-    "texte": {
-      "type": "string",
-      "title": "Texte long",
-      "description": "Texte long avec formatage, incluant des paragraphes et des balises HTML.",
-      "maxLength": 6000,
-      "allOf": [
-        {
-          "$ref": "./partielles/balisesHtmlAutorisees.schema.json"
-        }
-      ]
-    }
-  },
-  "required": [
-    "langue",
-    "texte"
-  ]
+    "required": [
+      "langue",
+      "texte"
+    ],
+    "additionalProperties": false
+  }
 }

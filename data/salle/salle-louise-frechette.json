@@ -7,7 +7,12 @@
       "valeur": "http://kg.artsdata.ca/resource/K5-179"
     }
   ],
-  "nom": "Salle Louis-Fréchette",
+  "nom": [
+    {
+      "langue": "fr",
+      "texte": "Salle Louis-Fréchette"
+    }
+  ],
   "nomIdentiqueAuLieu": false,
   "description": [
     {

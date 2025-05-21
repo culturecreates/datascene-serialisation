@@ -40,17 +40,11 @@
       "type": "boolean"
     },
     "description": {
-      "type": "array",
-      "items": {
-        "$ref": "./datatypes/texteLongMultilingue.schema.json"
-      }
+      "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "descriptionCourte": {
       "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
-      "type": "array",
-      "items": {
-        "$ref": "./datatypes/texteLongMultilingue.schema.json"
-      }
+      "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "médias": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.",
@@ -58,13 +52,16 @@
       "items": {
         "$ref": "./utilitaires/média.schema.json"
       }
-    }, "aLieu": {
+    },
+    "aLieu": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./lieu.schema.json"
-    },"adresse": {
+    },
+    "adresse": {
       "description": "Adresse du lieu, qui peut être une adresse postale ou une adresse géographique. La propriété est un tableau de chaînes de caractères, car il peut y avoir plusieurs adresses associées à un même lieu.",
       "$ref": "./utilitaires/adressePostale.schema.json"
-    }, "accessibilitéUniverselle": {
+    },
+    "accessibilitéUniverselle": {
       "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
       "type": "array",
       "items": {
@@ -78,6 +75,5 @@
         "$ref": "./utilitaires/configurationSalle.schema.json"
       }
     }
-    
   }
 }

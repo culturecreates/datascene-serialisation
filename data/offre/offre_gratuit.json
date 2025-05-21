@@ -17,7 +17,7 @@
     ],
     "type": "LieuVirtuel",
     "lieuVirtuel": true,
-    "nom": "Zoom"
+    "nom": [{"langue": "fr","texte": "Zoom"}]
   },
   "complet": false,
   "statut": "confirmée",

@@ -7,14 +7,14 @@
       "valeur": "http://lavitrine.com/spectacle/123456"
     }
   ],
-  "nom": {
+  "nom": [{
     "langue": "fr",
     "texte": "Hommage à Michel Louvain."
-  },
-  "description": {
+  }],
+  "description": [{
     "langue": "fr",
     "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
-  },
+  }],
   "média": [
     {
       "type": "Média",
@@ -51,10 +51,10 @@
       "type": "Terme",
       "vocabulaire": "PublicCible",
       "code": "ToutPublics",
-      "étiquette": {
+      "étiquette": [{
         "langue": "fr",
         "texte": "Tout publics"
-      },
+      }],
       "numéroDeSéquence": 1
     }
   ],
@@ -102,7 +102,7 @@
                 "valeur": "http://lavitrine.com/representation/7567567"
               }
             ],
-            "nom": "Salle Albert-Rousseau",
+            "nom":[{"langue": "fr","texte": "Salle Albert-Rousseau"}],
             "adresse": {
               "type": "AdressePostale",
               "numéro": "2410",

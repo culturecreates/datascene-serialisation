@@ -33,10 +33,7 @@
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
     "description": {
-      "type": "array",
-      "items": {
-        "$ref": "./datatypes/texteLongMultilingue.schema.json"
-      },
+      "$ref": "./datatypes/texteLongMultilingue.schema.json",
       "minItems": 1
     },
     "lieuVirtuel": {

@@ -9,7 +9,7 @@
     ],
     "type": "Theatre",
     "lieuVirtuel": true,
-    "nom": "Theatre Verdun"
+    "nom": [{"langue": "fr","texte": "Theatre Verdun"}]
   },
   "complet": false,
   "statut": "confirmée",

@@ -18,13 +18,6 @@
       "description": "Énumération des identifiants connus.",
       "$ref": "./utilitaires/identifiant.schema.json"
     },
-    "aSérie": {
-      "type": "array",
-      "items": {
-        "$ref": "./série.schema.json"
-      },
-      "description": "Identification des séries desquelles fait partie le spectacle"
-    },
     "début": {
       "type": "string",
       "format": "date-time",

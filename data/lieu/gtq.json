@@ -1,7 +1,12 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Theatre",
-  "nom": "Grand Théâtre de Québec",
+  "nom": [
+    {
+      "langue": "fr",
+      "texte": "Grand Théâtre de Québec"
+    }
+  ],
   "identifiant": [
     {
       "type": "uri",
@@ -28,7 +33,7 @@
     "numéro": "269",
     "directionDeRue": "E",
     "typeDeRue": "Boulevard",
-    "rue":"boulevard René-Lévesque",
+    "rue": "boulevard René-Lévesque",
     "ville": "Québec",
     "région": "QC",
     "codePostal": "G1R 2B3",
