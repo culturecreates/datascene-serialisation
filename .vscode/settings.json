@@ -11,7 +11,7 @@
     },
     {
       "fileMatch": ["data/adresse/*.json"],
-      "url": "./schema/utilitaires/adresse.schema.json"
+      "url": "./schema/utilitaires/adressePostale.schema.json"
     },
     {
       "fileMatch": ["data/offre/*.json"],

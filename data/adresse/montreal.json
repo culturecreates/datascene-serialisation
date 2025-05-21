@@ -1,11 +1,11 @@
 {
-  "type": "Adresse",
+  "type": "AdressePostale",
   "ville": "Montréal",
   "région": "QC",
   "pays": "CAN",
   "codePostal": "H2X 1Y4",
   "numéro": "1234",
-  "typeDeRue": "rue",
+  "typeDeRue": "Avenue",
   "rue": "Saint-Laurent",
   "unité": "Bureau 567",
   "directionDeRue": "O"

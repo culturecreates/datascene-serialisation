@@ -34,7 +34,7 @@
     },
     "nom": {
       "description": "Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
-      "$ref": "./datatypes/texteLong.schema.json"
+      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
     "nomIdentiqueAuLieu": {
       "type": "boolean"
@@ -49,7 +49,7 @@
       "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
       "type": "array",
       "items": {
-        "$ref": "./datatypes/texteCourtMultilingue.schema.json"
+        "$ref": "./datatypes/texteLongMultilingue.schema.json"
       }
     },
     "médias": {

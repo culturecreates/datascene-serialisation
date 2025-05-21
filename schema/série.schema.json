@@ -39,7 +39,7 @@
       "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
       "type": "array",
       "items": {
-        "$ref": "./datatypes/texteCourtMultilingue.schema.json"
+        "$ref": "./datatypes/texteLongMultilingue.schema.json"
       }
     },
     "média": {
@@ -65,21 +65,14 @@
       }
     },
     "début": {
-      "description": "Date de début de la série.",
+      "description": "Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
       "type": "string",
       "format": "date-time"
     },
     "fin": {
-      "description": "Date de fin de la série",
+      "description": "Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
       "type": "string",
       "format": "date-time"
-    },
-    "aReprésentation": {
-      "description": "Identification des représentations faisant partie de la série.",
-      "type": "array",
-      "items": {
-        "$ref": "./représentation.schema.json"
-      }
     },
     "aOffre": {
       "description": "Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.",

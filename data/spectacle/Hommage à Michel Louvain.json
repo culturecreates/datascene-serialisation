@@ -47,7 +47,6 @@
     "Chanson"
   ],
   "publicCible": [
-    "ToutPublics",
     {
       "type": "Terme",
       "vocabulaire": "PublicCible",
@@ -63,6 +62,21 @@
     "fr"
   ],
   "spectacleSansParole": false,
+  "inSeries": [
+    {
+      "type": "Série",
+      "identifiant": [
+        {
+          "type": "uri",
+          "valeur": "http://lavitrine.com/series/123456"
+        }
+      ],
+      "nom": {
+        "langue": "fr",
+        "texte": "Un certain souvenir"
+      }
+    }
+  ],
   "aReprésentation": [
     {
       "type": "Représentation",

@@ -44,7 +44,7 @@
       "description": "Description courte (pouvant par exemple servir de «alt description» sur le web).",
       "type":"array",
       "items": {
-        "$ref": "../datatypes/texteCourt.schema.json"
+        "$ref": "../datatypes/texteLongMultilingue.schema.json"
       }
     }
   }

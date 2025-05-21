@@ -34,7 +34,7 @@
       "type": "boolean"
     },
     "completDepuis": {
-      "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée.",
+      "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },
@@ -55,12 +55,12 @@
       "type": "boolean"
     },
     "débutPrévente": {
-      "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée.",
+      "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },
     "débutDisponibilitéGénérale": {
-      "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation.",
+      "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },

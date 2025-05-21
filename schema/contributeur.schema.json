@@ -19,7 +19,7 @@
     },
     "nom": {
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
-      "$ref": "./datatypes/texteLong.schema.json"
+      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
     "nomsAlternatif":{
       "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
@@ -33,7 +33,7 @@
     },
     "descriptionCourte": {
       "description": "Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
-      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
+      "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "média": {
       "$ref": "./utilitaires/média.schema.json",

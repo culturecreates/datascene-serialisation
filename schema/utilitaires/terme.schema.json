@@ -35,5 +35,14 @@
       "description": "Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).",
       "type": "integer"
     }
-  }
+  },
+  "examples": [
+    {
+      "type": "Terme",
+      "vocabulaire": "PublicCible",
+      "code": "ToutPublics",
+      "version": "1.0",
+      "numéroDeSéquence": 1
+    }
+  ]
 }
