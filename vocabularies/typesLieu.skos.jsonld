@@ -24,61 +24,61 @@
   "prefLabel": "Types de Lieu",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/vocabulaires/Theatre",
+      "@id": "https://datascene.ca/vocabulaires#Theatre",
       "@type": "Concept",
       "prefLabel": "Théâtre",
       "definition": "Un lieu conçu pour des représentations théâtrales."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/Cinema",
+      "@id": "https://datascene.ca/vocabulaires#Cinema",
       "@type": "Concept",
       "prefLabel": "Cinéma",
       "definition": "Un lieu destiné à la projection de films."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/SalleConcert",
+      "@id": "https://datascene.ca/vocabulaires#SalleConcert",
       "@type": "Concept",
       "prefLabel": "Salle de concert",
       "definition": "Un lieu conçu pour des concerts de musique."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/GalerieArt",
+      "@id": "https://datascene.ca/vocabulaires#GalerieArt",
       "@type": "Concept",
       "prefLabel": "Galerie d'art",
       "definition": "Un lieu où des œuvres d'art sont exposées."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/Musee",
+      "@id": "https://datascene.ca/vocabulaires#Musee",
       "@type": "Concept",
       "prefLabel": "Musée",
       "definition": "Un lieu destiné à la conservation et à l'exposition d'objets d'intérêt historique, artistique ou scientifique."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/Bibliotheque",
+      "@id": "https://datascene.ca/vocabulaires#Bibliotheque",
       "@type": "Concept",
       "prefLabel": "Bibliothèque",
       "definition": "Un lieu où des livres et d'autres documents sont conservés et accessibles au public."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/CentreCulturel",
+      "@id": "https://datascene.ca/vocabulaires#CentreCulturel",
       "@type": "Concept",
       "prefLabel": "Centre culturel",
       "definition": "Un lieu polyvalent dédié à des activités culturelles."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/Amphitheatre",
+      "@id": "https://datascene.ca/vocabulaires#Amphitheatre",
       "@type": "Concept",
       "prefLabel": "Amphithéâtre",
       "definition": "Un lieu en plein air ou couvert, souvent utilisé pour des spectacles ou des événements."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/EspaceExterieur",
+      "@id": "https://datascene.ca/vocabulaires#EspaceExterieur",
       "@type": "Concept",
       "prefLabel": "Espace extérieur",
       "definition": "Un lieu en plein air utilisé pour des événements ou des activités culturelles."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/LieuVirtuel",
+      "@id": "https://datascene.ca/vocabulaires#LieuVirtuel",
       "@type": "Concept",
       "prefLabel": "Lieu Virtuel",
       "definition": "Un lieu virtuel utilisé pour des événements en ligne ou à distance."
