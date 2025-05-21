@@ -1,7 +1,7 @@
 # Site de révision
 
 
-![](images/modelle.png)
+![](images/modele.png)
 
 
 ### Classes principales

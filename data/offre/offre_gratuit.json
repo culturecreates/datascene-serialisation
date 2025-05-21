@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://datascene.ca/modelle#",
+    "@vocab": "https://datascene.ca/modele#",
     "@base": "https://datascene.ca/vocabulaires/",
     "type": {
       "@type": "@id",

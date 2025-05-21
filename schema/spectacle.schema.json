@@ -150,7 +150,7 @@
   },
   "definitions": {
     "OeuvreAssociée": {
-      "$id": "https://datascene.ca/modelle/OeuvreAssociée",
+      "$id": "https://datascene.ca/modele/OeuvreAssociée",
       "title": "Oeuvre Associée",
       "description": "Objets d'association à une oeuvre.",
       "required": [
