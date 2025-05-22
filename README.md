@@ -14,8 +14,8 @@ Voir https://datascene.ca pour le projet final.
 
 # How to generate docs
 1. install json-schema-for-humans
-2. run ./generate.sh
-3. install ruby gems
-4. cd vocabularies
+2. run ./generate.sh 
+3. cd vocabularies
+4 .gem install linkeddata
 5. run ./generate-skos.sh
 6. git push
