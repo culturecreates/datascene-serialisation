@@ -384,7 +384,7 @@
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#nom" onclick="anchorLink('nom')">nom</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <a href="#nom" onclick="anchorLink('nom')">nom</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
 <div class="description collapse" id="collapseDescription_nom">
             <p>Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.</p>
 
@@ -398,26 +398,145 @@
         </div>
 
     
-
-    <span class="pattern-value" id="nom_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
         
 
         
-        <p><span class="badge badge-light restriction min-length-restriction" id="nom_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="nom_maxLength">Must be at most <code>6000</code> characters long</span></p>
+        
+
+        <p><span class="badge badge-light restriction unique-items-restriction" id="nom_uniqueItems">All items must be unique</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="nom_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom" onclick="anchorLink('nom')">nom</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom_items" onclick="anchorLink('nom_items')">nom items</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+ <span class="badge badge-info no-additional">No Additional Properties</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordionnom_items_langue">
+    <div class="card">
+        <div class="card-header" id="headingnom_items_langue">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#nom_items_langue"
+                        aria-expanded="" aria-controls="nom_items_langue" onclick="setAnchor('#nom_items_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="nom_items_langue"
+             class="collapse property-definition-div" aria-labelledby="headingnom_items_langue"
+             data-parent="#accordionnom_items_langue">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom" onclick="anchorLink('nom')">nom</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom_items" onclick="anchorLink('nom_items')">nom items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom_items_langue" onclick="anchorLink('nom_items_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+<span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
+</span>
+
+    <span class="pattern-value" id="nom_items_langue_pattern">Must match regular expression: <code>^[a-z]{2,3}$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="nom_items_langue_minLength">Must be at least <code>2</code> characters long</span></p>
 
         <br/>
 <div class="badge badge-secondary">Examples:</div>
-<br/><div id="nom_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+<br/><div id="nom_items_langue_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;fr&quot;</span>
 </pre></div>
-</div><div id="nom_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</div><div id="nom_items_langue_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;en&quot;</span>
 </pre></div>
-</div><div id="nom_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
-</pre></div>
-</div><div id="nom_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
-</pre></div>
-</div><div id="nom_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</div><div id="nom_items_langue_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;mul&quot;</span>
 </pre></div>
 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordionnom_items_texte">
+    <div class="card">
+        <div class="card-header" id="headingnom_items_texte">
+            <h2 class="mb-0">
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#nom_items_texte"
+                        aria-expanded="" aria-controls="nom_items_texte" onclick="setAnchor('#nom_items_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
+            </h2>
+        </div>
+
+        <div id="nom_items_texte"
+             class="collapse property-definition-div" aria-labelledby="headingnom_items_texte"
+             data-parent="#accordionnom_items_texte">
+            <div class="card-body pl-5">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom" onclick="anchorLink('nom')">nom</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom_items" onclick="anchorLink('nom_items')">nom items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#nom_items_texte" onclick="anchorLink('nom_items_texte')">texte</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="nom_items_texte_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="nom_items_texte_maxLength">Must be at most <code>500</code> characters long</span></p>
+
+        
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
             </div>
         </div>
     </div>
@@ -477,7 +596,29 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 <span class="description"><p>Texte sans formatage, avec des changements de paragraphes (typiquement affiché sur plusieurs lignes).</p>
 
 <p>Les textes longs ne sont pas prévus pour inclure des éléments de mise en page, mais permettent l'inclusion de quelques balises HTML lorsqu'elles sont nécessaires pour s'assurer que la description est compréhensible. Les balises HTML autorisées sont b, i, u, sup et sub.</p>
-</span><a href="#nom" onclick="anchorLink('nom')" class="ref-link">Same definition as nom</a>
+</span>
+
+    
+
+    <span class="pattern-value" id="nomsAlternatif_items_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
+        
+
+        
+        <p><span class="badge badge-light restriction min-length-restriction" id="nomsAlternatif_items_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="nomsAlternatif_items_maxLength">Must be at most <code>6000</code> characters long</span></p>
+
+        <br/>
+<div class="badge badge-secondary">Examples:</div>
+<br/><div id="nomsAlternatif_items_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+</pre></div>
+</div><div id="nomsAlternatif_items_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</pre></div>
+</div><div id="nomsAlternatif_items_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</pre></div>
+</div><div id="nomsAlternatif_items_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</pre></div>
+</div><div id="nomsAlternatif_items_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</pre></div>
+</div>
         </div>
     </div>
             </div>
@@ -505,7 +646,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#description" onclick="anchorLink('description')">description</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <a href="#description" onclick="anchorLink('description')">description</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
 <span class="description"><p>Énumération de textes longs associés à un code de langue au standard ISO 639-1.</p>
 </span>
 
@@ -515,19 +656,45 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
         
         
 
-        
-<div class="accordion" id="accordiondescription_langue">
+        <p><span class="badge badge-light restriction unique-items-restriction" id="description_uniqueItems">All items must be unique</span></p> <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
     <div class="card">
-        <div class="card-header" id="headingdescription_langue">
+        <div class="card-body items-definition" id="description_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description" onclick="anchorLink('description')">description</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description_items" onclick="anchorLink('description_items')">description items</a></div><span class="badge badge-dark value-type">Type: object</span><br/>
+ <span class="badge badge-info no-additional">No Additional Properties</span>
+        
+
+        
+        
+
+        
+<div class="accordion" id="accordiondescription_items_langue">
+    <div class="card">
+        <div class="card-header" id="headingdescription_items_langue">
             <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_langue"
-                        aria-expanded="" aria-controls="description_langue" onclick="setAnchor('#description_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_items_langue"
+                        aria-expanded="" aria-controls="description_items_langue" onclick="setAnchor('#description_items_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
             </h2>
         </div>
 
-        <div id="description_langue"
-             class="collapse property-definition-div" aria-labelledby="headingdescription_langue"
-             data-parent="#accordiondescription_langue">
+        <div id="description_items_langue"
+             class="collapse property-definition-div" aria-labelledby="headingdescription_items_langue"
+             data-parent="#accordiondescription_items_langue">
             <div class="card-body pl-5">
 
     <div class="breadcrumbs">root
@@ -544,41 +711,32 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#description_langue" onclick="anchorLink('description_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <a href="#description_items" onclick="anchorLink('description_items')">description items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description_items_langue" onclick="anchorLink('description_items_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
 <span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
-</span>
-
-    <span class="pattern-value" id="description_langue_pattern">Must match regular expression: <code>^[a-z]{2,3}$</code></span>
-        
-
-        
-        <p><span class="badge badge-light restriction min-length-restriction" id="description_langue_minLength">Must be at least <code>2</code> characters long</span></p>
-
-        <br/>
-<div class="badge badge-secondary">Examples:</div>
-<br/><div id="description_langue_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;fr&quot;</span>
-</pre></div>
-</div><div id="description_langue_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;en&quot;</span>
-</pre></div>
-</div><div id="description_langue_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;acf&quot;</span>
-</pre></div>
-</div>
+</span><a href="#nom_items_langue" onclick="anchorLink('nom_items_langue')" class="ref-link">Same definition as langue</a>
             </div>
         </div>
     </div>
 </div>
-<div class="accordion" id="accordiondescription_texte">
+<div class="accordion" id="accordiondescription_items_texte">
     <div class="card">
-        <div class="card-header" id="headingdescription_texte">
+        <div class="card-header" id="headingdescription_items_texte">
             <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_texte"
-                        aria-expanded="" aria-controls="description_texte" onclick="setAnchor('#description_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#description_items_texte"
+                        aria-expanded="" aria-controls="description_items_texte" onclick="setAnchor('#description_items_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
             </h2>
         </div>
 
-        <div id="description_texte"
-             class="collapse property-definition-div" aria-labelledby="headingdescription_texte"
-             data-parent="#accordiondescription_texte">
+        <div id="description_items_texte"
+             class="collapse property-definition-div" aria-labelledby="headingdescription_items_texte"
+             data-parent="#accordiondescription_items_texte">
             <div class="card-body pl-5">
 
     <div class="breadcrumbs">root
@@ -595,33 +753,42 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#description_texte" onclick="anchorLink('description_texte')">texte</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
+    <a href="#description_items" onclick="anchorLink('description_items')">description items</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#description_items_texte" onclick="anchorLink('description_items_texte')">texte</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
 <span class="description"><p>Texte long avec formatage, incluant des paragraphes et des balises HTML.</p>
 </span>
 
-    <span class="pattern-value" id="nom_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
+    <span class="pattern-value" id="nomsAlternatif_items_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
         
 
         
-        <p><span class="badge badge-light restriction max-length-restriction" id="description_texte_maxLength">Must be at most <code>6000</code> characters long</span></p>
+        <p><span class="badge badge-light restriction max-length-restriction" id="description_items_texte_maxLength">Must be at most <code>6000</code> characters long</span></p>
 
         <br/>
 <div class="badge badge-secondary">Examples:</div>
-<br/><div id="nom_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+<br/><div id="nomsAlternatif_items_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
 </pre></div>
-</div><div id="nom_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</div><div id="nomsAlternatif_items_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
 </pre></div>
-</div><div id="nom_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</div><div id="nomsAlternatif_items_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
 </pre></div>
-</div><div id="nom_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</div><div id="nomsAlternatif_items_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
 </pre></div>
-</div><div id="nom_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</div><div id="nomsAlternatif_items_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
 </pre></div>
 </div>
             </div>
         </div>
     </div>
 </div>
+        </div>
+    </div>
             </div>
         </div>
     </div>
@@ -647,92 +814,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: object</span><br/>
+    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
 <span class="description"><p>Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.</p>
-</span>
-
-    
-        
-
-        
-        
-
-        
-<div class="accordion" id="accordiondescriptionCourte_langue">
-    <div class="card">
-        <div class="card-header" id="headingdescriptionCourte_langue">
-            <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#descriptionCourte_langue"
-                        aria-expanded="" aria-controls="descriptionCourte_langue" onclick="setAnchor('#descriptionCourte_langue')"><span class="property-name">langue</span> <span class="badge badge-warning required-property">Required</span></button>
-            </h2>
-        </div>
-
-        <div id="descriptionCourte_langue"
-             class="collapse property-definition-div" aria-labelledby="headingdescriptionCourte_langue"
-             data-parent="#accordiondescriptionCourte_langue">
-            <div class="card-body pl-5">
-
-    <div class="breadcrumbs">root
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#descriptionCourte_langue" onclick="anchorLink('descriptionCourte_langue')">langue</a></div><h4>Code de langue</h4><span class="badge badge-dark value-type">Type: string</span><br/>
-<span class="description"><p>Code de langue au standard ISO 639-1. Voir <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language-subtag-registry</a>.</p>
-</span><a href="#description_langue" onclick="anchorLink('description_langue')" class="ref-link">Same definition as langue</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="accordion" id="accordiondescriptionCourte_texte">
-    <div class="card">
-        <div class="card-header" id="headingdescriptionCourte_texte">
-            <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#descriptionCourte_texte"
-                        aria-expanded="" aria-controls="descriptionCourte_texte" onclick="setAnchor('#descriptionCourte_texte')"><span class="property-name">texte</span> <span class="badge badge-warning required-property">Required</span></button>
-            </h2>
-        </div>
-
-        <div id="descriptionCourte_texte"
-             class="collapse property-definition-div" aria-labelledby="headingdescriptionCourte_texte"
-             data-parent="#accordiondescriptionCourte_texte">
-            <div class="card-body pl-5">
-
-    <div class="breadcrumbs">root
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#descriptionCourte" onclick="anchorLink('descriptionCourte')">descriptionCourte</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#descriptionCourte_texte" onclick="anchorLink('descriptionCourte_texte')">texte</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
-
-        
-
-        
-        <p><span class="badge badge-light restriction min-length-restriction" id="descriptionCourte_texte_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="descriptionCourte_texte_maxLength">Must be at most <code>500</code> characters long</span></p>
-
-        
-            </div>
-        </div>
-    </div>
-</div>
+</span><a href="#description" onclick="anchorLink('description')" class="ref-link">Same definition as description</a>
             </div>
         </div>
     </div>
@@ -1138,9 +1222,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#média_description_items" onclick="anchorLink('média_description_items')">Texte court</a></div><h4>Texte court</h4><span class="badge badge-dark value-type">Type: string</span><br/>
-<span class="description"><p>Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)</p>
-</span><a href="#média_notesUsage" onclick="anchorLink('média_notesUsage')" class="ref-link">Same definition as notesUsage</a>
+    <a href="#média_description_items" onclick="anchorLink('média_description_items')">Texte long multilingue</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>Énumération de textes longs associés à un code de langue au standard ISO 639-1.</p>
+</span><a href="#description" onclick="anchorLink('description')" class="ref-link">Same definition as description</a>
         </div>
     </div>
             </div>
@@ -1501,6 +1585,6 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 </div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-05-21 at 11:31:46 -0400</p>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-05-21 at 22:01:57 -0400</p>
     </footer></body>
 </html>
