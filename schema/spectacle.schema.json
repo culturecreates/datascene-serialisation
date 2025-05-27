@@ -90,7 +90,7 @@
       "description": "Identification des disciplines artistiques du spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./vocabulaires/disciplinesArtistique.schema.json"
+        "$ref": "./utilitaires/terme.schema.json"
       }
     },
     "publicCible": {
