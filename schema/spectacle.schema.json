@@ -138,13 +138,6 @@
       "items": {
         "$ref": "./représentation.schema.json"
       }
-    },
-    "traçabilité": {
-      "description": "Énumération des spectacles dont est issu le présent spectacle. Utilisé lorsqu'un spectacle est issu de la fusion d'autres spectacles.",
-      "type": "array",
-      "items": {
-        "$ref": "./spectacle.schema.json"
-      }
     }
   },
   "definitions": {
