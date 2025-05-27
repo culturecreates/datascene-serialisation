@@ -56,12 +56,11 @@
         "$ref": "./utilitaires/contribution.schema.json"
       }
     },
-    "url": {
-      "description": "URL vers des pages web donnant plus d'information sur la série.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
+   "mainEntityOfPage": {
+      "description": "Pages web donnant plus d'information sur la série.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uri"
+        "$ref": "./utilitaires/webPage.schema.json"
       }
     },
     "début": {

@@ -5,14 +5,18 @@
   "description": "les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).",
   "required": [
     "type",
+    "typeContributeur",
     "identifiant",
     "nom"
   ],
   "type": "object",
   "properties": {
     "type": {
+       "const":"Contributeur"
+    },
+    "typeContributeur": {
       "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
-      "$ref": "./vocabulaires/contributeurType.schema.json"
+      "$ref": "./utilitaires/terme.schema.json"
     },
     "identifiant": {
       "$ref": "./utilitaires/identifiant.schema.json"

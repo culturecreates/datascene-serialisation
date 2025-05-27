@@ -65,7 +65,7 @@
       "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
       "type": "array",
       "items": {
-        "$ref": "./vocabulaires/accessibilitéUniverselleTermes.schema.json"
+        "$ref": "./utilitaires/terme.schema.json"
       }
     },
     "aConfigurationSalle": {

@@ -2,19 +2,20 @@
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Spectacle",
   "identifiant": [
+    "http://lavitrine.com/spectacle/123456"
+  ],
+  "nom": [
     {
-      "type": "uri",
-      "valeur": "http://lavitrine.com/spectacle/123456"
+      "langue": "fr",
+      "texte": "Hommage à Michel Louvain."
     }
   ],
-  "nom": [{
-    "langue": "fr",
-    "texte": "Hommage à Michel Louvain."
-  }],
-  "description": [{
-    "langue": "fr",
-    "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
-  }],
+  "description": [
+    {
+      "langue": "fr",
+      "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
+    }
+  ],
   "média": [
     {
       "type": "Média",
@@ -22,20 +23,66 @@
       "notesUsage": "(ne sont pas affichées)"
     }
   ],
-  "contribution": [
+  "aContribution": [
     {
-      "type": [
-        "ArtisteSurScène"
+      "type": "Contribution",
+      "contributionType": [
+        {
+          "type": "Terme",
+          "vocabulaire": "ContributionType",
+          "code": "ArtisteSurScène",
+          "étiquette": [
+            {
+              "langue": "fr",
+              "texte": "Production"
+            }
+          ],
+          "numéroDeSéquence": 1
+        }
       ],
       "contributeur": {
-        "type": "Groupe",
+        "type": "Contributeur",
+        "typeContributeur": {
+          "type": "Terme",
+          "vocabulaire": "TypeContributeur",
+          "code": "personnePhysique",
+          "étiquette": [
+            {
+              "langue": "fr",
+              "texte": "Personne physique"
+            }
+          ],
+          "numéroDeSéquence": 1
+        },
         "identifiant": [
+          "http://lavitrine.com/123456"
+        ],
+        "nom": [
           {
-            "type": "uri",
-            "valeur": "http://lavitrine.com/123456"
+            "langue": "fr",
+            "texte": "Un certain souvenir"
           }
         ],
-        "nom": "Un certain souvenir"
+        "aAssociationGéographique": [
+          {
+            "type": "AssociationGéographique",
+            "typeAssociationGéographique": {
+              "type": "Terme",
+              "vocabulaire": "AssociationGéographiqueType",
+              "code": "lieuDeFondation",
+              "étiquette": [
+                {
+                  "langue": "fr",
+                  "texte": "Lieu de fondation"
+                }
+              ],
+              "numéroDeSéquence": 1
+            },
+            "pays": "CAN",
+            "région": "QC",
+            "ville": "Québec"
+          }
+        ]
       }
     }
   ],
@@ -51,10 +98,12 @@
       "type": "Terme",
       "vocabulaire": "PublicCible",
       "code": "ToutPublics",
-      "étiquette": [{
-        "langue": "fr",
-        "texte": "Tout publics"
-      }],
+      "étiquette": [
+        {
+          "langue": "fr",
+          "texte": "Tout publics"
+        }
+      ],
       "numéroDeSéquence": 1
     }
   ],
@@ -81,28 +130,39 @@
     {
       "type": "Représentation",
       "identifiant": [
-        {
-          "type": "uri",
-          "valeur": "http://lavitrine.com/representation/123456"
-        }
+        "http://lavitrine.com/representation/123456"
       ],
       "début": "2023-02-26T15:00:00-05:00",
       "aOffre": [
         {
           "type": "Offre",
           "aConfigurationSalle": {
-            "type": "cabaret"
+            "type": "ConfigurationSalle",
+            "configurationSalleType": {
+              "type": "Terme",
+              "vocabulaire": "ConfigurationSalleType",
+              "code": "Cabaret",
+              "étiquette": [
+                {
+                  "langue": "fr",
+                  "texte": "Configuration salle type 1"
+                }
+              ],
+              "numéroDeSéquence": 1
+            }
           },
           "aLieu": {
             "type": "Theatre",
             "lieuVirtuel": false,
             "identifiant": [
+              "http://lavitrine.com/representation/7567567"
+            ],
+            "nom": [
               {
-                "type": "uri",
-                "valeur": "http://lavitrine.com/representation/7567567"
+                "langue": "fr",
+                "texte": "Salle Albert-Rousseau"
               }
             ],
-            "nom":[{"langue": "fr","texte": "Salle Albert-Rousseau"}],
             "adresse": {
               "type": "AdressePostale",
               "numéro": "2410",

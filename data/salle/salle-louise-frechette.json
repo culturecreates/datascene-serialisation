@@ -2,10 +2,7 @@
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Salle",
   "identifiant": [
-    {
-      "type": "uri",
-      "valeur": "http://kg.artsdata.ca/resource/K5-179"
-    }
+    "http://kg.artsdata.ca/resource/K5-179"
   ],
   "nom": [
     {
@@ -18,6 +15,23 @@
     {
       "langue": "fr",
       "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+    }
+  ],
+  "aConfigurationSalle": [
+    { "type": "ConfigurationSalle",
+      "configurationSalleType": {
+        "type": "Terme",
+        "vocabulaire": "ConfigurationSalleType",
+        "code": "configurationSalleType",
+        "étiquette": [
+          {
+            "langue": "fr",
+            "texte": "Configuration de salle"
+          }
+        ],
+        "numéroDeSéquence": 1
+      },
+      "capacité": 1500
     }
   ]
 }

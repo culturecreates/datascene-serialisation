@@ -4,17 +4,20 @@
   "title": "Configuration de salle",
   "description": "Précisions sur un configuration possible de la salle.",
   "required": [
-    "type"
+    "type",
+    "configurationSalleType"
   ],
   "type": "object",
   "properties": {
     "type": {
-         "$ref": "../vocabulaires/configurationSalleTermes.schema.json"
+      "const": "ConfigurationSalle"
+    },
+    "typeConfigurationSalle": {
+      "$ref": "terme.schema.json"
     },
     "capacité": {
-          "description": "Capacité, en nombre de spectacteurs.",
-          "type": "integer",
-          "minimum": 1
-        }
+      "description": "Capacité, en nombre de spectacteurs.",
+      "type": "integer"
+    }
   }
 }

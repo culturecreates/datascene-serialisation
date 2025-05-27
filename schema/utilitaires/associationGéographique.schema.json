@@ -9,7 +9,10 @@
   "type": "object",
   "properties": {
     "type": {
-     "$ref": "../vocabulaires/associationGéographiqueType.schema.json"
+      "const": "AssociationGéographique"
+    },
+    "typeAssociationGéographique": {
+      "$ref": "terme.schema.json"
     },
     "pays": {
       "$ref": "../datatypes/pays.schema.json"

@@ -72,12 +72,11 @@
         "$ref": "./utilitaires/contribution.schema.json"
       }
     },
-    "url": {
-      "description": "URL vers des pages web donnant plus d'information sur le spectacle.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
+    "mainEntityOfPage": {
+      "description": "Vers des pages web donnant plus d'information sur le spectacle.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "uri"
+        "$ref": "./utilitaires/webPage.schema.json"
       }
     },
     "aOeuvreAssociée": {
@@ -123,14 +122,14 @@
       "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./vocabulaires/contenusType.schema.json"
+        "$ref": "./utilitaires/terme.schema.json"
       }
     },
     "avertissement": {
       "description": "Permet d'identifier des avertissements associés au spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./vocabulaires/avertissement.schema.json"
+        "$ref": "./utilitaires/terme.schema.json"
       }
     },
     "aReprésentation": {
@@ -223,7 +222,6 @@
         "Chanson"
       ],
       "publicCible": [
-        "ToutPublics",
         {
           "type": "Terme",
           "vocabulaire": "PublicCible",

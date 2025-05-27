@@ -64,10 +64,12 @@
       "description": "Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "url": {
-      "description": "Propriété utilisée seulement si l'URL associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
-      "type": "string",
-      "format": "uri"
+    "mainEntityOfPage": {
+      "description": "Propriété utilisée seulement si l'URL du PageWeb associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilitaires/webPage.schema.json"
+      }
     },
     "aContributionSupplémentaire": {
       "type": "array",
@@ -83,7 +85,7 @@
       },
       "description": "Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées"
     },
-     "inSeries": {
+    "inSeries": {
       "type": "array",
       "description": "Identification des séries dont la représentation fait partie.",
       "items": {

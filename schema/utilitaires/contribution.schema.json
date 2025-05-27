@@ -5,14 +5,18 @@
   "description": "cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.",
   "required": [
     "type",
+    "contributionType",
     "contributeur"
   ],
   "type": "object",
   "properties": {
     "type": {
+      "const": "Contribution"
+    },
+    "contributionType": {
       "type":"array",
       "items": {
-         "$ref": "../vocabulaires/contributionType.schema.json"
+         "$ref": "terme.schema.json"
       },
       "description": "Identification des types de contribution."
     },
