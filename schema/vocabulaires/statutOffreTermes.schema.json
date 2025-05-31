@@ -4,10 +4,12 @@
   "title": "Statut de l'Offre",
   "description": "Vocabulaire contrôlé pour les statuts d'une offre.",
   "type": "string",
-  "enum": ["confirmée", "annulée", "reportée"],
+  "enum": ["EventScheduled", "EventCancelled", "EventRescheduled","EventPostponed","EventMovedOnline"],
   "enumDescriptions": {
-    "confirmée": "L'offre a été confirmée et est prévue comme initialement planifiée.",
-    "annulée": "L'offre a été annulée et ne sera pas réalisée.",
-    "reportée": "L'offre a été reportée à une date ultérieure."
+    "EventScheduled": "L'offre a été confirmée et est prévue comme initialement planifiée.",
+    "EventCancelled": "L'offre a été annulée et ne sera pas réalisée.",
+    "EventRescheduled": "L'offre a été reportée à une date ultérieure.",
+    "EventPostponed": "L'offre a été suspendue. La nouvelle date n'est pas encore confirmée.",
+    "EventMovedOnline": "L'offre a été déplacée en ligne, initialement prévue en personne."
   }
 }

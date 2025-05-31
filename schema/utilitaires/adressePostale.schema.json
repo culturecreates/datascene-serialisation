@@ -5,52 +5,34 @@
   "description": "Permet d’indiquer l’adresse d’un lieu.",
   "required": [
     "type",
-    "numéro",
-    "typeDeRue",
-    "rue",
-    "ville",
-    "région",
-    "pays",
-    "codePostal"
+    "streetAddress",
+    "addressLocality",
+    "addressRegion",
+    "addressCountry",
+    "postalCode"
   ],
   "type": "object",
   "properties": {
     "type": {
       "const": "AdressePostale"
     },
-    "unité": {
-      "description": "Numéro d’unité, bureau ou appartement\n\nNote: cette propriété et les propriétés suivantes sont inspirées des directrices sur l'adressage de Postes Canada.",
+    "streetAddress": {
+      "description": "Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "numéro": {
-      "description": "Numéro municipal",
+    "addressLocality": {
+      "description": "Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "typeDeRue": {
-      "description": "Abréviation de type de rue recommandée par Postes Canada",
-      "$ref": "../vocabulaires/typesDeRoute.schema.json"
-    },
-    "rue": {
-      "description": "Nom de la rue",
-      "$ref": "../datatypes/texteCourt.schema.json"
-    },
-    "directionDeRue": {
-      "description": "Abréviation des points cardinaux de Postes Canada",
-      "$ref": "../vocabulaires/directionDeRue.schema.json"
-    },
-    "ville": {
-      "description": "Nom de la ville",
-      "$ref": "../datatypes/texteCourt.schema.json"
-    },
-    "région": {
+    "addressRegion": {
       "description": "Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.",
       "type": "string"
     },
-    "pays": {
+    "addressCountry": {
       "description": "Code de pays à 3 caractères selon le standard ISO 3166-1",
       "$ref": "../datatypes/pays.schema.json"
     },
-    "codePostal": {
+    "postalCode": {
       "description": "Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union",
       "$ref": "../datatypes/codePostalCanadien.schema.json"
     }
@@ -59,14 +41,14 @@
     {
       "if": {
         "properties": {
-          "pays": {
+          "addressCountry": {
             "const": "CAN"
           }
         }
       },
       "then": {
         "properties": {
-          "région": {
+          "addressRegion": {
             "enum": [
               "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"
             ]
@@ -75,7 +57,7 @@
       },
       "else": {
         "properties": {
-          "région": {
+          "addressRegion": {
             "type": "string",
             "description": "Nom de la région, province ou état. Peut être un code de pays à 2 caractères selon le standard ISO 3166-1.",
             "pattern": "^[A-Z]{2}$"

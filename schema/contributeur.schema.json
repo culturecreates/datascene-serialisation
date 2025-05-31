@@ -12,7 +12,7 @@
   "type": "object",
   "properties": {
     "type": {
-       "const":"Contributeur"
+      "const": "Contributeur"
     },
     "typeContributeur": {
       "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
@@ -25,7 +25,7 @@
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "nomsAlternatif":{
+    "alternateName": {
       "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
       "type": "array",
       "items": {
@@ -33,14 +33,17 @@
       }
     },
     "description": {
-        "$ref": "./datatypes/texteLongMultilingue.schema.json"
+      "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "descriptionCourte": {
       "description": "Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
       "$ref": "./datatypes/texteLongMultilingue.schema.json"
     },
     "média": {
-      "$ref": "./utilitaires/média.schema.json",
+      "type": "array",
+      "items": {
+        "$ref": "./utilitaires/média.schema.json"
+      },
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
     },
     "contributionTypeHabituelle": {
@@ -56,9 +59,13 @@
       "items": {
         "$ref": "./utilitaires/associationGéographique.schema.json"
       }
-    },"composéDe": {
+    },
+    "composéDe": {
       "description": "Énumération des membres des groupes, troupes et collectifs, etc.",
-      "$ref": "./contributeur.schema.json"
+      "type": "array",
+      "items": {
+        "$ref": "./contributeur.schema.json"
+      }
     }
   }
 }

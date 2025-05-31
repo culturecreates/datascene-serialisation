@@ -30,11 +30,14 @@
     },
     "durée": {
       "type": "string",
-      "description": "Durée de la représentation",
-      "minimum": 1
+      "description": "Durée de la représentation en format ISO-8601",
+      "pattern": "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d)(\\d+H)?(\\d+M)?(\\d+(\\.\\d+)?S)?)?$",
+      "minimum": 1,
+      "example": "PT1H30M"
     },
     "devaitPrécédemmentDébuter": {
-      "type": "integer",
+      "type": "string",
+      "format": "date-time",
       "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée."
     },
     "entracte": {

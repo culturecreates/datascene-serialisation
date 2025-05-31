@@ -8,8 +8,7 @@
     "identifiant",
     "nom",
     "description",
-    "début",
-    "aOffre"
+    "début"
   ],
   "type": "object",
   "properties": {
@@ -29,10 +28,7 @@
     },
     "description": {
       "description": "Description de la série.",
-      "type": "array",
-      "items": {
-        "$ref": "./datatypes/texteLongMultilingue.schema.json"
-      },
+      "$ref": "./datatypes/texteLongMultilingue.schema.json",
       "minItems": 1
     },
     "descriptionCourte": {
@@ -56,7 +52,7 @@
         "$ref": "./utilitaires/contribution.schema.json"
       }
     },
-   "mainEntityOfPage": {
+    "mainEntityOfPage": {
       "description": "Pages web donnant plus d'information sur la série.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {

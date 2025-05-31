@@ -5,7 +5,6 @@
   "description": "cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.",
   "required": [
     "type",
-    "notesUsage",
     "url"
   ],
   "type": "object",
@@ -21,6 +20,16 @@
       "description": "Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
+    "encodingFormat": {
+      "description": "Format du média. Il est suggéré d'utiliser les formats standards du web (par exemple, image/png, image/jpeg, video/mp4, application/pdf).",
+      "type": "string",
+      "examples": [
+        "image/png",
+        "image/jpeg",
+        "video/mp4",
+        "audio/mpeg"
+      ]
+    },
     "url": {
       "description": "URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible",
       "type": "string",
@@ -34,15 +43,19 @@
       "description": "Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.",
       "type": "array",
       "items": {
-        "$ref": "../datatypes/texteCourt.schema.json"
+        "$ref": "../datatypes/texteCourtMultilingue.schema.json"
       }
     },
     "crédits": {
       "description": "Crédits associés au média.",
       "type": "array",
       "items": {
-        "$ref": "../datatypes/texteCourt.schema.json"
+        "$ref": "../datatypes/texteCourtMultilingue.schema.json"
       }
+    },
+    "copyrightHolder": {
+      "description": "Personne ou organisation détenant les droits d'auteur du média.",
+      "$ref": "../datatypes/texteCourtMultilingue.schema.json"
     },
     "description": {
       "description": "Description courte (pouvant par exemple servir de «alt description» sur le web).",

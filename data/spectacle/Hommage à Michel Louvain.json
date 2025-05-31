@@ -86,12 +86,31 @@
       }
     }
   ],
-  "url": [
-    "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/",
-    "https://www.sallealbertrousseau.com/events/un-certain-souvenir/"
+  "mainEntityOfPage": [
+    {
+      "type": "WebPage",
+      "url": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/",
+      "inLanguage": "fr"
+    },
+    {
+      "type": "WebPage",
+      "url": "https://www.sallealbertrousseau.com/events/un-certain-souvenir/",
+      "inLanguage": "en"
+    }
   ],
   "discipline": [
-    "Chanson"
+    {
+      "type": "Terme",
+      "vocabulaire": "Discipline",
+      "code": "Chanson",
+      "étiquette": [
+        {
+          "langue": "fr",
+          "texte": "Chanson"
+        }
+      ],
+      "numéroDeSéquence": 1
+    }
   ],
   "publicCible": [
     {
@@ -111,21 +130,6 @@
     "fr"
   ],
   "spectacleSansParole": false,
-  "inSeries": [
-    {
-      "type": "Série",
-      "identifiant": [
-        {
-          "type": "uri",
-          "valeur": "http://lavitrine.com/series/123456"
-        }
-      ],
-      "nom": {
-        "langue": "fr",
-        "texte": "Un certain souvenir"
-      }
-    }
-  ],
   "aReprésentation": [
     {
       "type": "Représentation",
@@ -133,6 +137,27 @@
         "http://lavitrine.com/representation/123456"
       ],
       "début": "2023-02-26T15:00:00-05:00",
+      "inSeries": [
+        {
+          "type": "Série",
+          "début": "2023-02-26T15:00:00-05:00",
+          "description": [
+            {
+              "langue": "fr",
+              "texte": "Un certain souvenir est une série de spectacles qui rendent hommage à Michel Louvain."
+            }
+          ],
+          "identifiant": [
+            "http://lavitrine.com/series/123456"
+          ],
+          "nom": [
+            {
+              "langue": "fr",
+              "texte": "Un certain souvenir"
+            }
+          ]
+        }
+      ],
       "aOffre": [
         {
           "type": "Offre",
