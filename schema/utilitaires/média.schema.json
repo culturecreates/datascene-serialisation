@@ -37,7 +37,7 @@
     },
     "inLanguage": {
       "description": "Langue au format ISO 639-1.",
-      "$ref": "./partielles/langue.schema.json"
+      "$ref": "../datatypes/partielles/langue.schema.json"
     },
     "licence": {
       "description": "Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.",

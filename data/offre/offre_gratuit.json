@@ -10,17 +10,19 @@
   "type": "Offre",
   "aLieu": {
     "identifiant": [
-      {
-        "type": "uri",
-        "valeur": "http://123"
-      }
+      "http://123"
     ],
-    "type": "LieuVirtuel",
+    "type": "Lieu",
     "lieuVirtuel": true,
-    "nom": [{"langue": "fr","texte": "Zoom"}]
+    "nom": [
+      {
+        "langue": "fr",
+        "texte": "Zoom"
+      }
+    ]
   },
   "complet": false,
-  "statut": "confirmée",
+  "statut": "EventRescheduled",
   "gratuit": true,
   "accessibleViaAutreOffre": false,
   "sansLienAcquisition": false

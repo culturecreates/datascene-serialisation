@@ -177,7 +177,7 @@
             }
           },
           "aLieu": {
-            "type": "Theatre",
+            "type": "Lieu",
             "lieuVirtuel": false,
             "identifiant": [
               "http://lavitrine.com/representation/7567567"
@@ -190,17 +190,16 @@
             ],
             "adresse": {
               "type": "AdressePostale",
-              "numéro": "2410",
-              "typeDeRue": "Chemin",
-              "rue": "Sainte-Foy",
-              "ville": "Québec",
-              "région": "QC",
-              "pays": "CAN",
-              "codePostal": "G1V 1T3"
+             
+              "streetAddress": "250 Sainte-Foy",
+              "addressLocality": "Québec",
+              "addressRegion": "QC",
+              "addressCountry": "CAN",
+              "postalCode": "G1V 1T3"
             }
           },
           "complet": false,
-          "statut": "confirmée",
+          "statut": "EventScheduled",
           "gratuit": false,
           "accessibleViaAutreOffre": false,
           "sansLienAcquisition": false,

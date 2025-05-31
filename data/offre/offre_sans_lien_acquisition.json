@@ -2,17 +2,14 @@
   "type": "Offre",
   "aLieu": {
     "identifiant": [
-      {
-        "type": "uri",
-        "valeur": "http://123"
-      }
+       "http://123"
     ],
-    "type": "Theatre",
+    "type": "Lieu",
     "lieuVirtuel": true,
     "nom": [{"langue": "fr","texte": "Theatre Verdun"}]
   },
   "complet": false,
-  "statut": "confirmée",
+  "statut": "EventScheduled",
   "gratuit": false,
   "accessibleViaAutreOffre": false,
   "sansLienAcquisition": true
