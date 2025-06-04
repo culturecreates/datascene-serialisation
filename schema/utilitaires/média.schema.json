@@ -20,16 +20,6 @@
       "description": "Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "encodingFormat": {
-      "description": "Format du média. Il est suggéré d'utiliser les formats standards du web (par exemple, image/png, image/jpeg, video/mp4, application/pdf).",
-      "type": "string",
-      "examples": [
-        "image/png",
-        "image/jpeg",
-        "video/mp4",
-        "audio/mpeg"
-      ]
-    },
     "url": {
       "description": "URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible",
       "type": "string",

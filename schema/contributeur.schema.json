@@ -16,7 +16,7 @@
     },
     "typeContributeur": {
       "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
-      "$ref": "./utilitaires/terme.schema.json"
+      "$ref": "./vocabulaires/contributeurType.schema.json"
     },
     "identifiant": {
       "$ref": "./utilitaires/identifiant.schema.json"
@@ -48,8 +48,8 @@
     },
     "contributionTypeHabituelle": {
       "type": "array",
-      "items": {
-        "$ref": "./vocabulaires/contributionType.schema.json"
+       "items": {
+         "$ref": "./utilitaires/terme.schema.json"
       },
       "description": "Énumération des types de contributions habituellement faites par le contributeur."
     },

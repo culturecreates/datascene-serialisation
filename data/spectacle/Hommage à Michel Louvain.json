@@ -42,18 +42,7 @@
       ],
       "contributeur": {
         "type": "Contributeur",
-        "typeContributeur": {
-          "type": "Terme",
-          "vocabulaire": "TypeContributeur",
-          "code": "personnePhysique",
-          "étiquette": [
-            {
-              "langue": "fr",
-              "texte": "Personne physique"
-            }
-          ],
-          "numéroDeSéquence": 1
-        },
+        "typeContributeur": "PersonnePhysique",
         "identifiant": [
           "http://lavitrine.com/123456"
         ],
@@ -190,7 +179,6 @@
             ],
             "adresse": {
               "type": "AdressePostale",
-             
               "streetAddress": "250 Sainte-Foy",
               "addressLocality": "Québec",
               "addressRegion": "QC",

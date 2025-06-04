@@ -16,6 +16,6 @@ Voir https://datascene.ca pour le projet final.
 1. install json-schema-for-humans
 2. run ./generate.sh 
 3. cd vocabularies
-4 .gem install linkeddata
+4. gem install linkeddata (ruby 3.1.2 or higher)
 5. run ./generate-skos.sh
 6. git push

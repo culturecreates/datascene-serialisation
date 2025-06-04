@@ -3,10 +3,14 @@
   "$id": "https://datascene.ca/modeles/TypeDeContributeurType",
   "title": "Type de contributeurs",
   "description": "Vocabulaire contrôlé pour les types de contributeurs.",
-  "source":"https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
+  "source": "https://datascene.ca/references/vocabulaires/types_de_contributeurs/",
   "type": "string",
   "enum": [
     "PersonnePhysique",
     "Groupe"
-  ]
+  ],
+  "enumDescriptions": {
+    "PersonnePhysique": "Une personne physique, un individu.",
+    "Groupe": "Personne morale ou groupes de personnes physiques (entités juridiques, artistiques, ou autres)."
+  }
 }
