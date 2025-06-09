@@ -1,13 +1,13 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Theatre",
-  "nom": [
+  "name": [
     {
-      "langue": "fr",
-      "texte": "Grand Théâtre de Québec"
+      "lang": "fr",
+      "value": "Grand Théâtre de Québec"
     }
   ],
-  "identifiant": [
+  "identifier": [
     {
       "type": "uri",
       "valeur": "http://kg.artsdata.ca/resource/K5-180"
@@ -19,17 +19,17 @@
   ],
   "description": [
     {
-      "langue": "fr",
-      "texte": "Un important centre culturel de Québec, accueillant des spectacles variés."
+      "lang": "fr",
+      "value": "Un important centre culturel de Québec, accueillant des spectacles variés."
     },
     {
-      "langue": "en",
-      "texte": "A major cultural center in Quebec City, hosting a variety of performances."
+      "lang": "en",
+      "value": "A major cultural center in Quebec City, hosting a variety of performances."
     }
   ],
-  "lieuVirtuel": false,
-  "adresse": {
-    "type": "AdressePostale",
+  "virtualPlace": false,
+  "address": {
+    "type": "PostalAddress",
     "numéro": "269",
     "directionDeRue": "E",
     "typeDeRue": "Boulevard",
@@ -41,52 +41,52 @@
   },
   "salle": [
     {
-      "identifiants": [
+      "identifier": [
         {
           "type": "uri",
           "value": "http://kg.artsdata.ca/resource/K5-179"
         }
       ],
       "type": "Salle",
-      "nom": "Salle Louis-Fréchette",
-      "nomIdentiqueAuLieu": false,
+      "name": "Salle Louis-Fréchette",
+      "nameSameAsPlace": false,
       "description": [
         {
-          "langue": "fr",
-          "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+          "lang": "fr",
+          "value": "Une grande salle de spectacle avec une acoustique exceptionnelle."
         }
       ]
     },
     {
       "type": "Salle",
-      "identifiants": [
+      "identifier": [
         {
           "type": "uri",
           "value": "http://lavitrine.com/1234"
         }
       ],
-      "nomIdentiqueAuLieu": true,
+      "nameSameAsPlace": true,
       "description": [
         {
-          "langue": "fr",
-          "texte": "Une salle plus intime pour des performances variées."
+          "lang": "fr",
+          "value": "Une salle plus intime pour des performances variées."
         }
       ]
     },
     {
       "type": "Salle",
-      "identifiants": [
+      "identifier": [
         {
           "type": "uri",
           "value": "http://lavitrine.com/4567"
         }
       ],
-      "nom": "STUDIOTELUS",
-      "nomIdentiqueAuLieu": false,
+      "name": "STUDIOTELUS",
+      "nameSameAsPlace": false,
       "description": [
         {
-          "langue": "fr",
-          "texte": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
+          "lang": "fr",
+          "value": "Une espace multifonctionnel situé à l'intérieur du Grand Théâtre de Québec."
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/utilitaires/adressePostale.schema.json",
-  "title": "Adresse Postale",
+  "$id": "https://datascene.ca/utilitaires/postal_address.schema.json",
+  "title": "Postal Address",
   "description": "Permet d’indiquer l’adresse d’un lieu.",
   "required": [
     "type",
@@ -14,7 +14,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "AdressePostale"
+      "const": "PostalAddress"
     },
     "streetAddress": {
       "description": "Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.",

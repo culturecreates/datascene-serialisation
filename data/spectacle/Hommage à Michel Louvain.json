@@ -1,19 +1,19 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
   "type": "Spectacle",
-  "identifiant": [
+  "identifier": [
     "http://lavitrine.com/spectacle/123456"
   ],
-  "nom": [
+  "name": [
     {
-      "langue": "fr",
-      "texte": "Hommage à Michel Louvain."
+      "lang": "fr",
+      "value": "Hommage à Michel Louvain."
     }
   ],
   "description": [
     {
-      "langue": "fr",
-      "texte": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
+      "lang": "fr",
+      "value": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
     }
   ],
   "média": [
@@ -28,44 +28,44 @@
       "type": "Contribution",
       "contributionType": [
         {
-          "type": "Terme",
-          "vocabulaire": "ContributionType",
+          "type": "Term",
+          "vocabulary": "ContributionType",
           "code": "ArtisteSurScène",
-          "étiquette": [
+          "label": [
             {
-              "langue": "fr",
-              "texte": "Production"
+              "lang": "fr",
+              "value": "Production"
             }
           ],
-          "numéroDeSéquence": 1
+          "sequenceNumber": 1
         }
       ],
       "contributeur": {
         "type": "Contributeur",
         "typeContributeur": "PersonnePhysique",
-        "identifiant": [
+        "identifier": [
           "http://lavitrine.com/123456"
         ],
-        "nom": [
+        "name": [
           {
-            "langue": "fr",
-            "texte": "Un certain souvenir"
+            "lang": "fr",
+            "value": "Un certain souvenir"
           }
         ],
         "aAssociationGéographique": [
           {
             "type": "AssociationGéographique",
             "typeAssociationGéographique": {
-              "type": "Terme",
-              "vocabulaire": "AssociationGéographiqueType",
+              "type": "Term",
+              "vocabulary": "AssociationGéographiqueType",
               "code": "lieuDeFondation",
-              "étiquette": [
+              "label": [
                 {
-                  "langue": "fr",
-                  "texte": "Lieu de fondation"
+                  "lang": "fr",
+                  "value": "Lieu de fondation"
                 }
               ],
-              "numéroDeSéquence": 1
+              "sequenceNumber": 1
             },
             "pays": "CAN",
             "région": "QC",
@@ -89,30 +89,30 @@
   ],
   "discipline": [
     {
-      "type": "Terme",
-      "vocabulaire": "Discipline",
+      "type": "Term",
+      "vocabulary": "Discipline",
       "code": "Chanson",
-      "étiquette": [
+      "label": [
         {
-          "langue": "fr",
-          "texte": "Chanson"
+          "lang": "fr",
+          "value": "Chanson"
         }
       ],
-      "numéroDeSéquence": 1
+      "sequenceNumber": 1
     }
   ],
   "publicCible": [
     {
-      "type": "Terme",
-      "vocabulaire": "PublicCible",
+      "type": "Term",
+      "vocabulary": "PublicCible",
       "code": "ToutPublics",
-      "étiquette": [
+      "label": [
         {
-          "langue": "fr",
-          "texte": "Tout publics"
+          "lang": "fr",
+          "value": "Tout publics"
         }
       ],
-      "numéroDeSéquence": 1
+      "sequenceNumber": 1
     }
   ],
   "enLangue": [
@@ -122,7 +122,7 @@
   "aReprésentation": [
     {
       "type": "Représentation",
-      "identifiant": [
+      "identifier": [
         "http://lavitrine.com/representation/123456"
       ],
       "début": "2023-02-26T15:00:00-05:00",
@@ -132,17 +132,17 @@
           "début": "2023-02-26T15:00:00-05:00",
           "description": [
             {
-              "langue": "fr",
-              "texte": "Un certain souvenir est une série de spectacles qui rendent hommage à Michel Louvain."
+              "lang": "fr",
+              "value": "Un certain souvenir est une série de spectacles qui rendent hommage à Michel Louvain."
             }
           ],
-          "identifiant": [
+          "identifier": [
             "http://lavitrine.com/series/123456"
           ],
-          "nom": [
+          "name": [
             {
-              "langue": "fr",
-              "texte": "Un certain souvenir"
+              "lang": "fr",
+              "value": "Un certain souvenir"
             }
           ]
         }
@@ -150,35 +150,35 @@
       "aOffre": [
         {
           "type": "Offre",
-          "aConfigurationSalle": {
-            "type": "ConfigurationSalle",
-            "configurationSalleType": {
-              "type": "Terme",
-              "vocabulaire": "ConfigurationSalleType",
+          "hasRoomConfiguration": {
+            "type": "RoomConfiguration",
+            "layout": {
+              "type": "Term",
+              "vocabulary": "ConfigurationSalleType",
               "code": "Cabaret",
-              "étiquette": [
+              "label": [
                 {
-                  "langue": "fr",
-                  "texte": "Configuration salle type 1"
+                  "lang": "fr",
+                  "value": "Configuration salle type 1"
                 }
               ],
-              "numéroDeSéquence": 1
+              "sequenceNumber": 1
             }
           },
           "aLieu": {
-            "type": "Lieu",
-            "lieuVirtuel": false,
-            "identifiant": [
+            "type": "Place",
+            "virtualPlace": false,
+            "identifier": [
               "http://lavitrine.com/representation/7567567"
             ],
-            "nom": [
+            "name": [
               {
-                "langue": "fr",
-                "texte": "Salle Albert-Rousseau"
+                "lang": "fr",
+                "value": "Salle Albert-Rousseau"
               }
             ],
-            "adresse": {
-              "type": "AdressePostale",
+            "address": {
+              "type": "PostalAddress",
               "streetAddress": "250 Sainte-Foy",
               "addressLocality": "Québec",
               "addressRegion": "QC",

@@ -6,8 +6,8 @@
   "required": [
     "type",
     "typeContributeur",
-    "identifiant",
-    "nom"
+    "identifier",
+    "name"
   ],
   "type": "object",
   "properties": {
@@ -18,10 +18,10 @@
       "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
       "$ref": "./vocabulaires/contributeurType.schema.json"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
@@ -49,7 +49,7 @@
     "contributionTypeHabituelle": {
       "type": "array",
        "items": {
-         "$ref": "./utilitaires/terme.schema.json"
+         "$ref": "./utilitaires/term.schema.json"
       },
       "description": "Énumération des types de contributions habituellement faites par le contributeur."
     },

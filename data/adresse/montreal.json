@@ -1,5 +1,5 @@
 {
-  "type": "AdressePostale",
+  "type": "PostalAddress",
   "ville": "Montréal",
   "région": "QC",
   "pays": "CAN",

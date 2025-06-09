@@ -1,22 +1,22 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/lieu.schema.json",
+  "$id": "https://datascene.ca/place.schema.json",
   "title": "Oeuvre",
   "description": "cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.",
   "required": [
     "type",
-    "identifiants",
-    "nom"
+    "identifier",
+    "name"
   ],
   "type": "object",
   "properties": {
     "type": {
       "const": "Oeuvre"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "description": "Nom de l'oeuvre.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     }

@@ -6,8 +6,8 @@
   "required": [
     "@context",
     "type",
-    "identifiant",
-    "nom",
+    "identifier",
+    "name",
     "description",
     "discipline",
     "publicCible",
@@ -38,10 +38,10 @@
     "type": {
       "const": "Spectacle"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "description": "Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
       "example": "Une Carmen pour tout le Québec",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
@@ -91,14 +91,14 @@
       "description": "Identification des disciplines artistiques du spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
     "publicCible": {
       "description": "Identification des publics cibles du spectacle.\n\nLorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
     "enLangue": {
@@ -123,14 +123,14 @@
       "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
     "avertissement": {
       "description": "Permet d'identifier des avertissements associés au spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
     "aReprésentation": {

@@ -1,25 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/lieu.schema.json",
-  "title": "Salle",
+  "$id": "https://datascene.ca/place.schema.json",
+  "title": "Room",
   "description": "certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.",
   "required": [
     "type",
-    "identifiant",
-    "nomIdentiqueAuLieu"
+    "identifier",
+    "nameSameAsPlace"
   ],
   "allOf": [
     {
       "if": {
         "properties": {
-          "nomIdentiqueAuLieu": {
+          "nameSameAsPlace": {
             "const": false
           }
         }
       },
       "then": {
         "required": [
-          "nom"
+          "name"
         ]
       }
     }
@@ -27,16 +27,16 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Salle"
+      "const": "Room"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "description": "Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
-    "nomIdentiqueAuLieu": {
+    "nameSameAsPlace": {
       "type": "boolean"
     },
     "description": {
@@ -55,20 +55,20 @@
     },
     "aLieu": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
-      "$ref": "./lieu.schema.json"
+      "$ref": "./place.schema.json"
     },
-    "adresse": {
+    "address": {
       "description": "Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.",
-      "$ref": "./utilitaires/adressePostale.schema.json"
+      "$ref": "./utilitaires/postal_address.schema.json"
     },
     "accessibilitéUniverselle": {
       "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
-    "aConfigurationSalle": {
+    "hasRoomConfiguration": {
       "description": "Précisions sur les configurations possibles de la salle.",
       "type": "array",
       "items": {

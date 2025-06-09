@@ -1,17 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/lieu.schema.json",
-  "title": "Lieu",
+  "$id": "https://datascene.ca/place.schema.json",
+  "title": "Place",
   "description": "sert à décrire un lieu, typiquement associé à une représentation. La classe est générique et les lieux peuvent correspondre à des édifices ou à des lieux extérieurs. Il s’agit du lieu associé à une adresse, ou à des indications géographiques précises, qui serait présenté à un consommateur comme l’endroit où se présenter pour assister à une représentation.",
   "required": [
     "type",
-    "identifiant",
-    "nom",
-    "lieuVirtuel"
+    "identifier",
+    "name",
+    "virtualPlace"
   ],
   "if": {
     "properties": {
-      "lieuVirtuel": {
+      "virtualPlace": {
         "const": false
       }
     }
@@ -19,41 +19,41 @@
   "then": {
     "required": [
       "type",
-      "adresse"
+      "address"
     ]
   },
   "type": "object",
   "properties": {
     "type": {
-      "const": "Lieu"
+      "const": "Place"
     },
-    "typeLieu": {
+    "additionalType": {
       "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.",
-      "$ref": "./utilitaires/terme.schema.json"
+      "$ref": "./utilitaires/term.schema.json"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },
     "description": {
       "$ref": "./datatypes/texteLongMultilingue.schema.json",
       "minItems": 1
     },
-    "lieuVirtuel": {
+    "virtualPlace": {
       "type": "boolean"
     },
-    "aSalle": {
+    "hasRoom": {
       "type": "array",
       "items": {
-        "$ref": "./salle.schema.json"
+        "$ref": "./room.schema.json"
       },
       "description": "Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle."
     },
-    "adresse": {
+    "address": {
       "description": "Coordonnées complètes du lieu.",
-      "$ref": "./utilitaires/adressePostale.schema.json"
+      "$ref": "./utilitaires/postal_address.schema.json"
     },
     "mainEntityOfPage": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu.",
@@ -66,7 +66,7 @@
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/terme.schema.json"
+        "$ref": "./utilitaires/term.schema.json"
       }
     },
     "coordGéo": {

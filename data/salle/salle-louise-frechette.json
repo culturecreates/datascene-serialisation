@@ -1,37 +1,37 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
-  "type": "Salle",
-  "identifiant": [
+  "type": "Room",
+  "identifier": [
     "http://kg.artsdata.ca/resource/K5-179"
   ],
-  "nom": [
+  "name": [
     {
-      "langue": "fr",
-      "texte": "Salle Louis-Fréchette"
+      "lang": "fr",
+      "value": "Salle Louis-Fréchette"
     }
   ],
-  "nomIdentiqueAuLieu": false,
+  "nameSameAsPlace": false,
   "description": [
     {
-      "langue": "fr",
-      "texte": "Une grande salle de spectacle avec une acoustique exceptionnelle."
+      "lang": "fr",
+      "value": "Une grande salle de spectacle avec une acoustique exceptionnelle."
     }
   ],
-  "aConfigurationSalle": [
-    { "type": "ConfigurationSalle",
-      "configurationSalleType": {
-        "type": "Terme",
-        "vocabulaire": "ConfigurationSalleType",
-        "code": "configurationSalleType",
-        "étiquette": [
+  "hasRoomConfiguration": [
+    { "type": "RoomConfiguration",
+      "layout": {
+        "type": "Term",
+        "vocabulary": "ConfigurationSalleType",
+        "code": "Italienne",
+        "label": [
           {
-            "langue": "fr",
-            "texte": "Configuration de salle"
+            "lang": "fr",
+            "value": "À l'italienne"
           }
         ],
-        "numéroDeSéquence": 1
+        "sequenceNumber": 1
       },
-      "capacité": 1500
+      "capacity": 1500
     }
   ]
 }

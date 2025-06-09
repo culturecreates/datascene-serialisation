@@ -12,7 +12,7 @@
     "type": {
       "const": "Média"
     },
-    "numéroDeSéquence": {
+    "sequenceNumber": {
       "type": "integer",
       "description": "Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé)."
     },

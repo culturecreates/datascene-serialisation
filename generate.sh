@@ -7,9 +7,9 @@ generate_all() {
   generate-schema-doc ./schema/représentation.schema.json ./docs/représentation.html
   generate-schema-doc ./schema/offre.schema.json ./docs/offre.html
   generate-schema-doc ./schema/contributeur.schema.json ./docs/contributeur.html
-  generate-schema-doc ./schema/lieu.schema.json ./docs/lieu.html
+  generate-schema-doc ./schema/place.schema.json ./docs/lieu.html
   generate-schema-doc ./schema/oeuvre.schema.json ./docs/oeuvre.html
-  generate-schema-doc ./schema/salle.schema.json ./docs/salle.html
+  generate-schema-doc ./schema/room.schema.json ./docs/salle.html
   generate-schema-doc ./schema/série.schema.json ./docs/série.html
 
   # Generate documentation for all schemas in the utilitaires directory
@@ -39,13 +39,13 @@ else
       generate-schema-doc ./schema/contributeur.schema.json ./docs/contributeur.html
       ;;
     lieu)
-      generate-schema-doc ./schema/lieu.schema.json ./docs/lieu.html
+      generate-schema-doc ./schema/place.schema.json ./docs/lieu.html
       ;;
     oeuvre)
       generate-schema-doc ./schema/oeuvre.schema.json ./docs/oeuvre.html
       ;;
     salle)
-      generate-schema-doc ./schema/salle.schema.json ./docs/salle.html
+      generate-schema-doc ./schema/room.schema.json ./docs/salle.html
       ;;
     serie)
       generate-schema-doc ./schema/série.schema.json ./docs/série.html

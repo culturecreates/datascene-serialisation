@@ -19,13 +19,13 @@
     },
     "aLieu": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
-      "$ref": "./lieu.schema.json"
+      "$ref": "./place.schema.json"
     },
-    "aSalle": {
+    "hasRoom": {
       "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
-      "$ref": "./salle.schema.json"
+      "$ref": "./room.schema.json"
     },
-    "aConfigurationSalle": {
+    "hasRoomConfiguration": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
       "$ref": "./utilitaires/configurationSalle.schema.json"
     },

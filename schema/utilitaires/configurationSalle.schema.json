@@ -5,17 +5,17 @@
   "description": "Précisions sur un configuration possible de la salle.",
   "required": [
     "type",
-    "configurationSalleType"
+    "layout"
   ],
   "type": "object",
   "properties": {
     "type": {
-      "const": "ConfigurationSalle"
+      "const": "RoomConfiguration"
     },
-    "typeConfigurationSalle": {
+    "layout": {
       "$ref": "terme.schema.json"
     },
-    "capacité": {
+    "capacity": {
       "description": "Capacité, en nombre de spectacteurs.",
       "type": "integer"
     }

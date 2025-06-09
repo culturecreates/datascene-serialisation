@@ -5,8 +5,8 @@
   "description": "cette classe permet de regrouper des représentations n’étant pas nécessairement toutes associées à un même spectacle, mais liées entre elles par des éléments de commercialisation ou de modalités d’accès. Un festival est un exemple de série.",
   "required": [
     "type",
-    "identifiant",
-    "nom",
+    "identifier",
+    "name",
     "description",
     "début"
   ],
@@ -15,10 +15,10 @@
     "type": {
       "const": "Série"
     },
-    "identifiant": {
-      "$ref": "./utilitaires/identifiant.schema.json"
+    "identifier": {
+      "$ref": "./utilitaires/identifier.schema.json"
     },
-    "nom": {
+    "name": {
       "description": "Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
       "$ref": "./datatypes/texteCourtMultilingue.schema.json"
     },

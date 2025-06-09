@@ -5,7 +5,7 @@
   "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
   "required": [
     "type",
-    "identifiant",
+    "identifier",
     "début",
     "aOffre"
   ],
@@ -14,9 +14,9 @@
     "type": {
       "const": "Représentation"
     },
-    "identifiant": {
+    "identifier": {
       "description": "Énumération des identifiants connus.",
-      "$ref": "./utilitaires/identifiant.schema.json"
+      "$ref": "./utilitaires/identifier.schema.json"
     },
     "début": {
       "type": "string",

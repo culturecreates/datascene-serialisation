@@ -1,20 +1,20 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://datascene.ca/modele/Terme",
-  "title": "Terme",
+  "title": "Term",
   "description": "permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.",
   "required": [
     "type",
-    "vocabulaire",
+    "vocabulary",
     "code",
-    "numéroDeSéquence"
+    "sequenceNumber"
   ],
   "type": "object",
   "properties": {
     "type": {
-      "const": "Terme"
+      "const": "Term"
     },
-    "vocabulaire": {
+    "vocabulary": {
       "name": "Vocabulaire",
       "description": "Identification du vocabulaire duquel est tiré le terme.\n\nTypiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.",
       "$ref": "../datatypes/texteCourt.schema.json"
@@ -27,22 +27,22 @@
       "description": "Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.",
       "$ref": "../datatypes/texteCourt.schema.json"
     },
-    "étiquette": {
+    "label": {
       "description": "Version textuelle du terme tiré du vocabulaire choisi",
       "$ref": "../datatypes/texteCourtMultilingue.schema.json"
     },
-    "numéroDeSéquence": {
+    "sequenceNumber": {
       "description": "Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).",
       "type": "integer"
     }
   },
   "examples": [
     {
-      "type": "Terme",
-      "vocabulaire": "PublicCible",
+      "type": "Term",
+      "vocabulary": "PublicCible",
       "code": "ToutPublics",
       "version": "1.0",
-      "numéroDeSéquence": 1
+      "sequenceNumber": 1
     }
   ]
 }

@@ -9,15 +9,15 @@
   },
   "type": "Offre",
   "aLieu": {
-    "identifiant": [
+    "identifier": [
       "http://123"
     ],
-    "type": "Lieu",
-    "lieuVirtuel": true,
-    "nom": [
+    "type": "Place",
+    "virtualPlace": true,
+    "name": [
       {
-        "langue": "fr",
-        "texte": "Zoom"
+        "lang": "fr",
+        "value": "Zoom"
       }
     ]
   },

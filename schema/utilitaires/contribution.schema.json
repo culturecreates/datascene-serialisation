@@ -24,7 +24,7 @@
       "description": "Identification du contributeur",
        "$ref": "../contributeur.schema.json"
     },
-    "numéroDeSéquence": {
+    "sequenceNumber": {
       "type": "integer",
       "description": "Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier)."
     },

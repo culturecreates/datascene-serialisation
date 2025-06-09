@@ -8,10 +8,10 @@
   "items": {
     "type": "object",
     "properties": {
-      "langue": {
+      "lang": {
         "$ref": "./partielles/langue.schema.json"
       },
-      "texte": {
+      "value": {
         "type": "string",
         "title": "Texte long",
         "description": "Texte long avec formatage, incluant des paragraphes et des balises HTML.",
@@ -24,8 +24,8 @@
       }
     },
     "required": [
-      "langue",
-      "texte"
+      "lang",
+      "value"
     ],
     "additionalProperties": false
   }
