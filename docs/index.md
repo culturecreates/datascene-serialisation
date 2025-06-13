@@ -16,13 +16,14 @@ Ces pages sont généré par [json-schema-for-humans](https://github.com/coveoos
 - [Oeuvre](oeuvre.html)
 
 ### Classes utilitaires
-- [Adresse](utilitaires/adressePostale.html)
-- [Association géographique](utilitaires/associationGéographique.html)
-- [Contribution](utilitaires/contribution.html)
-- [Configuration de salle](utilitaires/configurationSalle.html)
-- [Identifiant](utilitaires/identifiant.html)
-- [Média](utilitaires/média.html)
-- [Terme](utilitaires/terme.html)
+- [Adresse](utilities/postal_address.html)
+- [Association géographique](utilities/geographic_relation.html)
+- [Contribution](utilities/contribution.html)
+- [Configuration de salle](utilities/room_specification.html)
+- [Identifiant](utilities/identifier.html)
+- [Média](utilities/media.html)
+- [Terme](utilities/term.html)
+- [Page Web](utilities/web_page.html)
 
 ### Vocabulaires contrôlés
 - [Accessibilité Universelle](vocabulaires/accessibilitéUniversellesTermes.skos.html)
@@ -36,9 +37,7 @@ Ces pages sont généré par [json-schema-for-humans](https://github.com/coveoos
 - [Types de contributeurs](vocabulaires/contributeursType.skos.html)
 - [Types de contributions](vocabulaires/contributionType.skos.html)
 - [Types de lieu](vocabulaires/typesLieu.skos.html)
-- [Types de rue](vocabulaires/typesDeRoutes.skos.html)
-- [Points cardinaux](vocabulaires/directionsDeRue.skos.html)
-- Régions au Canada - voir énumération dans classe Adresse
+
 
 
 

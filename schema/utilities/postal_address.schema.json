@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/utilities/postal_address.schema.json",
+  "title": "Postal Address",
+  "description": "Permet d’indiquer l’adresse d’un lieu.",
+  "required": [
+    "type",
+    "streetAddress",
+    "addressLocality",
+    "addressRegion",
+    "addressCountry",
+    "postalCode"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "PostalAddress"
+    },
+    "streetAddress": {
+      "description": "Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.",
+      "$ref": "../datatypes/text_short.schema.json"
+    },
+    "addressLocality": {
+      "description": "Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.",
+      "$ref": "../datatypes/text_short.schema.json"
+    },
+    "addressRegion": {
+      "description": "Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.",
+      "type": "string"
+    },
+    "addressCountry": {
+      "description": "Code de pays à 3 caractères selon le standard ISO 3166-1",
+      "$ref": "../datatypes/country_code.schema.json"
+    },
+    "postalCode": {
+      "description": "Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union",
+      "$ref": "../datatypes/canada_postal_code.schema.json"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "addressCountry": {
+            "const": "CAN"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "addressRegion": {
+            "enum": [
+              "AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "addressRegion": {
+            "type": "string",
+            "description": "Nom de la région, province ou état. Peut être un code de pays à 2 caractères selon le standard ISO 3166-1.",
+            "pattern": "^[A-Z]{2}$"
+          }
+        }
+      }
+    }
+  ]
+}

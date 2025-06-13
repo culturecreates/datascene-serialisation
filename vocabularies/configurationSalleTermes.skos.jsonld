@@ -22,55 +22,55 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes",
+  "@id": "https://datascene.ca/vocabularies/room_specificationTermes",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Configurations de salle",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Italienne",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Italienne",
       "@type": "Concept",
       "prefLabel": "À l'italienne",
       "definition": "Configuration de salle classique avec des rangées de sièges face à la scène."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Cabaret",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Cabaret",
       "@type": "Concept",
       "prefLabel": "Cabaret",
       "definition": "Configuration avec des tables et des chaises, souvent utilisée pour des spectacles intimistes."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Theatre",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Theatre",
       "@type": "Concept",
       "prefLabel": "Théâtre",
       "definition": "Disposition classique pour des représentations théâtrales."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Debout",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Debout",
       "@type": "Concept",
       "prefLabel": "Debout",
       "definition": "Configuration où le public reste debout."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Multifonctionnelle",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Multifonctionnelle",
       "@type": "Concept",
       "prefLabel": "Multifonctionnelle",
       "definition": "Salle pouvant être configurée de différentes manières selon les besoins."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Conference",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Conference",
       "@type": "Concept",
       "prefLabel": "Conférence",
       "definition": "Disposition adaptée pour des conférences ou des présentations."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#Amphitheatre",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#Amphitheatre",
       "@type": "Concept",
       "prefLabel": "Amphithéâtre",
       "definition": "Disposition en gradins, souvent utilisée pour des conférences ou des spectacles."
     },
     {
-      "@id": "https://datascene.ca/vocabulaires/configurationSalleTermes#HybrideMixte",
+      "@id": "https://datascene.ca/vocabularies/room_specificationTermes#HybrideMixte",
       "@type": "Concept",
       "prefLabel": "Formule hybride ou mixte (debout/assis)",
       "definition": "Configuration combinant des places assises et debout."

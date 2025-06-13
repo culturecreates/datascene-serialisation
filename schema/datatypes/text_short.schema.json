@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modele/TextShort",
+  "title": "Texte court",
+  "description": "Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 500,
+  "$ref": "./partials/no_html.schema.json"
+}

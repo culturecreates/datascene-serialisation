@@ -27,7 +27,7 @@
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Types d'associations géographiques",
   "definition": "Vocabulaire contrôlé pour les types d'associations géographiques.",
-  "source": "https://datascene.ca/references/vocabulaires/types_d_associations_geographiques_d_un_contributeur/",
+  "source": "https://datascene.ca/references/vocabularies/types_d_associations_geographiques_d_un_contributeur/",
   "hasTopConcept": [
     {
       "@id": "https://datascene.ca/AssociationGeographiqueType#naissance",

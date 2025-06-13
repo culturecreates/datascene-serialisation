@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modeles/ContributorType",
+  "title": "Type de contributeur",
+  "description": "Vocabulaire contrôlé pour les types de contributeur.",
+  "source": "https://datascene.ca/references/vocabularies/types_de_contributeurs/",
+  "type": "string",
+  "enum": [
+    "Person",
+    "Group"
+  ],
+  "enumDescriptions": {
+    "Person": "Une personne physique, un individu.",
+    "Group": "Personne morale ou groupes de personnes physiques (entités juridiques, artistiques, ou autres)."
+  }
+}

@@ -30,49 +30,49 @@
       "const": "Room"
     },
     "identifier": {
-      "$ref": "./utilitaires/identifier.schema.json"
+      "$ref": "./utilities/identifier.schema.json"
     },
     "name": {
       "description": "Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
-      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
     "nameSameAsPlace": {
       "type": "boolean"
     },
     "description": {
-      "$ref": "./datatypes/texteLongMultilingue.schema.json"
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
     },
-    "descriptionCourte": {
+    "shortDescription": {
       "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
-      "$ref": "./datatypes/texteLongMultilingue.schema.json"
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
     },
-    "médias": {
+    "media": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/média.schema.json"
+        "$ref": "./utilities/media.schema.json"
       }
     },
-    "aLieu": {
+    "hasPlace": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./place.schema.json"
     },
     "address": {
       "description": "Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.",
-      "$ref": "./utilitaires/postal_address.schema.json"
+      "$ref": "./utilities/postal_address.schema.json"
     },
-    "accessibilitéUniverselle": {
+    "venueAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/term.schema.json"
+        "$ref": "./utilities/term.schema.json"
       }
     },
     "hasRoomConfiguration": {
       "description": "Précisions sur les configurations possibles de la salle.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/configurationSalle.schema.json"
+        "$ref": "./utilities/room_specification.schema.json"
       }
     }
   }

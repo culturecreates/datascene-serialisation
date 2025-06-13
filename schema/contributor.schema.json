@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/contributor.schema.json",
+  "title": "Contributor",
+  "description": "les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).",
+  "required": [
+    "type",
+    "contributorType",
+    "identifier",
+    "name"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Contributor"
+    },
+    "contributorType": {
+      "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
+      "$ref": "./vocabularies/contributor_type.schema.json"
+    },
+    "identifier": {
+      "$ref": "./utilities/identifier.schema.json"
+    },
+    "name": {
+      "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
+    },
+    "alternateName": {
+      "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
+      "type": "array",
+      "items": {
+        "$ref": "./datatypes/text_long.schema.json"
+      }
+    },
+    "description": {
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
+    },
+    "shortDescription": {
+      "description": "Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/media.schema.json"
+      },
+      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
+    },
+    "typicalContributionType": {
+      "type": "array",
+       "items": {
+         "$ref": "./utilities/term.schema.json"
+      },
+      "description": "Énumération des types de contributions habituellement faites par le contributeur."
+    },
+    "hasGeographicRelation": {
+      "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/geographic_relation.schema.json"
+      }
+    },
+    "hasMembers": {
+      "description": "Énumération des membres des groupes, troupes et collectifs, etc.",
+      "type": "array",
+      "items": {
+        "$ref": "./contributor.schema.json"
+      }
+    }
+  }
+}

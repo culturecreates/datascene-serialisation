@@ -1,0 +1,370 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modele/Show",
+  "title": "Spectacle",
+  "description": "la classe centrale du référentiel. Elle permet de documenter ce qui relève du spectacle au sens d'œuvre mise en scène. Par contraste, cela exclut donc les éléments descriptifs des représentations.",
+  "required": [
+    "@context",
+    "type",
+    "identifier",
+    "name",
+    "description",
+    "discipline",
+    "audience",
+    "showWithoutWords"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "showWithoutWords": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "inLanguage"
+        ]
+      }
+    }
+  ],
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
+      "const": "https://datascence.ca/context.jsonld"
+    },
+    "type": {
+      "const": "Show"
+    },
+    "identifier": {
+      "$ref": "./utilities/identifier.schema.json"
+    },
+    "name": {
+      "description": "Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
+      "example": "Une Carmen pour tout le Québec",
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
+    },
+    "alternateName": {
+      "description": "Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.",
+      "example": "Carmen au grand écran",
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
+    },
+    "description": {
+      "description": "Description du spectacle",
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
+    },
+    "shortDescription": {
+      "description": "Description résumée du spectacle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
+    },
+    "media": {
+      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au spectacle.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/media.schema.json"
+      }
+    },
+    "hasContribution": {
+      "description": "Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).\n\nLe contributeur peut être une personne ou une organisation.\n\nIl s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.\n\nSi un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/contribution.schema.json"
+      }
+    },
+    "mainEntityOfPage": {
+      "description": "Vers des pages web donnant plus d'information sur le spectacle.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/web_page.schema.json"
+      }
+    },
+    "hasRelatedWork": {
+      "description": "Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.\n\nExemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.\n\nExemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.\n\nContre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/WorkRelation"
+      }
+    },
+    "discipline": {
+      "description": "Identification des disciplines artistiques du spectacle.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/term.schema.json"
+      }
+    },
+    "audience": {
+      "description": "Identification des publics cibles du spectacle.\n\nLorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/term.schema.json"
+      }
+    },
+    "inLanguage": {
+      "description": "Langues utilisées dans le spectacle, en ordre décroissant d'importance. La langue principale doit donc être mentionnée en premier.",
+      "type": "array",
+      "items": {
+        "$ref": "./datatypes/partials/language.schema.json"
+      }
+    },
+    "supportMaterialLanguage": {
+      "description": "Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...)",
+      "type": "array",
+      "items": {
+        "$ref": "./datatypes/partials/language.schema.json"
+      }
+    },
+    "showWithoutWords": {
+      "description": "Indication à l'effet que le spectacle ne contient pas de paroles.",
+      "type": "boolean"
+    },
+    "contentType": {
+      "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/term.schema.json"
+      }
+    },
+    "contentWarning": {
+      "description": "Permet d'identifier des avertissements associés au spectacle.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/term.schema.json"
+      }
+    },
+    "hasEvent": {
+      "description": "Énumération des représentations du spectacle, qu'elles soient passées ou futures.",
+      "type": "array",
+      "items": {
+        "$ref": "./event.schema.json"
+      }
+    }
+  },
+  "definitions": {
+    "WorkRelation": {
+      "$id": "https://datascene.ca/modele/WorkRelation",
+      "title": "Oeuvre Associée",
+      "description": "Objets d'association à une oeuvre.",
+      "required": [
+        "type",
+        "work"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "WorkRelation"
+        },
+        "work": {
+          "description": "Identification de l'oeuvre.",
+          "$ref": "./work.schema.json"
+        },
+        "usageNote": {
+          "description": "Notes sur le lien entre l'oeuvre et le spectacle",
+          "$ref": "./datatypes/text_short_multilingual.schema.json"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "@context": "https://datascence.ca/context.jsonld",
+      "type": "Show",
+      "identifier": [
+        "http://lavitrine.com/spectacle/123456"
+      ],
+      "name": [
+        {
+          "lang": "fr",
+          "value": "Hommage à Michel Louvain."
+        }
+      ],
+      "description": [
+        {
+          "lang": "fr",
+          "value": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
+        }
+      ],
+      "media": [
+        {
+          "type": "Média",
+          "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
+          "usageNote": "(ne sont pas affichées)"
+        }
+      ],
+      "hasContribution": [
+        {
+          "type": "Contribution",
+          "contributionType": [
+            {
+              "type": "Term",
+              "vocabulary": "ContributionType",
+              "code": "ArtisteSurScène",
+              "label": [
+                {
+                  "lang": "fr",
+                  "value": "Production"
+                }
+              ],
+              "sequenceNumber": 1
+            }
+          ],
+          "contributeur": {
+            "type": "Contributor",
+            "contributorType": "Person",
+            "identifier": [
+              "http://lavitrine.com/123456"
+            ],
+            "name": [
+              {
+                "lang": "fr",
+                "value": "Un certain souvenir"
+              }
+            ],
+            "hasGeographicRelation": [
+              {
+                "type": "GeographicRelation",
+                "relationType": {
+                  "type": "Term",
+                  "vocabulary": "GeographicRelationType",
+                  "code": "lieuDeFondation",
+                  "label": [
+                    {
+                      "lang": "fr",
+                      "value": "Lieu de fondation"
+                    }
+                  ],
+                  "sequenceNumber": 1
+                },
+                "country": "CAN",
+                "region": "QC",
+                "locality": "Québec"
+              }
+            ]
+          }
+        }
+      ],
+      "mainEntityOfPage": [
+        {
+          "type": "WebPage",
+          "url": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/",
+          "inLanguage": "fr"
+        },
+        {
+          "type": "WebPage",
+          "url": "https://www.sallealbertrousseau.com/events/un-certain-souvenir/",
+          "inLanguage": "en"
+        }
+      ],
+      "discipline": [
+        {
+          "type": "Term",
+          "vocabulary": "Discipline",
+          "code": "Chanson",
+          "label": [
+            {
+              "lang": "fr",
+              "value": "Chanson"
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ],
+      "audience": [
+        {
+          "type": "Term",
+          "vocabulary": "PublicCible",
+          "code": "ToutPublics",
+          "label": [
+            {
+              "lang": "fr",
+              "value": "Tout publics"
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ],
+      "inLanguage": [
+        "fr"
+      ],
+      "showWithoutWords": false,
+      "hasEvent": [
+        {
+          "type": "Représentation",
+          "identifier": [
+            "http://lavitrine.com/representation/123456"
+          ],
+          "startDateTime": "2023-02-26T15:00:00-05:00",
+          "inSeries": [
+            {
+              "type": "EventSeries",
+              "startDateTime": "2023-02-26T15:00:00-05:00",
+              "description": [
+                {
+                  "lang": "fr",
+                  "value": "Un certain souvenir est une série de spectacles qui rendent hommage à Michel Louvain."
+                }
+              ],
+              "identifier": [
+                "http://lavitrine.com/series/123456"
+              ],
+              "name": [
+                {
+                  "lang": "fr",
+                  "value": "Un certain souvenir"
+                }
+              ]
+            }
+          ],
+          "hasOffer": [
+            {
+              "type": "Offer",
+              "hasRoomConfiguration": {
+                "type": "RoomConfiguration",
+                "layout": {
+                  "type": "Term",
+                  "vocabulary": "ConfigurationSalleType",
+                  "code": "Cabaret",
+                  "label": [
+                    {
+                      "lang": "fr",
+                      "value": "Configuration salle type 1"
+                    }
+                  ],
+                  "sequenceNumber": 1
+                }
+              },
+              "hasPlace": {
+                "type": "Place",
+                "virtualPlace": false,
+                "identifier": [
+                  "http://lavitrine.com/representation/7567567"
+                ],
+                "name": [
+                  {
+                    "lang": "fr",
+                    "value": "Salle Albert-Rousseau"
+                  }
+                ],
+                "address": {
+                  "type": "PostalAddress",
+                  "streetAddress": "250 Sainte-Foy",
+                  "addressLocality": "Québec",
+                  "addressRegion": "QC",
+                  "addressCountry": "CAN",
+                  "postalCode": "G1V 1T3"
+                }
+              },
+              "isSoldout": false,
+              "offerStatus": "EventScheduled",
+              "isAccessibleForFree": false,
+              "isAccessibleFromAnotherOffer": false,
+              "ticketLinkAvailable": false,
+              "ticketLink": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

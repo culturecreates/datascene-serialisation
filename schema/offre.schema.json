@@ -1,23 +1,23 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://datascene.ca/offre.schema.json",
-  "title": "Offre",
+  "title": "Offer",
   "description": "permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.",
   "required": [
     "type",
-    "aLieu",
-    "complet",
-    "statut",
-    "gratuit",
-    "accessibleViaAutreOffre",
-    "sansLienAcquisition"
+    "hasPlace",
+    "isSoldout",
+    "offerStatus",
+    "isAccessibleForFree",
+    "isAccessibleFromAnotherOffer",
+    "ticketLinkAvailable"
   ],
   "type": "object",
   "properties": {
     "type": {
-      "const": "Offre"
+      "const": "Offer"
     },
-    "aLieu": {
+    "hasPlace": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./place.schema.json"
     },
@@ -27,48 +27,48 @@
     },
     "hasRoomConfiguration": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
-      "$ref": "./utilitaires/configurationSalle.schema.json"
+      "$ref": "./utilities/room_specification.schema.json"
     },
-    "complet": {
+    "isSoldout": {
       "description": "Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.",
       "type": "boolean"
     },
-    "completDepuis": {
+    "soldoutSince": {
       "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },
-    "statut": {
+    "offerStatus": {
       "description": "Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.",
-      "$ref": "./vocabulaires/statutOffreTermes.schema.json"
+      "$ref": "./vocabularies/event_status.schema.json"
     },
-    "prix": {
+    "price": {
       "description": "Prix de départ en dollars canadiens.",
-      "$ref": "./datatypes/monétaires.schema.json"
+      "$ref": "./datatypes/currency.schema.json"
     },
-    "gratuit": {
+    "isAccessibleForFree": {
       "description": "Indique que la présente offre est gratuite.",
       "type": "boolean"
     },
-    "accessibleViaAutreOffre": {
+    "isAccessibleFromAnotherOffer": {
       "description": "Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.",
       "type": "boolean"
     },
-    "débutPrévente": {
+    "preSaleStart": {
       "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },
-    "débutDisponibilitéGénérale": {
+    "generalSaleStart": {
       "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
       "type": "string",
       "format": "date-time"
     },
-    "sansLienAcquisition": {
+    "ticketLinkAvailable": {
       "description": "Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.",
       "type": "boolean"
     },
-    "lienAcquisition": {
+    "ticketLink": {
       "description": "URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.",
       "type": "string",
       "format": "uri"
@@ -78,14 +78,14 @@
     {
       "if": {
         "properties": {
-          "gratuit": { "const": false },
-          "accessibleViaAutreOffre": { "const": false },
-          "sansLienAcquisition": { "const": false }
+          "isAccessibleForFree": { "const": false },
+          "isAccessibleFromAnotherOffer": { "const": false },
+          "ticketLinkAvailable": { "const": true }
         },
-        "required": ["gratuit", "accessibleViaAutreOffre", "sansLienAcquisition"]
+        "required": ["isAccessibleForFree", "isAccessibleFromAnotherOffer", "ticketLinkAvailable"]
       },
       "then": {
-        "required": ["lienAcquisition"]
+        "required": ["ticketLink"]
       }
     }
   ]

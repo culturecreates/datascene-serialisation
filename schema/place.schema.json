@@ -29,16 +29,16 @@
     },
     "additionalType": {
       "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.",
-      "$ref": "./utilitaires/term.schema.json"
+      "$ref": "./utilities/term.schema.json"
     },
     "identifier": {
-      "$ref": "./utilitaires/identifier.schema.json"
+      "$ref": "./utilities/identifier.schema.json"
     },
     "name": {
-      "$ref": "./datatypes/texteCourtMultilingue.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
     "description": {
-      "$ref": "./datatypes/texteLongMultilingue.schema.json",
+      "$ref": "./datatypes/text_long_multilingual.schema.json",
       "minItems": 1
     },
     "virtualPlace": {
@@ -53,24 +53,24 @@
     },
     "address": {
       "description": "Coordonnées complètes du lieu.",
-      "$ref": "./utilitaires/postal_address.schema.json"
+      "$ref": "./utilities/postal_address.schema.json"
     },
     "mainEntityOfPage": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/webPage.schema.json"
+        "$ref": "./utilities/web_page.schema.json"
       }
     },
-    "accessibilitéUniverselle": {
+    "venueAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {
-        "$ref": "./utilitaires/term.schema.json"
+        "$ref": "./utilities/term.schema.json"
       }
     },
-    "coordGéo": {
-      "$ref": "./datatypes/coordGéo.schema.json"
+    "geoCoordinates": {
+      "$ref": "./datatypes/geo_coordinates.schema.json"
     }
   }
 }

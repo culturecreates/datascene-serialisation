@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modele/Event",
+  "title": "Représentation",
+  "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
+  "required": [
+    "type",
+    "identifier",
+    "startDateTime",
+    "hasOffer"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "Représentation"
+    },
+    "identifier": {
+      "description": "Énumération des identifiants connus.",
+      "$ref": "./utilities/identifier.schema.json"
+    },
+    "startDateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times."
+    },
+    "endDateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times."
+    },
+    "duration": {
+      "type": "string",
+      "description": "Durée de la représentation en format ISO-8601",
+      "pattern": "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d)(\\d+H)?(\\d+M)?(\\d+(\\.\\d+)?S)?)?$",
+      "minimum": 1,
+      "example": "PT1H30M"
+    },
+    "previousStartDateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée."
+    },
+    "hasIntermission": {
+      "type": "boolean",
+      "description": "Indique la présence d'une ou plusieurs entractes"
+    },
+    "isSupplementary": {
+      "type": "boolean",
+      "description": "Indique si la représentation est une représentation supplémentaire"
+    },
+    "description": {
+      "$ref": "./datatypes/text_long_multilingual.schema.json",
+      "description": "Propriété utilisée seulement si la description de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent."
+    },
+    "shortDescription": {
+      "description": "Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
+    },
+    "media": {
+      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) supplémentaires associés à la représentation, lorsqu'ils sont disponibles et qu'il n'est pas possible de les associer au spectacle. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/media.schema.json"
+      }
+    },
+    "alternateName": {
+      "description": "Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent",
+      "$ref": "./datatypes/text_short_multilingual.schema.json"
+    },
+    "mainEntityOfPage": {
+      "description": "Propriété utilisée seulement si l'URL du PageWeb associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.",
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/web_page.schema.json"
+      }
+    },
+    "hasAdditionalContribution": {
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/contribution.schema.json"
+      },
+      "description": "Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées."
+    },
+    "hasRemovedContribution": {
+      "type": "array",
+      "items": {
+        "$ref": "./utilities/contribution.schema.json"
+      },
+      "description": "Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées"
+    },
+    "inSeries": {
+      "type": "array",
+      "description": "Identification des séries dont la représentation fait partie.",
+      "items": {
+        "$ref": "./event_series.schema.json"
+      }
+    },
+    "hasOffer": {
+      "type": "array",
+      "items": {
+        "$ref": "./offre.schema.json"
+      },
+      "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.",
+      "minItems": 1,
+      "maxItems": 2
+    }
+  }
+}

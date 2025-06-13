@@ -1,6 +1,6 @@
 {
-  "type": "Offre",
-  "aLieu": {
+  "type": "Offer",
+  "hasPlace": {
     "identifier": [
        "http://123"
     ],
@@ -8,9 +8,10 @@
     "virtualPlace": true,
     "name": [{"lang": "fr","value": "Theatre Verdun"}]
   },
-  "complet": false,
-  "statut": "EventScheduled",
-  "gratuit": false,
-  "accessibleViaAutreOffre": false,
-  "sansLienAcquisition": true
+  "isSoldout": false,
+  "offerStatus": "EventScheduled",
+  "isAccessibleForFree": false,
+  "isAccessibleFromAnotherOffer": false,
+  "ticketLinkAvailable": true,
+  "ticketLink": "http://example.com/ticket"
 }

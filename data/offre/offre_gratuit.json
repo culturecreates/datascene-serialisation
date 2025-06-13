@@ -1,14 +1,14 @@
 {
   "@context": {
     "@vocab": "https://datascene.ca/modele#",
-    "@base": "https://datascene.ca/vocabulaires/",
+    "@base": "https://datascene.ca/vocabularies/",
     "type": {
       "@type": "@id",
       "@id": "type"
     }
   },
-  "type": "Offre",
-  "aLieu": {
+  "type": "Offer",
+  "hasPlace": {
     "identifier": [
       "http://123"
     ],
@@ -21,9 +21,9 @@
       }
     ]
   },
-  "complet": false,
-  "statut": "EventRescheduled",
-  "gratuit": true,
-  "accessibleViaAutreOffre": false,
-  "sansLienAcquisition": false
+  "isSoldout": false,
+  "offerStatus": "EventRescheduled",
+  "isAccessibleForFree": true,
+  "isAccessibleFromAnotherOffer": false,
+  "ticketLinkAvailable": false
 }

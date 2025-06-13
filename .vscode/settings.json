@@ -11,7 +11,7 @@
     },
     {
       "fileMatch": ["data/adresse/*.json"],
-      "url": "./schema/utilitaires/postal_address.schema.json"
+      "url": "./schema/utilities/postal_address.schema.json"
     },
     {
       "fileMatch": ["data/offre/*.json"],
@@ -19,11 +19,11 @@
     },
     {
       "fileMatch": ["data/spectacle/*.json"],
-      "url": "./schema/spectacle.schema.json"
+      "url": "./schema/show.schema.json"
     },
     {
       "fileMatch": ["data/représentation/*.json"],
-      "url": "./schema/représentation.schema.json"
+      "url": "./schema/event.schema.json"
     }
   ]
 }

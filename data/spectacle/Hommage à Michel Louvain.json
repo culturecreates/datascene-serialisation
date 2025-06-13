@@ -1,6 +1,6 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
-  "type": "Spectacle",
+  "type": "Show",
   "identifier": [
     "http://lavitrine.com/spectacle/123456"
   ],
@@ -16,14 +16,14 @@
       "value": "Le 14 avril 2021, Michel Louvain tirait sa révérence après une vie dédiée à la chanson. Réunis sur scène dans cette production à l’image de..."
     }
   ],
-  "média": [
+  "media": [
     {
       "type": "Média",
       "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
-      "notesUsage": "(ne sont pas affichées)"
+      "usageNote": "(ne sont pas affichées)"
     }
   ],
-  "aContribution": [
+  "hasContribution": [
     {
       "type": "Contribution",
       "contributionType": [
@@ -41,8 +41,8 @@
         }
       ],
       "contributeur": {
-        "type": "Contributeur",
-        "typeContributeur": "PersonnePhysique",
+        "type": "Contributor",
+        "contributorType": "Person",
         "identifier": [
           "http://lavitrine.com/123456"
         ],
@@ -52,12 +52,12 @@
             "value": "Un certain souvenir"
           }
         ],
-        "aAssociationGéographique": [
+        "hasGeographicRelation": [
           {
-            "type": "AssociationGéographique",
-            "typeAssociationGéographique": {
+            "type": "GeographicRelation",
+            "relationType": {
               "type": "Term",
-              "vocabulary": "AssociationGéographiqueType",
+              "vocabulary": "GeographicRelationType",
               "code": "lieuDeFondation",
               "label": [
                 {
@@ -67,9 +67,9 @@
               ],
               "sequenceNumber": 1
             },
-            "pays": "CAN",
-            "région": "QC",
-            "ville": "Québec"
+            "country": "CAN",
+            "region": "QC",
+            "locality": "Québec"
           }
         ]
       }
@@ -101,7 +101,7 @@
       "sequenceNumber": 1
     }
   ],
-  "publicCible": [
+  "audience": [
     {
       "type": "Term",
       "vocabulary": "PublicCible",
@@ -115,21 +115,21 @@
       "sequenceNumber": 1
     }
   ],
-  "enLangue": [
+  "inLanguage": [
     "fr"
   ],
-  "spectacleSansParole": false,
-  "aReprésentation": [
+  "showWithoutWords": false,
+  "hasEvent": [
     {
       "type": "Représentation",
       "identifier": [
         "http://lavitrine.com/representation/123456"
       ],
-      "début": "2023-02-26T15:00:00-05:00",
+      "startDateTime": "2023-02-26T15:00:00-05:00",
       "inSeries": [
         {
-          "type": "Série",
-          "début": "2023-02-26T15:00:00-05:00",
+          "type": "EventSeries",
+          "startDateTime": "2023-02-26T15:00:00-05:00",
           "description": [
             {
               "lang": "fr",
@@ -147,9 +147,9 @@
           ]
         }
       ],
-      "aOffre": [
+      "hasOffer": [
         {
-          "type": "Offre",
+          "type": "Offer",
           "hasRoomConfiguration": {
             "type": "RoomConfiguration",
             "layout": {
@@ -165,7 +165,7 @@
               "sequenceNumber": 1
             }
           },
-          "aLieu": {
+          "hasPlace": {
             "type": "Place",
             "virtualPlace": false,
             "identifier": [
@@ -186,12 +186,12 @@
               "postalCode": "G1V 1T3"
             }
           },
-          "complet": false,
-          "statut": "EventScheduled",
-          "gratuit": false,
-          "accessibleViaAutreOffre": false,
-          "sansLienAcquisition": false,
-          "lienAcquisition": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
+          "isSoldout": false,
+          "offerStatus": "EventScheduled",
+          "isAccessibleForFree": false,
+          "isAccessibleFromAnotherOffer": false,
+          "ticketLinkAvailable": false,
+          "ticketLink": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
         }
       ]
     }

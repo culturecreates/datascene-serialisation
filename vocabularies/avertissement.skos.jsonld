@@ -27,7 +27,7 @@
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Avertissements",
   "definition": "Fournir des informations liées à la santé et sécurité du public.",
-  "source": "https://datascene.ca/references/vocabulaires/avertissements/",
+  "source": "https://datascene.ca/references/vocabularies/avertissements/",
   "hasTopConcept": [
     {
       "@id": "https://datascene.ca/Avertissements#ClignotementsEtEffetsStroboscopiques",

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modele/GeographicRelation",
+  "title": "Association Géographique",
+  "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
+  "required": [
+    "type"
+  ],
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "GeographicRelation"
+    },
+    "relationType": {
+      "$ref": "term.schema.json"
+    },
+    "addressCountry": {
+      "$ref": "../datatypes/country_code.schema.json"
+    },
+    "addressRegion": {
+      "$ref": "../datatypes/text_short.schema.json"
+    },
+    "addressLocality": {
+      "$ref": "../datatypes/text_short.schema.json"
+    }
+  }
+}

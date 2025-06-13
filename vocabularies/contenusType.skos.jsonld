@@ -27,7 +27,7 @@
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Types de contenus sensibles",
   "definition": "Liste des types de contenus sensibles pouvant nécessiter un avertissement pour le public.",
-  "source": "https://datascene.ca/references/vocabulaires/types_de_contenus/",
+  "source": "https://datascene.ca/references/vocabularies/types_de_contenus/",
   "hasTopConcept": [
     {
       "@id": "https://datascene.ca/contenusType#Alcool",

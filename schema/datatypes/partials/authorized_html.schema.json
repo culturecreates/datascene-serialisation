@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "examples": [
+    "<b>Texte en gras</b>",
+    "<i>Texte en italique</i>",
+    "<u>Texte souligné</u>",
+    "<sup>Texte en exposant</sup>",
+    "<sub>Texte en indice</sub>"
+  ],
+  "type": "string",
+  "pattern": "^(?!.*<[^bius][^>]*>)(?!.*</?(?!b|i|u|sup|sub)[^>]*>).*$"
+}

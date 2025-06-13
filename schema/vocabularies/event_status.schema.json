@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://datascene.ca/modele/eventStatus",
+  "title": "Statut de l'Offre",
+  "description": "Vocabulaire contrôlé pour les statuts d'une offre.",
+  "type": "string",
+  "enum": ["EventScheduled", "EventCancelled", "EventRescheduled","EventPostponed","EventMovedOnline"],
+  "enumDescriptions": {
+    "EventScheduled": "L'offre a été confirmée et est prévue comme initialement planifiée.",
+    "EventCancelled": "L'offre a été annulée et ne sera pas réalisée.",
+    "EventRescheduled": "L'offre a été reportée à une date ultérieure.",
+    "EventPostponed": "L'offre a été suspendue. La nouvelle date n'est pas encore confirmée.",
+    "EventMovedOnline": "L'offre a été déplacée en ligne, initialement prévue en personne."
+  }
+}

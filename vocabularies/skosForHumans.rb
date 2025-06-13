@@ -141,7 +141,7 @@ html_output = ERB.new(template).result(binding)
 
 # Write the HTML to a file in ../docs/vocab
 output_filename = File.basename(file_path, '.jsonld') + '.html'
-output_path = File.expand_path("../docs/vocabulaires/#{output_filename}", File.dirname(file_path))
+output_path = File.expand_path("../docs/vocabularies/#{output_filename}", File.dirname(file_path))
 FileUtils.mkdir_p(File.dirname(output_path)) # Ensure the directory exists
 File.write(output_path, html_output)
 

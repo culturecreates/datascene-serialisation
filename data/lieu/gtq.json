@@ -1,6 +1,6 @@
 {
   "@context": "https://datascence.ca/context.jsonld",
-  "type": "Theatre",
+  "type": "Place",
   "name": [
     {
       "lang": "fr",
@@ -9,13 +9,11 @@
   ],
   "identifier": [
     {
-      "type": "uri",
-      "valeur": "http://kg.artsdata.ca/resource/K5-180"
+      "type": "PropertyValue",
+      "propertyID": "Artsdata",
+      "value": "K5-180"
     },
-    {
-      "type": "uri",
-      "valeur": "http://www.wikidata.org/entity/Q3114610"
-    }
+    "http://www.wikidata.org/entity/Q3114610"
   ],
   "description": [
     {
@@ -30,14 +28,11 @@
   "virtualPlace": false,
   "address": {
     "type": "PostalAddress",
-    "numéro": "269",
-    "directionDeRue": "E",
-    "typeDeRue": "Boulevard",
-    "rue": "boulevard René-Lévesque",
-    "ville": "Québec",
-    "région": "QC",
-    "codePostal": "G1R 2B3",
-    "pays": "CAN"
+    "streetAddress": "259 boulevard René-Lévesque",
+    "addressLocality": "Québec",
+    "addressRegion": "QC",
+    "postalCode": "G1R 2B3",
+    "addressCountry": "CAN"
   },
   "salle": [
     {
