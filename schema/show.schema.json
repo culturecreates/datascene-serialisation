@@ -187,7 +187,7 @@
       ],
       "media": [
         {
-          "type": "Média",
+          "type": "Media",
           "url": "https://sallealbertrousseau.blob.core.windows.net/image-processor-cache/9/7/5/4/a/e/9754aef29c7eb9c559bb6bd4f55a0a8012e7c393.jpg",
           "usageNote": "(ne sont pas affichées)"
         }
@@ -198,12 +198,12 @@
           "contributionType": [
             {
               "type": "Term",
-              "vocabulary": "ContributionType",
+              "vocabulary": "https://datascene.ca/ContributionType#",
               "code": "ArtisteSurScène",
               "label": [
                 {
                   "lang": "fr",
-                  "value": "Production"
+                  "value": "Artiste sur scène"
                 }
               ],
               "sequenceNumber": 1
@@ -211,7 +211,7 @@
           ],
           "contributeur": {
             "type": "Contributor",
-            "contributorType": "Person",
+            "contributorType": "Group",
             "identifier": [
               "http://lavitrine.com/123456"
             ],
@@ -226,7 +226,7 @@
                 "type": "GeographicRelation",
                 "relationType": {
                   "type": "Term",
-                  "vocabulary": "GeographicRelationType",
+                  "vocabulary": "https://datascene.ca/AssociationGeographiqueType#",
                   "code": "lieuDeFondation",
                   "label": [
                     {
@@ -236,9 +236,9 @@
                   ],
                   "sequenceNumber": 1
                 },
-                "country": "CAN",
-                "region": "QC",
-                "locality": "Québec"
+                "addressCountry": "CAN",
+                "addressRegion": "QC",
+                "addressLocality": "Québec"
               }
             ]
           }
@@ -359,7 +359,7 @@
               "offerStatus": "EventScheduled",
               "isAccessibleForFree": false,
               "isAccessibleFromAnotherOffer": false,
-              "ticketLinkAvailable": false,
+              "ticketLinkAvailable": true,
               "ticketLink": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
             }
           ]
