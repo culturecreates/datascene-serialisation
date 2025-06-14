@@ -39,7 +39,7 @@
   "examples": [
     {
       "type": "Term",
-      "vocabulary": "PublicCible",
+      "vocabulary": "datascene",
       "code": "ToutPublics",
       "version": "1.0",
       "sequenceNumber": 1

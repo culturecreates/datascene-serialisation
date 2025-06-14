@@ -21,7 +21,7 @@
     { "type": "RoomConfiguration",
       "layout": {
         "type": "Term",
-        "vocabulary": "ConfigurationSalleType",
+        "vocabulary": "datascene",
         "code": "Italienne",
         "label": [
           {

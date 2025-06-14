@@ -198,7 +198,7 @@
           "contributionType": [
             {
               "type": "Term",
-              "vocabulary": "https://datascene.ca/ContributionType#",
+              "vocabulary": "datascene",
               "code": "ArtisteSurScène",
               "label": [
                 {
@@ -226,7 +226,7 @@
                 "type": "GeographicRelation",
                 "relationType": {
                   "type": "Term",
-                  "vocabulary": "https://datascene.ca/AssociationGeographiqueType#",
+                  "vocabulary": "datascene",
                   "code": "lieuDeFondation",
                   "label": [
                     {
@@ -259,7 +259,7 @@
       "discipline": [
         {
           "type": "Term",
-          "vocabulary": "Discipline",
+          "vocabulary": "datascene",
           "code": "Chanson",
           "label": [
             {
@@ -273,7 +273,7 @@
       "audience": [
         {
           "type": "Term",
-          "vocabulary": "PublicCible",
+          "vocabulary": "datascene",
           "code": "ToutPublics",
           "label": [
             {
@@ -323,7 +323,7 @@
                 "type": "RoomConfiguration",
                 "layout": {
                   "type": "Term",
-                  "vocabulary": "ConfigurationSalleType",
+                  "vocabulary": "datascene",
                   "code": "Cabaret",
                   "label": [
                     {
