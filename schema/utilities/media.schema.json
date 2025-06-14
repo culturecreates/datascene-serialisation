@@ -10,7 +10,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Média"
+      "const": "Media"
     },
     "sequenceNumber": {
       "type": "integer",
