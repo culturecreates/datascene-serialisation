@@ -10,7 +10,7 @@
     "offerStatus",
     "isAccessibleForFree",
     "isAccessibleFromAnotherOffer",
-    "ticketLinkAvailable"
+    "ticketLinkNotAvailable"
   ],
   "type": "object",
   "properties": {
@@ -64,7 +64,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "ticketLinkAvailable": {
+    "ticketLinkNotAvailable": {
       "description": "Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.",
       "type": "boolean"
     },
@@ -80,9 +80,9 @@
         "properties": {
           "isAccessibleForFree": { "const": false },
           "isAccessibleFromAnotherOffer": { "const": false },
-          "ticketLinkAvailable": { "const": true }
+          "ticketLinkNotAvailable": { "const": false }
         },
-        "required": ["isAccessibleForFree", "isAccessibleFromAnotherOffer", "ticketLinkAvailable"]
+        "required": ["isAccessibleForFree", "isAccessibleFromAnotherOffer", "ticketLinkNotAvailable"]
       },
       "then": {
         "required": ["ticketLink"]

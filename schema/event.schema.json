@@ -38,7 +38,7 @@
     "previousStartDateTime": {
       "type": "string",
       "format": "date-time",
-      "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée."
+      "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times."
     },
     "hasIntermission": {
       "type": "boolean",

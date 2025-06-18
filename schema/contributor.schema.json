@@ -29,7 +29,7 @@
       "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
       "type": "array",
       "items": {
-        "$ref": "./datatypes/text_long.schema.json"
+        "$ref": "./datatypes/text_short_multilingual.schema.json"
       }
     },
     "description": {
