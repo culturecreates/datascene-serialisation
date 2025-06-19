@@ -86,7 +86,7 @@
 
     <div class="enum-value" id="contributorType_enum">
             <h4>Must be one of:</h4>
-            <ul class="list-group"><li class="list-group-item enum-item">"Person"</li><li class="list-group-item enum-item">"Group"</li></ul>
+            <ul class="list-group"><li class="list-group-item enum-item">"Person"</li><li class="list-group-item enum-item">"Group"</li><li class="list-group-item enum-item">"Organization"</li></ul>
             </div>
         
 
@@ -690,33 +690,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#alternateName_items" onclick="anchorLink('alternateName_items')">Texte long</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
-<span class="description"><p>Texte sans formatage, avec des changements de paragraphes (typiquement affiché sur plusieurs lignes).</p>
-
-<p>Les textes longs ne sont pas prévus pour inclure des éléments de mise en page, mais permettent l'inclusion de quelques balises HTML lorsqu'elles sont nécessaires pour s'assurer que la description est compréhensible. Les balises HTML autorisées sont b, i, u, sup et sub.</p>
-</span>
-
-    
-
-    <span class="pattern-value" id="alternateName_items_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
-        
-
-        
-        <p><span class="badge badge-light restriction min-length-restriction" id="alternateName_items_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="alternateName_items_maxLength">Must be at most <code>6000</code> characters long</span></p>
-
-        <br/>
-<div class="badge badge-secondary">Examples:</div>
-<br/><div id="alternateName_items_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
-</pre></div>
-</div><div id="alternateName_items_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
-</pre></div>
-</div><div id="alternateName_items_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
-</pre></div>
-</div><div id="alternateName_items_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
-</pre></div>
-</div><div id="alternateName_items_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
-</pre></div>
-</div>
+    <a href="#alternateName_items" onclick="anchorLink('alternateName_items')">Texte court multilingue</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)</p>
+</span><a href="#name" onclick="anchorLink('name')" class="ref-link">Same definition as name</a>
         </div>
     </div>
             </div>
@@ -862,7 +838,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 <span class="description"><p>Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.</p>
 </span>
 
-    <span class="pattern-value" id="alternateName_items_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
+    <span class="pattern-value" id="description_items_value_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
         
 
         
@@ -870,15 +846,15 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 
         <br/>
 <div class="badge badge-secondary">Examples:</div>
-<br/><div id="alternateName_items_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+<br/><div id="description_items_value_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
 </pre></div>
-</div><div id="alternateName_items_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</div><div id="description_items_value_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
 </pre></div>
-</div><div id="alternateName_items_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</div><div id="description_items_value_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
 </pre></div>
-</div><div id="alternateName_items_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</div><div id="description_items_value_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
 </pre></div>
-</div><div id="alternateName_items_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</div><div id="description_items_value_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
 </pre></div>
 </div>
             </div>
@@ -968,7 +944,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#media_items" onclick="anchorLink('media_items')">Média</a></div><h4>Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
+<span class="description"><p>Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
 </span>
 
     
@@ -1567,7 +1543,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#typicalContributionType_items" onclick="anchorLink('typicalContributionType_items')">Term</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span>
 
     
@@ -2010,7 +1986,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasGeographicRelation_items_relationType" onclick="anchorLink('hasGeographicRelation_items_relationType')">relationType</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#typicalContributionType_items" onclick="anchorLink('typicalContributionType_items')" class="ref-link">Same definition as Term</a>
             </div>
         </div>
@@ -2215,6 +2191,6 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 </div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-06-14 at 11:14:44 -0400</p>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-06-19 at 13:19:18 -0400</p>
     </footer></body>
 </html>

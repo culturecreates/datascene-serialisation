@@ -543,7 +543,7 @@
             />
         </svg>
     <a href="#previousStartDateTime" onclick="anchorLink('previousStartDateTime')">previousStartDateTime</a></div><span class="badge badge-dark value-type">Type: string</span><span class="badge badge-info value-type">Format: date-time</span><br/>
-<span class="description"><p>Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée.</p>
+<span class="description"><p>Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.</p>
 </span>
         
 
@@ -884,7 +884,7 @@
             />
         </svg>
     <a href="#media_items" onclick="anchorLink('media_items')">Média</a></div><h4>Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
+<span class="description"><p>Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
 </span>
 
     
@@ -1902,7 +1902,7 @@
             />
         </svg>
     <a href="#hasAdditionalContribution_items" onclick="anchorLink('hasAdditionalContribution_items')">Contribution</a></div><h4>Contribution</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
+<span class="description"><p>Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
 </span>
 
     
@@ -2036,7 +2036,7 @@
             />
         </svg>
     <a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')">Term</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span>
 
     
@@ -2569,7 +2569,7 @@
 
     <div class="enum-value" id="hasAdditionalContribution_items_contributeur_contributorType_enum">
             <h4>Must be one of:</h4>
-            <ul class="list-group"><li class="list-group-item enum-item">"Person"</li><li class="list-group-item enum-item">"Group"</li></ul>
+            <ul class="list-group"><li class="list-group-item enum-item">"Person"</li><li class="list-group-item enum-item">"Group"</li><li class="list-group-item enum-item">"Organization"</li></ul>
             </div>
         
 
@@ -2781,33 +2781,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#hasAdditionalContribution_items_contributeur_alternateName_items" onclick="anchorLink('hasAdditionalContribution_items_contributeur_alternateName_items')">Texte long</a></div><h4>Texte long</h4><span class="badge badge-dark value-type">Type: string</span><br/>
-<span class="description"><p>Texte sans formatage, avec des changements de paragraphes (typiquement affiché sur plusieurs lignes).</p>
-
-<p>Les textes longs ne sont pas prévus pour inclure des éléments de mise en page, mais permettent l'inclusion de quelques balises HTML lorsqu'elles sont nécessaires pour s'assurer que la description est compréhensible. Les balises HTML autorisées sont b, i, u, sup et sub.</p>
-</span>
-
-    
-
-    <span class="pattern-value" id="description_items_value_pattern">Must match regular expression: <code>^(?!.*&lt;[^bius][^&gt;]*&gt;)(?!.*&lt;/?(?!b|i|u|sup|sub)[^&gt;]*&gt;).*$</code></span>
-        
-
-        
-        <p><span class="badge badge-light restriction min-length-restriction" id="hasAdditionalContribution_items_contributeur_alternateName_items_minLength">Must be at least <code>1</code> characters long</span></p><p><span class="badge badge-light restriction max-length-restriction" id="hasAdditionalContribution_items_contributeur_alternateName_items_maxLength">Must be at most <code>6000</code> characters long</span></p>
-
-        <br/>
-<div class="badge badge-secondary">Examples:</div>
-<br/><div id="description_items_value_ex1" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
-</pre></div>
-</div><div id="description_items_value_ex2" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
-</pre></div>
-</div><div id="description_items_value_ex3" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
-</pre></div>
-</div><div id="description_items_value_ex4" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
-</pre></div>
-</div><div id="description_items_value_ex5" class="jumbotron examples"><div class="highlight"><pre><span></span><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
-</pre></div>
-</div>
+    <a href="#hasAdditionalContribution_items_contributeur_alternateName_items" onclick="anchorLink('hasAdditionalContribution_items_contributeur_alternateName_items')">Texte court multilingue</a></div><h4>Texte court multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)</p>
+</span><a href="#media_items_license_items" onclick="anchorLink('media_items_license_items')" class="ref-link">Same definition as Texte court multilingue</a>
         </div>
     </div>
             </div>
@@ -3003,7 +2979,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasAdditionalContribution_items_contributeur_media_items" onclick="anchorLink('hasAdditionalContribution_items_contributeur_media_items')">Média</a></div><h4>Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
+<span class="description"><p>Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
 </span><a href="#media_items" onclick="anchorLink('media_items')" class="ref-link">Same definition as Média</a>
         </div>
     </div>
@@ -3102,7 +3078,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasAdditionalContribution_items_contributeur_typicalContributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributeur_typicalContributionType_items')">Term</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')" class="ref-link">Same definition as Term</a>
         </div>
     </div>
@@ -3336,7 +3312,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasAdditionalContribution_items_contributeur_hasGeographicRelation_items_relationType" onclick="anchorLink('hasAdditionalContribution_items_contributeur_hasGeographicRelation_items_relationType')">relationType</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')" class="ref-link">Same definition as Term</a>
             </div>
         </div>
@@ -3793,7 +3769,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasRemovedContribution_items" onclick="anchorLink('hasRemovedContribution_items')">Contribution</a></div><h4>Contribution</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
+<span class="description"><p>Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
 </span><a href="#hasAdditionalContribution_items" onclick="anchorLink('hasAdditionalContribution_items')" class="ref-link">Same definition as Contribution</a>
         </div>
     </div>
@@ -4268,52 +4244,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#inSeries_items_shortDescription" onclick="anchorLink('inSeries_items_shortDescription')">shortDescription</a></div><span class="badge badge-dark value-type">Type: array</span><br/>
-<span class="description"><p>Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.</p>
-</span>
-        
-
-        
-        
-
-         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
-    <div class="card">
-        <div class="card-body items-definition" id="inSeries_items_shortDescription_items">
-            
-
-    <div class="breadcrumbs">root
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#inSeries" onclick="anchorLink('inSeries')">inSeries</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#inSeries_items" onclick="anchorLink('inSeries_items')">Série de représentations (EventSeries)</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#inSeries_items_shortDescription" onclick="anchorLink('inSeries_items_shortDescription')">shortDescription</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-        </svg>
-    <a href="#inSeries_items_shortDescription_items" onclick="anchorLink('inSeries_items_shortDescription_items')">Texte long multilingue</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
-<span class="description"><p>Énumération de textes longs associés à un code de langue au standard ISO 639-1.</p>
+    <a href="#inSeries_items_shortDescription" onclick="anchorLink('inSeries_items_shortDescription')">shortDescription</a></div><h4>Texte long multilingue</h4><span class="badge badge-dark value-type">Type: array of object</span><br/>
+<span class="description"><p>Description résumée de la série. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.</p>
 </span><a href="#description" onclick="anchorLink('description')" class="ref-link">Same definition as description</a>
-        </div>
-    </div>
             </div>
         </div>
     </div>
@@ -4395,7 +4328,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_media_items" onclick="anchorLink('inSeries_items_media_items')">Média</a></div><h4>Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
+<span class="description"><p>Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
 </span><a href="#media_items" onclick="anchorLink('media_items')" class="ref-link">Same definition as Média</a>
         </div>
     </div>
@@ -4491,7 +4424,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasContribution_items" onclick="anchorLink('inSeries_items_hasContribution_items')">Contribution</a></div><h4>Contribution</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
+<span class="description"><p>Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.</p>
 </span><a href="#hasAdditionalContribution_items" onclick="anchorLink('hasAdditionalContribution_items')" class="ref-link">Same definition as Contribution</a>
         </div>
     </div>
@@ -4758,7 +4691,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items" onclick="anchorLink('inSeries_items_hasOffer_items')">Offre (Offer)</a></div><h4>Offre (Offer)</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.</p>
+<span class="description"><p>Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.</p>
 </span>
 
     <h2 class="handle">
@@ -4969,18 +4902,18 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
         </div>
     </div>
 </div>
-<div class="accordion" id="accordioninSeries_items_hasOffer_items_if_ticketLinkAvailable">
+<div class="accordion" id="accordioninSeries_items_hasOffer_items_if_ticketLinkNotAvailable">
     <div class="card">
-        <div class="card-header" id="headinginSeries_items_hasOffer_items_if_ticketLinkAvailable">
+        <div class="card-header" id="headinginSeries_items_hasOffer_items_if_ticketLinkNotAvailable">
             <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#inSeries_items_hasOffer_items_if_ticketLinkAvailable"
-                        aria-expanded="" aria-controls="inSeries_items_hasOffer_items_if_ticketLinkAvailable" onclick="setAnchor('#inSeries_items_hasOffer_items_if_ticketLinkAvailable')"><span class="property-name">ticketLinkAvailable</span> <span class="badge badge-warning required-property">Required</span></button>
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#inSeries_items_hasOffer_items_if_ticketLinkNotAvailable"
+                        aria-expanded="" aria-controls="inSeries_items_hasOffer_items_if_ticketLinkNotAvailable" onclick="setAnchor('#inSeries_items_hasOffer_items_if_ticketLinkNotAvailable')"><span class="property-name">ticketLinkNotAvailable</span> <span class="badge badge-warning required-property">Required</span></button>
             </h2>
         </div>
 
-        <div id="inSeries_items_hasOffer_items_if_ticketLinkAvailable"
-             class="collapse property-definition-div" aria-labelledby="headinginSeries_items_hasOffer_items_if_ticketLinkAvailable"
-             data-parent="#accordioninSeries_items_hasOffer_items_if_ticketLinkAvailable">
+        <div id="inSeries_items_hasOffer_items_if_ticketLinkNotAvailable"
+             class="collapse property-definition-div" aria-labelledby="headinginSeries_items_hasOffer_items_if_ticketLinkNotAvailable"
+             data-parent="#accordioninSeries_items_hasOffer_items_if_ticketLinkNotAvailable">
             <div class="card-body pl-5">
 
     <div class="breadcrumbs">root
@@ -5025,8 +4958,8 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#inSeries_items_hasOffer_items_if_ticketLinkAvailable" onclick="anchorLink('inSeries_items_hasOffer_items_if_ticketLinkAvailable')">ticketLinkAvailable</a></div><span class="badge badge-dark value-type">Type: const</span><br/>
-<span class="const-value" id="inSeries_items_hasOffer_items_if_ticketLinkAvailable_const">Specific value: <code>true</code></span>
+    <a href="#inSeries_items_hasOffer_items_if_ticketLinkNotAvailable" onclick="anchorLink('inSeries_items_hasOffer_items_if_ticketLinkNotAvailable')">ticketLinkNotAvailable</a></div><span class="badge badge-dark value-type">Type: const</span><br/>
+<span class="const-value" id="inSeries_items_hasOffer_items_if_ticketLinkNotAvailable_const">Specific value: <code>false</code></span>
         
 
         
@@ -6097,7 +6030,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items_hasPlace_hasRoom_items" onclick="anchorLink('inSeries_items_hasOffer_items_hasPlace_hasRoom_items')">Salle (Room)</a></div><h4>Salle (Room)</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.</p>
+<span class="description"><p>Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.</p>
 </span>
 
     <h2 class="handle">
@@ -6983,7 +6916,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items_hasPlace_hasRoom_items_media_items" onclick="anchorLink('inSeries_items_hasOffer_items_hasPlace_hasRoom_items_media_items')">Média</a></div><h4>Média</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
+<span class="description"><p>Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.</p>
 </span><a href="#media_items" onclick="anchorLink('media_items')" class="ref-link">Same definition as Média</a>
         </div>
     </div>
@@ -8375,7 +8308,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items_hasPlace_hasRoom_items_venueAccessibility_items" onclick="anchorLink('inSeries_items_hasOffer_items_hasPlace_hasRoom_items_venueAccessibility_items')">Term</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')" class="ref-link">Same definition as Term</a>
         </div>
     </div>
@@ -8721,7 +8654,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items_hasPlace_hasRoom_items_hasRoomConfiguration_items_layout" onclick="anchorLink('inSeries_items_hasOffer_items_hasPlace_hasRoom_items_hasRoomConfiguration_items_layout')">layout</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')" class="ref-link">Same definition as Term</a>
             </div>
         </div>
@@ -9144,7 +9077,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#inSeries_items_hasOffer_items_hasPlace_venueAccessibility_items" onclick="anchorLink('inSeries_items_hasOffer_items_hasPlace_venueAccessibility_items')">Term</a></div><h4>Term</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
+<span class="description"><p>Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.</p>
 </span><a href="#hasAdditionalContribution_items_contributionType_items" onclick="anchorLink('hasAdditionalContribution_items_contributionType_items')" class="ref-link">Same definition as Term</a>
         </div>
     </div>
@@ -9992,18 +9925,18 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
         </div>
     </div>
 </div>
-<div class="accordion" id="accordioninSeries_items_hasOffer_items_ticketLinkAvailable">
+<div class="accordion" id="accordioninSeries_items_hasOffer_items_ticketLinkNotAvailable">
     <div class="card">
-        <div class="card-header" id="headinginSeries_items_hasOffer_items_ticketLinkAvailable">
+        <div class="card-header" id="headinginSeries_items_hasOffer_items_ticketLinkNotAvailable">
             <h2 class="mb-0">
-                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#inSeries_items_hasOffer_items_ticketLinkAvailable"
-                        aria-expanded="" aria-controls="inSeries_items_hasOffer_items_ticketLinkAvailable" onclick="setAnchor('#inSeries_items_hasOffer_items_ticketLinkAvailable')"><span class="property-name">ticketLinkAvailable</span> <span class="badge badge-warning required-property">Required</span></button>
+                <button class="btn btn-link property-name-button" type="button" data-toggle="collapse" data-target="#inSeries_items_hasOffer_items_ticketLinkNotAvailable"
+                        aria-expanded="" aria-controls="inSeries_items_hasOffer_items_ticketLinkNotAvailable" onclick="setAnchor('#inSeries_items_hasOffer_items_ticketLinkNotAvailable')"><span class="property-name">ticketLinkNotAvailable</span> <span class="badge badge-warning required-property">Required</span></button>
             </h2>
         </div>
 
-        <div id="inSeries_items_hasOffer_items_ticketLinkAvailable"
-             class="collapse property-definition-div" aria-labelledby="headinginSeries_items_hasOffer_items_ticketLinkAvailable"
-             data-parent="#accordioninSeries_items_hasOffer_items_ticketLinkAvailable">
+        <div id="inSeries_items_hasOffer_items_ticketLinkNotAvailable"
+             class="collapse property-definition-div" aria-labelledby="headinginSeries_items_hasOffer_items_ticketLinkNotAvailable"
+             data-parent="#accordioninSeries_items_hasOffer_items_ticketLinkNotAvailable">
             <div class="card-body pl-5">
 
     <div class="breadcrumbs">root
@@ -10041,7 +9974,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#inSeries_items_hasOffer_items_ticketLinkAvailable" onclick="anchorLink('inSeries_items_hasOffer_items_ticketLinkAvailable')">ticketLinkAvailable</a></div><span class="badge badge-dark value-type">Type: boolean</span><br/>
+    <a href="#inSeries_items_hasOffer_items_ticketLinkNotAvailable" onclick="anchorLink('inSeries_items_hasOffer_items_ticketLinkNotAvailable')">ticketLinkNotAvailable</a></div><span class="badge badge-dark value-type">Type: boolean</span><br/>
 <span class="description"><p>Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.</p>
 </span>
         
@@ -10177,7 +10110,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
             />
         </svg>
     <a href="#hasOffer_items" onclick="anchorLink('hasOffer_items')">Offre (Offer)</a></div><h4>Offre (Offer)</h4><span class="badge badge-dark value-type">Type: object</span><br/>
-<span class="description"><p>permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.</p>
+<span class="description"><p>Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.</p>
 </span><a href="#inSeries_items_hasOffer_items" onclick="anchorLink('inSeries_items_hasOffer_items')" class="ref-link">Same definition as Offre (Offer)</a>
         </div>
     </div>
@@ -10187,6 +10120,6 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».</p>
 </div>
 
     <footer>
-        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-06-14 at 11:14:43 -0400</p>
+        <p class="generated-by-footer">Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-06-19 at 13:19:17 -0400</p>
     </footer></body>
 </html>
