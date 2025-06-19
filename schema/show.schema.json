@@ -334,7 +334,7 @@
                   "sequenceNumber": 1
                 }
               },
-              "hasPlace": {
+              "inPlace": {
                 "type": "Place",
                 "virtualPlace": false,
                 "identifier": [

@@ -5,7 +5,7 @@
   "description": "Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.",
   "required": [
     "type",
-    "hasPlace",
+    "inPlace",
     "isSoldout",
     "offerStatus",
     "isAccessibleForFree",
@@ -17,7 +17,7 @@
     "type": {
       "const": "Offer"
     },
-    "hasPlace": {
+    "inPlace": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./place.schema.json"
     },

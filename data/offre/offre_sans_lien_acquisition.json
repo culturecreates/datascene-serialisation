@@ -1,6 +1,6 @@
 {
   "type": "Offer",
-  "hasPlace": {
+  "inPlace": {
     "identifier": [
        "http://123"
     ],

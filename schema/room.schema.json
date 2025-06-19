@@ -53,7 +53,7 @@
         "$ref": "./utilities/media.schema.json"
       }
     },
-    "hasPlace": {
+    "inPlace": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./place.schema.json"
     },
