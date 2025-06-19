@@ -12,6 +12,6 @@
   "offerStatus": "EventScheduled",
   "isAccessibleForFree": false,
   "isAccessibleFromAnotherOffer": false,
-  "ticketLinkAvailable": true,
+  "ticketLinkNotAvailable": false,
   "ticketLink": "http://example.com/ticket"
 }

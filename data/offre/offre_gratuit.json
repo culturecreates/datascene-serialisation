@@ -25,5 +25,5 @@
   "offerStatus": "EventRescheduled",
   "isAccessibleForFree": true,
   "isAccessibleFromAnotherOffer": false,
-  "ticketLinkAvailable": false
+  "ticketLinkNotAvailable": false
 }
