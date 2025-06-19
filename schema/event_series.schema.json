@@ -70,7 +70,7 @@
       "description": "Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.",
       "type": "array",
       "items": {
-        "$ref": "./offre.schema.json"
+        "$ref": "./offer.schema.json"
       },
       "minItems": 1,
       "maxItems": 2

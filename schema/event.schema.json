@@ -98,7 +98,7 @@
     "hasOffer": {
       "type": "array",
       "items": {
-        "$ref": "./offre.schema.json"
+        "$ref": "./offer.schema.json"
       },
       "description": "Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres.",
       "minItems": 1,
