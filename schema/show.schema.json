@@ -319,7 +319,7 @@
           "hasOffer": [
             {
               "type": "Offer",
-              "hasRoomConfiguration": {
+              "inRoomConfiguration": {
                 "type": "RoomConfiguration",
                 "layout": {
                   "type": "Term",

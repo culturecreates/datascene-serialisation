@@ -21,11 +21,11 @@
       "description": "Lieu associé à l'offre (physique ou virtuel).",
       "$ref": "./place.schema.json"
     },
-    "hasRoom": {
+    "inRoom": {
       "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
       "$ref": "./room.schema.json"
     },
-    "hasRoomConfiguration": {
+    "inRoomConfiguration": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
       "$ref": "./utilities/room_specification.schema.json"
     },

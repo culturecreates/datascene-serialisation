@@ -68,7 +68,7 @@
         "$ref": "./utilities/term.schema.json"
       }
     },
-    "hasRoomConfiguration": {
+    "inRoomConfiguration": {
       "description": "Précisions sur les configurations possibles de la salle.",
       "type": "array",
       "items": {
