@@ -23,7 +23,7 @@
     },
     {
       "fileMatch": ["data/représentation/*.json"],
-      "url": "./schema/event.schema.json"
+      "url": "./schema/performance.schema.json"
     }
   ]
 }

@@ -121,14 +121,14 @@
   "showWithoutWords": false,
   "hasPerformance": [
     {
-      "type": "Représentation",
+      "type": "Performance",
       "identifier": [
         "http://lavitrine.com/representation/123456"
       ],
       "startDateTime": "2023-02-26T15:00:00-05:00",
       "inSeries": [
         {
-          "type": "EventSeries",
+          "type": "Series",
           "startDateTime": "2023-02-26T15:00:00-05:00",
           "description": [
             {

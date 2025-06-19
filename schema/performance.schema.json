@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/event.schema.json",
-  "title": "Représentation (Event)",
+  "$id": "https://datascene.ca/modele/performance.schema.json",
+  "title": "Représentation (Performance)",
   "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
   "required": [
     "type",
@@ -12,7 +12,7 @@
   "type": "object",
   "properties": {
     "type": {
-      "const": "Représentation"
+      "const": "Performance"
     },
     "identifier": {
       "description": "Énumération des identifiants connus.",
@@ -92,7 +92,7 @@
       "type": "array",
       "description": "Identification des séries dont la représentation fait partie.",
       "items": {
-        "$ref": "./event_series.schema.json"
+        "$ref": "./series.schema.json"
       }
     },
     "hasOffer": {

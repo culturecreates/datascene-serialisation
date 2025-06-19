@@ -4,13 +4,13 @@
 generate_all() {
   echo "No parameter provided. Generating documentation for all schemas..."
   generate-schema-doc ./schema/show.schema.json ./docs/spectacle.html
-  generate-schema-doc ./schema/event.schema.json ./docs/représentation.html
+  generate-schema-doc ./schema/performance.schema.json ./docs/représentation.html
   generate-schema-doc ./schema/offer.schema.json ./docs/offre.html
   generate-schema-doc ./schema/contributor.schema.json ./docs/contributeur.html
   generate-schema-doc ./schema/place.schema.json ./docs/lieu.html
   generate-schema-doc ./schema/work.schema.json ./docs/oeuvre.html
   generate-schema-doc ./schema/room.schema.json ./docs/salle.html
-  generate-schema-doc ./schema/event_series.schema.json ./docs/série.html
+  generate-schema-doc ./schema/series.schema.json ./docs/série.html
 
   # Generate documentation for all schemas in the utilitaires directory
   for schema in ./schema/utilities/*.schema.json; do
@@ -30,7 +30,7 @@ else
       generate-schema-doc ./schema/show.schema.json ./docs/show.html
       ;;
     rep)
-      generate-schema-doc ./schema/event.schema.json ./docs/event.html
+      generate-schema-doc ./schema/performance.schema.json ./docs/performance.html
       ;;
     offre)
       generate-schema-doc ./schema/offer.schema.json ./docs/offer.html
@@ -48,7 +48,7 @@ else
       generate-schema-doc ./schema/room.schema.json ./docs/salle.html
       ;;
     serie)
-      generate-schema-doc ./schema/event_series.schema.json ./docs/série.html
+      generate-schema-doc ./schema/series.schema.json ./docs/série.html
       ;;
     utilitaires/*)
       schema_name=$(basename "$1" .schema.json)

@@ -137,7 +137,7 @@
       "description": "Énumération des représentations du spectacle, qu'elles soient passées ou futures.",
       "type": "array",
       "items": {
-        "$ref": "./event.schema.json"
+        "$ref": "./performance.schema.json"
       }
     }
   },
@@ -297,7 +297,7 @@
           "startDateTime": "2023-02-26T15:00:00-05:00",
           "inSeries": [
             {
-              "type": "EventSeries",
+              "type": "Series",
               "startDateTime": "2023-02-26T15:00:00-05:00",
               "description": [
                 {
