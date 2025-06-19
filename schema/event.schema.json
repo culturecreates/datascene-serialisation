@@ -44,7 +44,7 @@
       "type": "boolean",
       "description": "Indique la présence d'une ou plusieurs entractes"
     },
-    "isSupplementary": {
+    "isExtra": {
       "type": "boolean",
       "description": "Indique si la représentation est une représentation supplémentaire"
     },
