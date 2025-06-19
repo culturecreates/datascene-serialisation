@@ -25,18 +25,16 @@ Ces pages sont généré par [json-schema-for-humans](https://github.com/coveoos
 - [Terme](utilities/term.html)
 - [Page Web](utilities/web_page.html)
 
-### Vocabulaires contrôlés
-- [Accessibilité Universelle](vocabulaires/accessibilitéUniversellesTermes.skos.html)
-- [Avertissements](vocabulaires/avertissement.skos.html)
-- [Disciplines artistiques](vocabulaires/disciplines-asq.html)
-- [Public cible](vocabulaires/publicCible.skos.html)
+### vocabularies contrôlés
+- [Accessibilité Universelle](vocabularies/accessibilitéUniversellesTermes.skos.html)
+- [Avertissements](vocabularies/avertissement.skos.html)
+- [Disciplines artistiques](vocabularies/disciplines-asq.html)
+- [Public cible](vocabularies/publicCible.skos.html)
 - Statut d’offre - voir énumération dans classe Offre
-- [Types d’association géographiques](vocabulaires/associationGéographiqueType.skos.html)
-- [Types de configurations de salles](vocabulaires/configurationSalleTermes.skos.html)
-- [Types de contenus](vocabulaires/contenusType.skos.html)
-- [Types de contributeurs](vocabulaires/contributeursType.skos.html)
-- [Types de contributions](vocabulaires/contributionType.skos.html)
-- [Types de lieu](vocabulaires/typesLieu.skos.html)
+- [Types d’association géographiques](vocabularies/associationGéographiqueType.skos.html)
+- [Types de configurations de salles](vocabularies/configurationSalleTermes.skos.html)
+- [Types de contenus](vocabularies/contenusType.skos.html)
+- [Types de contributions](vocabularies/contributionType.skos.html)
 
 
 
