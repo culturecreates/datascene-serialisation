@@ -32,11 +32,8 @@
       "minItems": 1
     },
     "shortDescription": {
-      "description": "Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
-      "type": "array",
-      "items": {
-        "$ref": "./datatypes/text_long_multilingual.schema.json"
-      }
+      "description": "Description résumée de la série. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
+      "$ref": "./datatypes/text_long_multilingual.schema.json"
     },
     "media": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.",

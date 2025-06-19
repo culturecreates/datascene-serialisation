@@ -33,7 +33,7 @@ else
       generate-schema-doc ./schema/event.schema.json ./docs/event.html
       ;;
     offre)
-      generate-schema-doc ./schema/offer.schema.json ./docs/offre.html
+      generate-schema-doc ./schema/offer.schema.json ./docs/offer.html
       ;;
     contributeur)
       generate-schema-doc ./schema/contributor.schema.json ./docs/contributor.html
