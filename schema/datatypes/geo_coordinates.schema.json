@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/geoCoordinates",
+  "$id": "https://datascene.ca/modele/datatypes/geo_coordinates.schema.json",
   "title": "Coordonnées géographiques d'un point.",
   "description": "Coordonnées géographiques",
   "type": "object",

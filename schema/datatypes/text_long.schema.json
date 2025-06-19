@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/TextLong",
+  "$id": "https://datascene.ca/modele/datatypes/text_long.schema.json",
   "title": "Texte long",
   "description": "Texte sans formatage, avec des changements de paragraphes (typiquement affiché sur plusieurs lignes).\n\nLes textes longs ne sont pas prévus pour inclure des éléments de mise en page, mais permettent l'inclusion de quelques balises HTML lorsqu'elles sont nécessaires pour s'assurer que la description est compréhensible. Les balises HTML autorisées sont b, i, u, sup et sub.",
   "type": "string",

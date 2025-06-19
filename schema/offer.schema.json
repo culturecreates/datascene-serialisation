@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/Offer",
+  "$id": "https://datascene.ca/modele/offer.schema.json",
   "title": "Offre (Offer)",
   "description": "Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.",
   "required": [

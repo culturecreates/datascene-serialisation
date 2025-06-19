@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/Terme",
+  "$id": "https://datascene.ca/modele/utilities/term.schema.json",
   "title": "Term",
   "description": "Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.",
   "required": [

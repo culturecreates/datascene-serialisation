@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/Event",
+  "$id": "https://datascene.ca/modele/event.schema.json",
   "title": "Représentation (Event)",
   "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
   "required": [

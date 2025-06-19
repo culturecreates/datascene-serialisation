@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/ConfigurationSalle",
+  "$id": "https://datascene.ca/modele/utilities/room_specification.schema.json",
   "title": "Configuration de salle",
   "description": "Précisions sur un configuration possible de la salle.",
   "required": [

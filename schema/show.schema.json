@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/Show",
+  "$id": "https://datascene.ca/modele/show.schema.json",
   "title": "Spectacle (Show)",
   "description": "la classe centrale du référentiel. Elle permet de documenter ce qui relève du spectacle au sens d'œuvre mise en scène. Par contraste, cela exclut donc les éléments descriptifs des représentations.",
   "required": [

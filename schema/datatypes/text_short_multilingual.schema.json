@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/TextShortMultilingual",
+  "$id": "https://datascene.ca/modele/datatypes/text_short_multilingual.schema.json",
   "title": "Texte court multilingue",
   "description": "Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)",
   "type": "array",
