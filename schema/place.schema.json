@@ -62,7 +62,7 @@
         "$ref": "./utilities/web_page.schema.json"
       }
     },
-    "venueAccessibility": {
+    "placeAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {

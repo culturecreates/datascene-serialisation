@@ -61,7 +61,7 @@
       "description": "Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.",
       "$ref": "./utilities/postal_address.schema.json"
     },
-    "venueAccessibility": {
+    "roomAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
       "type": "array",
       "items": {
