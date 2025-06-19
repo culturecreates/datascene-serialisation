@@ -25,7 +25,7 @@
       "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
       "$ref": "./room.schema.json"
     },
-    "inRoomConfiguration": {
+    "roomConfiguration": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
       "$ref": "./utilities/room_specification.schema.json"
     },

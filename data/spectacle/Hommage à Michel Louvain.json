@@ -150,7 +150,7 @@
       "hasOffer": [
         {
           "type": "Offer",
-          "inRoomConfiguration": {
+          "roomConfiguration": {
             "type": "RoomConfiguration",
             "layout": {
               "type": "Term",
