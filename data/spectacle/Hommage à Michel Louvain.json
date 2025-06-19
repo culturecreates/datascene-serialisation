@@ -190,7 +190,7 @@
           "offerStatus": "EventScheduled",
           "isAccessibleForFree": false,
           "isAccessibleFromAnotherOffer": false,
-          "ticketLinkAvailable": true,
+          "ticketLinkNotAvailable": false,
           "ticketLink": "https://www.sallealbertrousseau.com/programmation/un-certain-souvenir/"
         }
       ]
