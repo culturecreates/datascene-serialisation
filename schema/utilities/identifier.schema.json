@@ -16,7 +16,7 @@
         "additionalProperties": false,
         "properties": {
           "type":{
-            "const": "PropertyValue"
+            "const": "Identifier"
             },
           "authority": {
             "name": "système d'identification",

@@ -8,8 +8,8 @@
   ],
   "identifier": [
     {
-      "type": "PropertyValue",
-      "authority": "Artsdata",
+      "type": "Identifier",
+      "authority": "artsdata",
       "id": "K5-180"
     },
     "http://www.wikidata.org/entity/Q3114610"
