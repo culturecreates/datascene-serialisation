@@ -18,7 +18,7 @@
       "url": "./schema/offer.schema.json"
     },
     {
-      "fileMatch": ["data/spectacle/*.json"],
+      "fileMatch": ["data/show/*.json"],
       "url": "./schema/show.schema.json"
     },
     {

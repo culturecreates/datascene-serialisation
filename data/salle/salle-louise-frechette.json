@@ -1,5 +1,4 @@
 {
-  "@context": "https://datascence.ca/context.jsonld",
   "type": "Room",
   "identifier": [
     "http://kg.artsdata.ca/resource/K5-179"
