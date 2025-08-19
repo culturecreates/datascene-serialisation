@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "type": "@type",
+    "id": "@id",
+    "@vocab": "http://datascene.ca/",
+    "datascene": "https://datascene.ca/",
+    "identifier": {
+      "@id": "datascene:identifier",
+      "@type": "@id"
+    },
+    "description": {
+      "@id": "datascene:description"
+    },
+    "lang": "@language",
+    "value": "@value"
+  }
+}
