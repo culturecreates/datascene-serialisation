@@ -1,5 +1,4 @@
 {
-  "@context": "https://datascence.ca/context.jsonld",
   "type": "Place",
   "name": [
     {
@@ -10,8 +9,8 @@
   "identifier": [
     {
       "type": "PropertyValue",
-      "propertyID": "Artsdata",
-      "value": "K5-180"
+      "authority": "Artsdata",
+      "id": "K5-180"
     },
     "http://www.wikidata.org/entity/Q3114610"
   ],
@@ -34,16 +33,11 @@
     "postalCode": "G1R 2B3",
     "addressCountry": "CAN"
   },
-  "salle": [
+  "inRoom": [
     {
-      "identifier": [
-        {
-          "type": "uri",
-          "value": "http://kg.artsdata.ca/resource/K5-179"
-        }
-      ],
-      "type": "Salle",
-      "name": "Salle Louis-Fréchette",
+      "identifier": ["http://kg.artsdata.ca/resource/K5-179"],
+      "type": "Room",
+      "name": [{"lang":"fr","value":"Salle Louis-Fréchette"}],
       "nameSameAsPlace": false,
       "description": [
         {
@@ -53,13 +47,8 @@
       ]
     },
     {
-      "type": "Salle",
-      "identifier": [
-        {
-          "type": "uri",
-          "value": "http://lavitrine.com/1234"
-        }
-      ],
+      "type": "Room",
+      "identifier": ["http://lavitrine.com/1234"],
       "nameSameAsPlace": true,
       "description": [
         {
@@ -69,14 +58,16 @@
       ]
     },
     {
-      "type": "Salle",
+      "type": "Room",
       "identifier": [
+        "http://lavitrine.com/4567"
+      ],
+      "name": [
         {
-          "type": "uri",
-          "value": "http://lavitrine.com/4567"
+          "lang": "fr",
+          "value": "STUDIOTELUS"
         }
       ],
-      "name": "STUDIOTELUS",
       "nameSameAsPlace": false,
       "description": [
         {

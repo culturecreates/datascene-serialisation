@@ -10,20 +10,21 @@
         "type": "object",
         "required": [
           "type",
-          "propertyID",
-          "value"
+          "authority",
+          "id"
         ],
+        "additionalProperties": false,
         "properties": {
           "type":{
             "const": "PropertyValue"
             },
-          "propertyID": {
+          "authority": {
             "name": "système d'identification",
             "description": "Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.",
             "type": "string",
             "minLength": 1
           },
-          "value": {
+          "id": {
             "description": "L'identifiant lui-même",
             "type": "string",
             "minLength": 1
@@ -42,8 +43,8 @@
   "examples": [
     {
       "type": "PropertyValue",
-      "propertyID": "isni",
-      "valeur": "000000012124423X"
+      "authority": "isni",
+      "id": "000000012124423X"
     },
     "https://isni.org/isni/000000012124423X"
   ]
