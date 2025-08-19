@@ -30,7 +30,6 @@ Ces pages sont généré par [json-schema-for-humans](https://github.com/coveoos
 - [Avertissements](vocabularies/avertissement.skos.html)
 - [Disciplines artistiques](vocabularies/disciplines-asq.html)
 - [Public cible](vocabularies/publicCible.skos.html)
-- Statut d’offre - voir énumération dans classe Offre
 - [Types d’association géographiques](vocabularies/associationGéographiqueType.skos.html)
 - [Types de configurations de salles](vocabularies/configurationSalleTermes.skos.html)
 - [Types de contenus](vocabularies/contenusType.skos.html)
