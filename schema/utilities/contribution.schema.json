@@ -9,6 +9,7 @@
     "contributeur"
   ],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Contribution"

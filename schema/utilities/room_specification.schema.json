@@ -8,6 +8,7 @@
     "layout"
   ],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "RoomConfiguration"

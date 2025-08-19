@@ -12,6 +12,7 @@
     "postalCode"
   ],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "PostalAddress"

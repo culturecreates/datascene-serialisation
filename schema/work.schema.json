@@ -9,6 +9,7 @@
     "name"
   ],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Work"

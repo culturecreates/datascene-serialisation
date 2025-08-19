@@ -11,6 +11,7 @@
     "startDateTime"
   ],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "type": {
       "const": "Series"
