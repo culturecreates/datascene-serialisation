@@ -2,7 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "datascene": "https://datascene.ca/modele#",
+    "datascene": "https://datascene.ca/PublicCible#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -18,7 +18,7 @@
       "@type": "@id"
     }
   },
-  "@id": "datascene:PublicCible",
+  "@id": "https://datascene.ca/PublicCible",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Public Cible",
