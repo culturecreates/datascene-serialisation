@@ -6,7 +6,7 @@
   "required": [
     "type",
     "contributionType",
-    "contributeur"
+    "contributor"
   ],
   "type": "object",
   "additionalProperties": false,
@@ -21,7 +21,7 @@
       },
       "description": "Identification des types de contribution."
     },
-    "contributeur": {
+    "contributor": {
       "description": "Identification du contributeur",
        "$ref": "../contributor.schema.json"
     },
