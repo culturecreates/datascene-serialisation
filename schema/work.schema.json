@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/work.schema.json",
+  "$id": "https://datascene.ca/schema/Work",
   "title": "Oeuvre (Work)",
   "description": "Cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.",
   "required": [

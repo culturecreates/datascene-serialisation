@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modeles/ContributorType",
+  "$id": "https://datascene.ca/schema/ContributorType",
   "title": "Type de contributeur",
   "description": "Vocabulaire contrôlé pour les types de contributeur.",
   "source": "https://datascene.ca/references/vocabularies/types_de_contributeurs/",

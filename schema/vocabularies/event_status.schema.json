@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/EventStatus",
+  "$id": "https://datascene.ca/schema/EventStatus",
   "title": "Statut de l'Offre",
   "description": "Vocabulaire contrôlé pour les statuts d'une offre.",
   "type": "string",

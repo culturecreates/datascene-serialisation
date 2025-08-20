@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/series.schema.json",
+  "$id": "https://datascene.ca/schema/Series",
   "title": "Série de représentations (Series)",
   "description": "cette classe permet de regrouper des représentations n’étant pas nécessairement toutes associées à un même spectacle, mais liées entre elles par des éléments de commercialisation ou de modalités d’accès. Un festival est un exemple de série.",
   "required": [

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/datatypes/text_long_multilingual.shema.json",
+  "$id": "https://datascene.ca/schema/datatypes/TextLongMultilingual",
   "title": "Texte long multilingue",
   "description": "Énumération de textes longs associés à un code de langue au standard ISO 639-1.",
   "type": "array",

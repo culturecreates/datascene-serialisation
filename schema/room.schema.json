@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/room.schema.json",
+  "$id": "https://datascene.ca/schema/Room",
   "title": "Salle (Room)",
   "description": "Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.",
   "required": [

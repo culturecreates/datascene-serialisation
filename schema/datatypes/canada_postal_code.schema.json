@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/datatypes/canada_postal_code.schema.json",
+  "$id": "https://datascene.ca/schema/datatypes/CanadaPostalCode",
   "title": "Code Postal Canadien",
   "description": "Code postal Canadien au format A1A 1A1, où A est une lettre et 1 est un chiffre.",
   "type": "string",

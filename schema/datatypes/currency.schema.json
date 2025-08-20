@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/datatypes/currency.schema.json",
+  "$id": "https://datascene.ca/schema/datatypes/Currency",
   "title": "Montant Monétaire",
   "description": "Montant en dollars canadiens, sans le signe dollar ($), avec une ou deux décimales.",
   "type": "string",
