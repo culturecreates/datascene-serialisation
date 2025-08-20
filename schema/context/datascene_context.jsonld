@@ -34,7 +34,7 @@
       "@type": "xsd:boolean"
     },
     "isAccessibleFromAnotherOffer": {
-      "@id": "datascene:isAccessibleForFree",
+      "@id": "datascene:isAccessibleFromAnotherOffer",
       "@type": "xsd:boolean"
     },
     "ticketLinkNotAvailable": {
@@ -58,8 +58,8 @@
       "@type": "xsd:integer"
     },
     "capacity": {
-      "@id": "datascene:sequenceNumber",
-      "@type": "xsd:capacity"
+      "@id": "datascene:capacity",
+      "@type": "xsd:integer"
     },
     "startDateTime": {
       "@id": "datascene:startDateTime",
