@@ -25,8 +25,12 @@
       "$ref": "../datatypes/text_short.schema.json"
     },
     "code": {
-      "description": "Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.",
+      "description": "Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette, l'identifiant et le code transmis, c'est ce dernier qui doit être priorisé.",
       "$ref": "../datatypes/text_short.schema.json"
+    },
+    "identifier": {
+      "description": "Identifiant du terme selon le vocabulaire identifié. ",
+      "$ref": "./identifier.schema.json"
     },
     "label": {
       "description": "Version textuelle du terme tiré du vocabulaire choisi",
