@@ -4,12 +4,86 @@
     "id": "@id",
     "@vocab": "http://datascene.ca/",
     "datascene": "https://datascene.ca/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "identifier": {
       "@id": "datascene:identifier",
       "@type": "@id"
     },
-    "description": {
-      "@id": "datascene:description"
+    "url": {
+      "@id": "datascene:url",
+      "@type": "@id"
+    },
+    "ticketLink": {
+      "@id": "datascene:ticketLink",
+      "@type": "@id"
+    },
+    "showWithoutWords": {
+      "@id": "datascene:showWithoutWords",
+      "@type": "xsd:boolean"
+    },
+    "virtualPlace": {
+      "@id": "datascene:virtualPlace",
+      "@type": "xsd:boolean"
+    },
+    "isSoldout": {
+      "@id": "datascene:isSoldout",
+      "@type": "xsd:boolean"
+    },
+    "isAccessibleForFree": {
+      "@id": "datascene:isAccessibleForFree",
+      "@type": "xsd:boolean"
+    },
+    "isAccessibleFromAnotherOffer": {
+      "@id": "datascene:isAccessibleForFree",
+      "@type": "xsd:boolean"
+    },
+    "ticketLinkNotAvailable": {
+      "@id": "datascene:ticketLinkNotAvailable",
+      "@type": "xsd:boolean"
+    },
+    "hasIntermission": {
+      "@id": "datascene:hasIntermission",
+      "@type": "xsd:boolean"
+    },
+    "isExtra": {
+      "@id": "datascene:isExtra",
+      "@type": "xsd:boolean"
+    },
+    "nameSameAsPlace": {
+      "@id": "datascene:nameSameAsPlace",
+      "@type": "xsd:boolean"
+    },
+    "sequenceNumber": {
+      "@id": "datascene:sequenceNumber",
+      "@type": "xsd:integer"
+    },
+    "capacity": {
+      "@id": "datascene:sequenceNumber",
+      "@type": "xsd:capacity"
+    },
+    "startDateTime": {
+      "@id": "datascene:startDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "soldoutSince": {
+      "@id": "datascene:soldoutSince",
+      "@type": "xsd:dateTime"
+    },
+    "preSaleStart": {
+      "@id": "datascene:preSaleStart",
+      "@type": "xsd:dateTime"
+    },
+    "generalSaleStart": {
+      "@id": "datascene:generalSaleStart",
+      "@type": "xsd:dateTime"
+    },
+    "endDateTime": {
+      "@id": "datascene:endDateTime",
+      "@type": "xsd:dateTime"
+    },
+    "previousStartDateTime": {
+      "@id": "datascene:previousStartDateTime",
+      "@type": "xsd:dateTime"
     },
     "lang": "@language",
     "value": "@value"
