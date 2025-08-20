@@ -42,7 +42,7 @@
   "uniqueItems": true,
   "examples": [
     {
-      "type": "PropertyValue",
+      "type": "Identifier",
       "authority": "isni",
       "id": "000000012124423X"
     },

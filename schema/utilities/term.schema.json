@@ -46,6 +46,7 @@
       "type": "Term",
       "vocabulary": "datascene",
       "code": "ToutPublics",
+      "identifier":"https://datascene.ca/PublicCible#ToutPublics",
       "version": "1.0",
       "sequenceNumber": 1
     }
