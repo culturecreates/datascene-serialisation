@@ -40,7 +40,7 @@
           "sequenceNumber": 1
         }
       ],
-      "contributeur": {
+      "contributor": {
         "type": "Contributor",
         "contributorType": "Group",
         "identifier": [
@@ -58,7 +58,7 @@
             "relationType": {
               "type": "Term",
               "vocabulary": "datascene",
-              "code": "lieuDeFondation",
+              "code": "LieuDeFondation",
               "label": [
                 {
                   "lang": "fr",
@@ -90,8 +90,12 @@
   "discipline": [
     {
       "type": "Term",
-      "vocabulary": "datascene",
+      "vocabulary": "scenepro",
+      "identifier": [
+        "http://scenepro.ca/taxonomies/Disciplines-asq#Chanson"
+      ],
       "code": "Chanson",
+      "version": "3",
       "label": [
         {
           "lang": "fr",
@@ -106,6 +110,9 @@
       "type": "Term",
       "vocabulary": "datascene",
       "code": "ToutPublics",
+      "identifier": [
+        "https://datascene.ca/PublicCible#ToutPublics"
+      ],
       "label": [
         {
           "lang": "fr",
